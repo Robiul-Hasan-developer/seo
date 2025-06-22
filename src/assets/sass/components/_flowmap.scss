@@ -1,0 +1,27 @@
+/* =========================== Flowmap css start ================================ */
+.animated-bg {
+  display: block;
+  width: 100%;
+  min-height: 400px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+.animated-bg canvas {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s 0.3s;
+  transition: opacity 0.3s 0.3s;
+}
+.animated-bg.active canvas {
+  opacity: 1;
+}
+/* =========================== Flowmap css end ================================ */
