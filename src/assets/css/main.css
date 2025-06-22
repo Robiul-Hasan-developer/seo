@@ -80,25 +80,49 @@
     --heading-font: "Vidaloka", serif;
     --body-font: "Poppins", sans-serif;
   /* Font Size Variable Start */
-    --heading-one: clamp(2rem, -0.0733rem + 6.3692vw, 4.25rem);
-    --heading-two: clamp(1.75rem, 0.7133rem + 2.8846vw, 2.875rem);
-    --heading-three: clamp(1.5rem, 0.3353rem + 2.1661vw, 2.5rem);
-    --heading-four: clamp(1.25rem, 0.5569rem + 1.444vw, 2rem);
-    --heading-five: clamp(1.125rem, 1.2rem + 0.722vw, 1.75rem);
-    --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem);
+    --heading-one: clamp(
+    2rem,
+    -0.0733rem + 6.3692vw,
+    4.25rem
+  );
+    --heading-two: clamp(
+    1.75rem,
+    0.7133rem + 2.8846vw,
+    2.875rem
+  );
+    --heading-three: clamp(
+    1.5rem,
+    0.3353rem + 2.1661vw,
+    2.5rem
+  );
+    --heading-four: clamp(
+    1.25rem,
+    0.5569rem + 1.444vw,
+    2rem
+  );
+    --heading-five: clamp(
+    1.125rem,
+    1.2rem + 0.722vw,
+    1.75rem
+  );
+    --heading-six: clamp(
+    1rem,
+    0.769rem + 0.6813vw,
+    1.25rem
+  );
   /* Font Size End */
   /* template main color */
-    --main-h: 209;
-    --main-s: 94%;
-    --main-l: 41%;
+    --main-h: 222;
+    --main-s: 90%;
+    --main-l: 51%;
     --main: var(--main-h) var(--main-s) var(--main-l);
-    --main-two-h: 249;
-    --main-two-s: 63%;
-    --main-two-l: 15%;
+    --main-two-h: 41;
+    --main-two-s: 99%;
+    --main-two-l: 55%;
     --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
   /* White Color */
     --white: 0 0% 100%;
-    --black: 0 0% 0%;
+    --black: 240 46% 5%;
     --body: 0 0% 43%;
     --heading-color: var(--black);
     --body-color: var(--body);
@@ -317,7 +341,7 @@
 }
 
 .hover-style-one .button__flair::before {
-    background-color: red;
+    background-color: var(--main-two-600);
 }
 
 .hover-style-two:hover, .hover-style-two:active {
@@ -4431,7 +4455,7 @@ input:focus, input:focus-visible {
 }
 
 .hover-underline-none:hover {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 /* Text Decoration End */
@@ -5141,6 +5165,37 @@ input:focus, input:focus-visible {
 
 /* Submenu End */
 /* Header Menu and Submenu Css End */
+.headerAbsoluteStyle {
+    position: absolute;
+    inset-block-start: 0;
+    width: 100%;
+    inset-inline-start: 0;
+}
+
+.menuColorWhite .nav-menu__link {
+    color: #ffff;
+}
+
+.menuColorWhite .nav-menu__item.activePage > a {
+    color: var(--main-two-600) !important;
+}
+
+.menuColorWhite .has-submenu > a::before {
+    color: #fff;
+}
+
+.menuColorWhite .has-submenu:hover > a::before {
+    color: var(--main-600);
+}
+
+.menuColorWhite .activePage > a::before {
+    color: var(--main-two-600);
+}
+
+.menuPositionEnd .header-menu {
+    margin-inline-start: auto;
+}
+
 /* ================================= Header Css End =========================== */
 /* Mega menu css start */
 .mega-menu {
