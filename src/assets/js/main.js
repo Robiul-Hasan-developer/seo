@@ -219,7 +219,9 @@
 
     // ========================= AOS Js Start ===========================
     AOS.init({
-      once: false,
+      once: false, // animation will happen every time you scroll
+      offset: 0, // start animation when element enters the viewport
+      anchorPlacement: "bottom-bottom", // when the bottom of the element hits the bottom of the screen
     });
     // ========================= AOS Js End ===========================
 
@@ -392,20 +394,29 @@
         const el = entry.target;
         if (entry.isIntersecting && !el.classList.contains("is-visible")) {
           counterUp(el, {
-            duration: 2000,
+            duration: 3500,
             delay: 16,
           });
           el.classList.add("is-visible");
         }
       });
     };
-
     const IO = new IntersectionObserver(callback, { threshold: 1 });
 
-    // Counter
-    const counter = document.querySelector(".counter");
-    if (counter) {
-      IO.observe(counter);
+    // Banner statistics Counter
+    const statisticsCounter = document.querySelectorAll(".counter");
+    if (statisticsCounter.length > 0) {
+      statisticsCounter.forEach((counterNumber) => {
+        IO.observe(counterNumber);
+      });
+    }
+
+    // performance Count
+    const performanceCount = document.querySelectorAll(".counter");
+    if (performanceCount.length > 0) {
+      performanceCount.forEach((counterNumber) => {
+        IO.observe(counterNumber);
+      });
     }
     // ========================= Counter Up Js End ===================
 

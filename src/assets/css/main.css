@@ -3193,6 +3193,10 @@ input:focus-visible {
     margin-inline-end: auto;
 }
 
+.tw--ms-10-px {
+    margin-inline-start: -20px;
+}
+
 .my-120 {
     margin-block-start: 60px;
     margin-block-end: 60px;
@@ -4303,6 +4307,10 @@ input:focus-visible {
     transform: scale(1.04);
 }
 
+.hover-scale-14:hover {
+    transform: scale(1.4);
+}
+
 .hover-scale-106:hover {
     transform: scale(1.06);
 }
@@ -4649,6 +4657,10 @@ input:focus-visible {
 
 .tw-z-999 {
     z-index: 999;
+}
+
+.tw-hover-z-4:hover {
+    z-index: 4 !important;
 }
 
 /* Z index css End */
