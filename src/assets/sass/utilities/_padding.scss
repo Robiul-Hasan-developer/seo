@@ -53,6 +53,11 @@
       padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
     }
   }
+  &-ps {
+    &-120-px {
+      padding-inline-start: clamp(1.5rem, -12.1677rem + 32.9177vw, 7.5rem);
+    }
+  }
 }
 
 .py-120 {

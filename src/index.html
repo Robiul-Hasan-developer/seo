@@ -828,7 +828,7 @@
 
 
     <!-- ============================ Banner section start ======================== -->
-<section class="banner-one position-relative z-1 bg-black">
+<section class="banner-one position-relative z-1 bg-black overflow-hidden">
   <div
     class="animated-bg flowmap-deformation-wrapper"
     data-bg="assets/images/bg/banner-one-bg.png"
@@ -851,7 +851,12 @@
               Our unique approach combines cutting-edge techniques with a deep
               understanding of market trends to create.
             </p>
-            <div class="tw-mt-16">
+            <div
+              class="tw-mt-16"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="0"
+            >
               <a
                 href="contact.html"
                 class="btn btn-main-two hover-style-two group group-item button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-205 group active--translate-y-2 pointer-events-auto rounded-pill"
@@ -863,7 +868,7 @@
                   <img
                     src="assets/images/icons/arrow-right.png"
                     alt="Arrow"
-                    class="group-hover-item-text-invert-white tw-duration-300 group-hover-item-rotate-45"
+                    class="group-hover-item-text-invert-white tw-duration-300 group-hover-item-rotate-45-deg"
                   />
                 </span>
               </a>
@@ -878,6 +883,8 @@
             <img
               src="assets/images/thumbs/banner-one-img.png"
               alt="Man Image"
+              data-aos="fade-up"
+              data-aos-duration="1500"
             />
             <img
               src="assets/images/thumbs/banner-one-element1.png"
@@ -907,7 +914,7 @@
             class="animation-rotate-right"
           />
           <span
-            class="position-absolute top-50 tw-start-50 tw--translate-middle text-main-two-600 tw-text-xl group-hover-text-main-600"
+            class="position-absolute top-50 tw-start-50 tw--translate-middle text-main-two-600 tw-text-2xl group-hover-text-main-600"
           >
             <i class="ph-fill ph-play"></i>
           </span>
@@ -918,6 +925,75 @@
   </div>
 </section>
 <!-- ============================ Banner section start ======================== -->
+
+    
+    <!-- =========================== About one Section start =============================== -->
+<div class="about-one py-120">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-4">
+        <div
+          class="position-relative tw-rounded-lg overflow-hidden h-100 tw-p-10"
+        >
+          <div
+            class="animated-bg flowmap-deformation-wrapper"
+            data-bg="assets/images/bg/about-one-gradient-bg.png"
+            data-bg-width="410"
+            data-bg-height="382"
+          ></div>
+          <div class="position-relative z-1">
+            <h2 class="text-main-two-600 text-84-px tw-leading-none counter">
+              920+
+            </h2>
+            <p class="tw-text-xl text-white tw-mt-2 fw-normal">
+              Project finish with superbly
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-8">
+        <div class="ps-lg-5 ms-xl-5">
+          <h3 class="splitTextStyleOne">
+            Discover Who We Are, What We Do, and How We Drive Growth Through
+            Expert SEO and Digital
+            <span class="font-playfair fw-normal">Marketing Solutions</span> .
+          </h3>
+          <div class="tw-ps-120-px">
+            <p
+              class="tw-mt-14 text-neutral-600"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="0"
+            >
+              At our core, we are a results-driven SEO and digital marketing
+              agency committed to helping businesses grow online. With a team of
+              skilled strategists, designers, and marketers, we craft tailored
+              solutions that boost visibility.
+            </p>
+            <div
+              class="tw-mt-17"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="300"
+            >
+              <a
+                href="contact.html"
+                class="text-main-600 fw-semibold border-bottom border-main-600 hover-border-main-two-600 hover-text-main-two-600 d-inline-flex align-items-center tw-gap-205 group-item"
+              >
+                Get Started
+                <span class="group-hover-item-rotate-45-deg tw-duration-300">
+                  <i class="ph-bold ph-arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- =========================== About one Section End =============================== -->
 
 
 
@@ -1272,7 +1348,10 @@
 <!-- custom GSAP -->
 <script src="assets/js/custom-gsap.js"></script>
 
+<!-- flowmap effect -->
 <script src="assets/js/flowmap-effect.min.js"></script>
+<!-- counterup -->
+<script src="assets/js/counterup.min.js"></script>
 
 <!-- main js -->
 <script src="assets/js/main.js"></script>

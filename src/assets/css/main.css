@@ -1910,6 +1910,10 @@ input:focus-visible {
     font-size: inherit;
 }
 
+.text-84-px {
+    font-size: clamp(2.125rem, -0.5476rem + 5.5679vw, 5.25rem);
+}
+
 .tw-text-xs {
     font-size: 0.75rem;
 }
@@ -2374,7 +2378,7 @@ input:focus-visible {
     transform: scale(1);
 }
 
-.group-item:hover .group-hover-item-rotate-45 {
+.group-item:hover .group-hover-item-rotate-45-deg {
     transform: translateY(-3px) rotate(-35deg);
 }
 
@@ -4063,6 +4067,10 @@ input:focus-visible {
     padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
 }
 
+.tw-ps-120-px {
+    padding-inline-start: clamp(1.5rem, -12.1677rem + 32.9177vw, 7.5rem);
+}
+
 .py-120 {
     padding-block-start: 60px;
     padding-block-end: 60px;
@@ -5144,6 +5152,7 @@ input:focus-visible {
     backdrop-filter: blur(24px);
     animation: slideDown 0.35s ease-out;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    background-color: hsl(var(--heading-color));
 }
 
 @media screen and (max-width: 991px) {

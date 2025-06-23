@@ -342,7 +342,7 @@ if ($(".split-reveal").length) {
 // **************************** split Reveal js End ****************************
 
 
-
+// **************************** Hover Parallax animation js Start ****************************
   var hoverBtns = gsap.utils.toArray(".hover-parallax-wrapper");
   const hoverBtnItem = gsap.utils.toArray(".hover-parallax-item");
   hoverBtns.forEach((btn, i) => {
@@ -373,6 +373,9 @@ if ($(".split-reveal").length) {
           });
       });
   });
+// **************************** Hover Parallax animation js End ****************************
+
+  
 
 /* **************************************************************************** 
                           Custom GSAP js start 

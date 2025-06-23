@@ -219,7 +219,7 @@
 
     // ========================= AOS Js Start ===========================
     AOS.init({
-      once: true,
+      once: false,
     });
     // ========================= AOS Js End ===========================
 
@@ -384,6 +384,31 @@
     flowmap_deformation(".flowmap-deformation-wrapper");
     // ========================= FlowMap Effect Js End ===========================
 
+    // ========================= Counter Up Js End ===================
+    const counterUp = window.counterUp.default;
+
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        const el = entry.target;
+        if (entry.isIntersecting && !el.classList.contains("is-visible")) {
+          counterUp(el, {
+            duration: 2000,
+            delay: 16,
+          });
+          el.classList.add("is-visible");
+        }
+      });
+    };
+
+    const IO = new IntersectionObserver(callback, { threshold: 1 });
+
+    // Counter
+    const counter = document.querySelector(".counter");
+    if (counter) {
+      IO.observe(counter);
+    }
+    // ========================= Counter Up Js End ===================
+
     // ================== Password Show Hide Js Start ==========
     // $(".toggle-password").on("click", function () {
     //   $(this).toggleClass("active");
@@ -432,31 +457,6 @@
     //   }
     // });
     // // ================================= Brand slider End =========================
-
-    // ========================= Counter Up Js End ===================
-    //  const counterUp = window.counterUp.default;
-
-    //  const callback = (entries) => {
-    //    entries.forEach((entry) => {
-    //      const el = entry.target;
-    //      if (entry.isIntersecting && !el.classList.contains('is-visible')) {
-    //        counterUp(el, {
-    //          duration: 2000,
-    //          delay: 16,
-    //        });
-    //        el.classList.add('is-visible');
-    //      }
-    //    });
-    //  };
-
-    //  const IO = new IntersectionObserver(callback, { threshold: 1 });
-
-    //  // Counter
-    //  const counter = document.querySelector('.counter');
-    //  if (counter) {
-    //    IO.observe(counter);
-    //  }
-    // ========================= Counter Up Js End ===================
 
     // ========================== Add Attribute For Bg Image Js Start ====================
     // $(".background-img").css('background', function () {
