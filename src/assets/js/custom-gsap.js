@@ -143,34 +143,6 @@ mmm.add("(max-width: 991px)", () => {
 // **************************** Mobile Menu js End ****************************
 
 // **************************** Custom Split text Js Start ****************************
-// if ($(".splitTextStyleOne").length > 0) {
-//   let character = gsap.utils.toArray(".splitTextStyleOne");
-//   character.forEach((character) => {
-//     let split_char = new SplitText(character, {
-//       type: "chars, words",
-//       lineThreshold: 0.3,
-//     });
-//     const tl2 = gsap.timeline({
-//       scrollTrigger: {
-//         trigger: character,
-//         start: "top 90%",
-//         end: "bottom 60%",
-//         scrub: false,
-//         markers: false,
-//         toggleActions: "play none none none",
-//       },
-//     });
-//     tl2.from(split_char.chars, {
-//       autoAlpha: 0,
-//       x: 40,
-//       duration: 0.3,
-//       opacity: 0,
-//       stagger: 0.03,
-//       ease: "back.out(1.7)",
-//     });
-//   });
-// }
-
 if ($(".splitTextStyleOne").length) {
   let staggerAmount = 0.03,
     translateXValue = 20,
@@ -368,6 +340,39 @@ if ($(".split-reveal").length) {
   });
 }
 // **************************** split Reveal js End ****************************
+
+
+
+  var hoverBtns = gsap.utils.toArray(".hover-parallax-wrapper");
+  const hoverBtnItem = gsap.utils.toArray(".hover-parallax-item");
+  hoverBtns.forEach((btn, i) => {
+      $(btn).mousemove(function (e) {
+          callParallax(e);
+      });
+
+      function callParallax(e) {
+          parallaxIt(e, hoverBtnItem[i], 60);
+      }
+
+      function parallaxIt(e, target, movement) {
+          var $this = $(btn);
+          var relX = e.pageX - $this.offset().left;
+          var relY = e.pageY - $this.offset().top;
+
+          gsap.to(target, 1, {
+              x: ((relX - $this.width() / 2) / $this.width()) * movement,
+              y: ((relY - $this.height() / 2) / $this.height()) * movement,
+              ease: Power2.easeOut,
+          });
+      }
+      $(btn).mouseleave(function (e) {
+          gsap.to(hoverBtnItem[i], 1, {
+              x: 0,
+              y: 0,
+              ease: Power2.easeOut,
+          });
+      });
+  });
 
 /* **************************************************************************** 
                           Custom GSAP js start 

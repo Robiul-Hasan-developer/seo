@@ -44,6 +44,9 @@
     .group-hover-item-scale-1 {
       transform: scale(1);
     }
+    .group-hover-item-rotate-45 {
+      transform: translateY(-3px) rotate(-35deg);
+    }
     .group-hover-item-translate-x-0 {
       transform: translateX(0);
     }

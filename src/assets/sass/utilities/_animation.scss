@@ -162,7 +162,7 @@
 }
 
 .animation-upDown {
-  animation: animationUpDown 8s linear infinite;
+  animation: animationUpDown 4s ease-in-out infinite;
 }
 
 .animation-rotate-scale {
@@ -200,26 +200,12 @@
 }
 
 @keyframes animationUpDown {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-60px);
-  }
+  0%,
   100% {
     transform: translateY(0px);
   }
-}
-
-.animation-delay {
-  &-1 {
-    animation-delay: 1s !important;
-  }
-  &-2 {
-    animation-delay: 2s;
-  }
-  &-3 {
-    animation-delay: 3s;
+  50% {
+    transform: translateY(-40px);
   }
 }
 
@@ -253,18 +239,16 @@
 }
 
 .left-right-animation {
-  animation: 2.6s leftRightAnimation linear infinite;
+  animation: 4s leftRightAnimation linear infinite;
 }
 
 @keyframes leftRightAnimation {
-  0% {
+  0%,
+  100% {
     transform: translateX(0px);
   }
   50% {
-    transform: translateX(-24px);
-  }
-  100% {
-    transform: translateX(0px);
+    transform: translateX(-40px);
   }
 }
 
@@ -286,8 +270,20 @@
   animation: wobble 2.4s ease-in-out infinite;
 }
 
+.animation-delay {
+  &-1 {
+    animation-delay: 1s !important;
+  }
+  &-2 {
+    animation-delay: 2s;
+  }
+  &-3 {
+    animation-delay: 3s;
+  }
+}
+/* Latest Animation */
 .animate-hand-move {
-  animation: handMove 2s ease-in-out infinite;
+  animation: handMove 2.5s ease-in-out infinite;
 }
 
 @keyframes handMove {
@@ -295,8 +291,16 @@
     transform: rotate(0deg);
     transform-origin: bottom;
   }
-  30% {
+  10% {
     transform: rotate(40deg);
+    transform-origin: bottom;
+  }
+  20% {
+    transform: rotate(0deg);
+    transform-origin: bottom;
+  }
+  30% {
+    transform: rotate(30deg);
     transform-origin: bottom;
   }
   40% {
@@ -308,5 +312,4 @@
     transform-origin: bottom;
   }
 }
-
 /* ======================== Animation Css End ==================================== */

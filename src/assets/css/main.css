@@ -2374,6 +2374,10 @@ input:focus-visible {
     transform: scale(1);
 }
 
+.group-item:hover .group-hover-item-rotate-45 {
+    transform: translateY(-3px) rotate(-35deg);
+}
+
 .group-item:hover .group-hover-item-translate-x-0 {
     transform: translateX(0);
 }
@@ -3297,6 +3301,10 @@ input:focus-visible {
 
 .max-w-590-px {
     max-width: 590px;
+}
+
+.max-w-845-px {
+    max-width: 845px;
 }
 
 /* Max width Css Class End */
@@ -4822,7 +4830,7 @@ input:focus-visible {
 }
 
 .animation-upDown {
-    animation: animationUpDown 8s linear infinite;
+    animation: animationUpDown 4s ease-in-out infinite;
 }
 
 .animation-rotate-scale {
@@ -4866,29 +4874,13 @@ input:focus-visible {
 }
 
 @keyframes animationUpDown {
-    0% {
+    0%, 100% {
         transform: translateY(0px);
     }
 
     50% {
-        transform: translateY(-60px);
+        transform: translateY(-40px);
     }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-.animation-delay-1 {
-    animation-delay: 1s !important;
-}
-
-.animation-delay-2 {
-    animation-delay: 2s;
-}
-
-.animation-delay-3 {
-    animation-delay: 3s;
 }
 
 .animation-rotate-right {
@@ -4924,20 +4916,16 @@ input:focus-visible {
 }
 
 .left-right-animation {
-    animation: 2.6s leftRightAnimation linear infinite;
+    animation: 4s leftRightAnimation linear infinite;
 }
 
 @keyframes leftRightAnimation {
-    0% {
+    0%, 100% {
         transform: translateX(0px);
     }
 
     50% {
-        transform: translateX(-24px);
-    }
-
-    100% {
-        transform: translateX(0px);
+        transform: translateX(-40px);
     }
 }
 
@@ -4959,8 +4947,21 @@ input:focus-visible {
     animation: wobble 2.4s ease-in-out infinite;
 }
 
+.animation-delay-1 {
+    animation-delay: 1s !important;
+}
+
+.animation-delay-2 {
+    animation-delay: 2s;
+}
+
+.animation-delay-3 {
+    animation-delay: 3s;
+}
+
+/* Latest Animation */
 .animate-hand-move {
-    animation: handMove 2s ease-in-out infinite;
+    animation: handMove 2.5s ease-in-out infinite;
 }
 
 @keyframes handMove {
@@ -4969,8 +4970,18 @@ input:focus-visible {
         transform-origin: bottom;
     }
 
-    30% {
+    10% {
         transform: rotate(40deg);
+        transform-origin: bottom;
+    }
+
+    20% {
+        transform: rotate(0deg);
+        transform-origin: bottom;
+    }
+
+    30% {
+        transform: rotate(30deg);
         transform-origin: bottom;
     }
 
@@ -5124,7 +5135,7 @@ input:focus-visible {
 }
 
 .header.fixed-header {
-    position: sticky;
+    position: fixed;
     inset-inline-start: 0;
     inset-block-start: 0;
     inset-inline-end: 0;
@@ -5481,10 +5492,53 @@ input:focus-visible {
 }
 
 /* ========================= Banner one css start ============================= */
-.banner-one {
+.banner-one__inner {
     padding: 294px 0 194px 0;
 }
 
+@media (max-width: 1300px) {
+    .banner-one__inner {
+        padding: 240px 0 120px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .banner-one__inner {
+        padding: 160px 0 120px 0;
+    }
+}
+
+.banner-one__thumbs {
+    max-width: 52%;
+}
+
+@media (max-width: 1300px) {
+    .banner-one__thumbs {
+        max-width: 48%;
+    }
+}
+
+.rotate-text-wrapper {
+    inset-inline-start: 42%;
+}
+
+@media (max-width: 1199px) {
+    .rotate-text-wrapper {
+        inset-inline-start: 35%;
+    }
+}
+
+@media (max-width: 991px) {
+    .rotate-text-wrapper {
+        inset-inline-start: 68%;
+    }
+}
+
+@media (max-width: 445px) {
+    .rotate-text-wrapper {
+        inset-inline-start: 75%;
+    }
+}
 /* ========================= Banner one css End ============================= */
 /* ================================== rtl css start ================================== */
 .text-start {
