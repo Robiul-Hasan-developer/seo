@@ -1,22 +1,13 @@
-@@include('../partials/_template-top.html')
+@@include('../partials/_template-top.html', {
+    'pageClass' : 'fontSizeStyleOne'
+})
 
     @@include('../partials/_header.html', {
         'headerClass': 'headerAbsoluteStyle menuColorWhite menuPositionEnd'
     })
 
-    <!-- ============================ Banner section start ======================== -->
-    <section class="py-120 position-relative z-1">
-        <div class="container">
-            <div class="animated-bg flowmap-deformation-wrapper"
-            data-bg="assets/images/bg/banner-one-bg.png" 
-            data-bg-width="1920"
-            data-bg-height="2070"
-            ></div>
-            <div class="pointer-events-none position-relative z-2">
-                <h1 class="text-white">Hello from banner section One</h1>
-            </div>
-        </div>
-    </section>
+    @@include('../partials/_banner.html')
+
 
     <div class="container my-5">
         <div class="">

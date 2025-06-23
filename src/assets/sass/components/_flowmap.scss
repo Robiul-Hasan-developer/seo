@@ -5,17 +5,19 @@
   min-height: 400px;
   overflow: hidden;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  inset-block-start: 0;
+  height: 100%;
   z-index: 0;
 }
 .animated-bg canvas {
   display: block;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  inset-block-start: 0;
+  height: 100%;
   z-index: 1;
   opacity: 0;
   -webkit-transition: opacity 0.3s 0.3s;

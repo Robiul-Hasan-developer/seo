@@ -73,12 +73,13 @@
 
    ================================== Css table of contents End======================================== */
 /* Font Family*/
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 /* ========================= Variable Css Start ======================== */
 :root {
   /* Font Family Variable */
-    --heading-font: "Vidaloka", serif;
-    --body-font: "Poppins", sans-serif;
+    --heading-font: "Manrope", sans-serif;
+    --body-font: "Satoshi", sans-serif;
+    --playfair-font: "Playfair Display", serif;
   /* Font Size Variable Start */
     --heading-one: clamp(
     2rem,
@@ -87,13 +88,13 @@
   );
     --heading-two: clamp(
     1.75rem,
-    0.7133rem + 2.8846vw,
-    2.875rem
+    0.6991rem + 2.4499vw,
+    3.25rem
   );
     --heading-three: clamp(
     1.5rem,
-    0.3353rem + 2.1661vw,
-    2.5rem
+    1.3224rem + 0.8909vw,
+    2.25rem
   );
     --heading-four: clamp(
     1.25rem,
@@ -103,7 +104,7 @@
     --heading-five: clamp(
     1.125rem,
     1.2rem + 0.722vw,
-    1.75rem
+    1.5rem
   );
     --heading-six: clamp(
     1rem,
@@ -332,6 +333,15 @@
     border-color: transparent;
 }
 
+.btn-main-two {
+    background-color: var(--main-two-600) !important;
+    color: hsl(var(--heading-color)) !important;
+}
+
+.btn-main-two.button--stroke::after {
+    border-color: transparent;
+}
+
 .hover-style-one:hover, .hover-style-one:active {
     background-color: var(--main-600);
 }
@@ -345,7 +355,7 @@
 }
 
 .hover-style-two:hover, .hover-style-two:active {
-    color: var(--main-two-600) !important;
+    color: hsl(var(--white)) !important;
 }
 
 .hover-style-two:hover.button--stroke::after, .hover-style-two:active.button--stroke::after {
@@ -353,7 +363,7 @@
 }
 
 .hover-style-two .button__flair::before {
-    background-color: hsl(var(--white));
+    background-color: var(--main-600);
 }
 
 /* =========================== Button Css End =================== */
@@ -553,18 +563,20 @@ input[type=number] {
     min-height: 400px;
     overflow: hidden;
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    inset-block-start: 0;
+    height: 100%;
     z-index: 0;
 }
 
 .animated-bg canvas {
     display: block;
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    inset-block-start: 0;
+    height: 100%;
     z-index: 1;
     opacity: 0;
     -webkit-transition: opacity 0.3s 0.3s;
@@ -799,19 +811,25 @@ body {
 p {
     font-weight: 400;
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 span {
     display: inline-block;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
     margin: 0;
     font-family: var(--heading-font);
     color: hsl(var(--heading-color));
@@ -819,27 +837,33 @@ h6, .h6 {
     font-weight: 700;
 }
 
-h1, .h1 {
+h1,
+.h1 {
     font-size: var(--heading-one);
 }
 
-h2, .h2 {
+h2,
+.h2 {
     font-size: var(--heading-two);
 }
 
-h3, .h3 {
+h3,
+.h3 {
     font-size: var(--heading-three);
 }
 
-h4, .h4 {
+h4,
+.h4 {
     font-size: var(--heading-four);
 }
 
-h5, .h5 {
+h5,
+.h5 {
     font-size: var(--heading-five);
 }
 
-h6, .h6 {
+h6,
+.h6 {
     font-size: var(--heading-six);
 }
 
@@ -902,7 +926,8 @@ button:focus {
     box-shadow: none;
 }
 
-input:focus, input:focus-visible {
+input:focus,
+input:focus-visible {
     box-shadow: none;
 }
 
@@ -2021,6 +2046,10 @@ input:focus, input:focus-visible {
 
 .font-body {
     font-family: var(--body-font);
+}
+
+.font-playfair {
+    font-family: var(--playfair-font);
 }
 
 /* Height Css Class Start */
@@ -3258,6 +3287,18 @@ input:focus, input:focus-visible {
     max-width: 1290px;
 }
 
+.max-w-1520-px {
+    max-width: 1520px;
+}
+
+.max-w-680-px {
+    max-width: 680px;
+}
+
+.max-w-590-px {
+    max-width: 590px;
+}
+
 /* Max width Css Class End */
 /* Overlay Start */
 .overlay {
@@ -4166,6 +4207,10 @@ input:focus, input:focus-visible {
     pointer-events: none;
 }
 
+.pointer-events-auto {
+    pointer-events: auto;
+}
+
 /* Border Radius Css Start */
 .tw-rounded {
     border-radius: 0.25rem;
@@ -4914,6 +4959,31 @@ input:focus, input:focus-visible {
     animation: wobble 2.4s ease-in-out infinite;
 }
 
+.animate-hand-move {
+    animation: handMove 2s ease-in-out infinite;
+}
+
+@keyframes handMove {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: bottom;
+    }
+
+    30% {
+        transform: rotate(40deg);
+        transform-origin: bottom;
+    }
+
+    40% {
+        transform: rotate(0deg);
+        transform-origin: bottom;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        transform-origin: bottom;
+    }
+}
 /* ======================== Animation Css End ==================================== */
 /* ================================= preload Css Start =========================== */
 .loader-mask {
@@ -5398,6 +5468,24 @@ input:focus, input:focus-visible {
 }
 
 /* Custom Cursor Css End */
+.fontSizeStyleOne:root {
+    --heading-one: clamp(
+    2.125rem,
+    -0.9752rem + 6.4588vw,
+    5.75rem
+  );
+}
+
+.fontSizeStyleOne h1, .fontSizeStyleOne .h1 {
+    font-size: var(--heading-one);
+}
+
+/* ========================= Banner one css start ============================= */
+.banner-one {
+    padding: 294px 0 194px 0;
+}
+
+/* ========================= Banner one css End ============================= */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

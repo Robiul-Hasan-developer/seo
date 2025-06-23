@@ -1,5 +1,5 @@
 /* Font Family*/
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 $colors: (
   "main": (
@@ -176,8 +176,9 @@ $font-sizes: (
 /* ========================= Variable Css Start ======================== */
 :root {
   /* Font Family Variable */
-  --heading-font: "Vidaloka", serif;
-  --body-font: "Poppins", sans-serif;
+  --heading-font: "Manrope", sans-serif;
+  --body-font: "Satoshi", sans-serif;
+  --playfair-font: "Playfair Display", serif;
 
   /* Font Size Variable Start */
   --heading-one: clamp(
@@ -187,14 +188,14 @@ $font-sizes: (
   ); // Min:32px - Max:68px
   --heading-two: clamp(
     1.75rem,
-    0.7133rem + 2.8846vw,
-    2.875rem
-  ); // Min: 28px - Max: 46px
+    0.6991rem + 2.4499vw,
+    3.25rem
+  ); // Min: 28px - Max: 52px
   --heading-three: clamp(
     1.5rem,
-    0.3353rem + 2.1661vw,
-    2.5rem
-  ); // Min: 24px - Max: 40px
+    1.3224rem + 0.8909vw,
+    2.25rem
+  ); // Min: 24px - Max: 36px
   --heading-four: clamp(
     1.25rem,
     0.5569rem + 1.444vw,
@@ -203,8 +204,8 @@ $font-sizes: (
   --heading-five: clamp(
     1.125rem,
     1.2rem + 0.722vw,
-    1.75rem
-  ); // Min: 18px - Max: 28px
+    1.5rem
+  ); // Min: 18px - Max: 24px
   --heading-six: clamp(
     1rem,
     0.769rem + 0.6813vw,
