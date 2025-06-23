@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- aos -->
     <link rel="stylesheet" href="assets/css/aos.css" />
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
@@ -926,9 +928,10 @@
 </section>
 <!-- ============================ Banner section start ======================== -->
 
-    
-    <!-- =========================== About one Section start =============================== -->
-<div class="about-one py-120">
+
+    <div class="position-relative">
+        <!-- =========================== About one Section start =============================== -->
+<section class="about-one py-120">
   <div class="container">
     <div class="row gy-sm-5 gy-4">
       <div
@@ -1015,7 +1018,7 @@
               solutions that boost visibility.
             </p>
             <div
-              class="tw-mt-17"
+              class="tw-mt-17 element-double-animation"
               data-aos="fade-up"
               data-aos-duration="600"
               data-aos-delay="300"
@@ -1024,7 +1027,12 @@
                 href="contact.html"
                 class="text-main-600 fw-semibold border-bottom border-main-600 hover-border-main-two-600 hover-text-main-two-600 d-inline-flex align-items-center tw-gap-205 group-item"
               >
-                Get Started
+                <span
+                  class="element-double-animation__element hover-element-main-two-600"
+                  data-content="Get Started"
+                  >Get Started</span
+                >
+
                 <span class="group-hover-item-rotate-45-deg tw-duration-300">
                   <i class="ph-bold ph-arrow-right"></i>
                 </span>
@@ -1035,9 +1043,56 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 <!-- =========================== About one Section End =============================== -->
 
+        <!-- ============================== Brand section start ============================== -->
+<div class="brand pb-120">
+  <div class="container">
+    <div class="swiper brand-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="element-double-animation">
+            <img src="assets/images/thumbs/brand-img1.png" alt="Logo" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="element-double-animation">
+            <img src="assets/images/thumbs/brand-img2.png" alt="Logo" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="element-double-animation">
+            <img src="assets/images/thumbs/brand-img3.png" alt="Logo" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="element-double-animation">
+            <img src="assets/images/thumbs/brand-img4.png" alt="Logo" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="element-double-animation">
+            <img src="assets/images/thumbs/brand-img5.png" alt="Logo" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="element-double-animation">
+            <img src="assets/images/thumbs/brand-img6.png" alt="Logo" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="element-double-animation">
+            <img src="assets/images/thumbs/brand-img3.png" alt="Logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ============================== Brand section end ============================== -->
+
+    </div>
 
 
     <div class="container my-5">
@@ -1395,6 +1450,8 @@
 <script src="assets/js/flowmap-effect.min.js"></script>
 <!-- counterup -->
 <script src="assets/js/counterup.min.js"></script>
+<!-- swiper slider -->
+<script src="assets/js/swiper-bundle.min.js"></script>
 
 <!-- main js -->
 <script src="assets/js/main.js"></script>
