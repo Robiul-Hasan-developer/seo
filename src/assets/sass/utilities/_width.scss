@@ -10,14 +10,17 @@
 }
 
 .tw-w {
+  &-w-max {
+    width: max-content;
+  }
   &-px {
     width: 1px;
   }
   &-300-px {
     width: 300px;
   }
-  &-w-max {
-    width: max-content;
+  &-92-px {
+    width: 92px;
   }
 }
 /* width Css Class End */

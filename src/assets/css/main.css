@@ -589,13 +589,39 @@ input[type=number] {
 
 /* =========================== Flowmap css end ================================ */
 /* ================================= Tab Css Start =========================== */
-.common-tab .nav-item .nav-link.active {
-    color: hsl(var(--white)) !important;
-    border-color: hsl(var(--main)) !important;
+.tab-style-one .nav-link__icon {
+    transition: width 0.7s linear(0, 0.5737 7.6%, 0.8382 11.87%, 0.9463 14.19%, 1.0292 16.54%, 1.0886 18.97%, 1.1258 21.53%, 1.137 22.97%, 1.1424 24.48%, 1.1423 26.1%, 1.1366 27.86%, 1.1165 31.01%, 1.0507 38.62%, 1.0219 42.57%, 0.9995 46.99%, 0.9872 51.63%, 0.9842 58.77%, 1.0011 81.26%, 1), background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1), color 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.common-tab .nav-item .nav-link:hover {
-    color: var(--main-600);
+.tab-style-one .nav-link__text {
+    transition: transform 0.7s linear(0, 0.5737 7.6%, 0.8382 11.87%, 0.9463 14.19%, 1.0292 16.54%, 1.0886 18.97%, 1.1258 21.53%, 1.137 22.97%, 1.1424 24.48%, 1.1423 26.1%, 1.1366 27.86%, 1.1165 31.01%, 1.0507 38.62%, 1.0219 42.57%, 0.9995 46.99%, 0.9872 51.63%, 0.9842 58.77%, 1.0011 81.26%, 1), background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1), color 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.tab-style-one .nav-link__yellow {
+    transition: transform 0.7s linear(0, 0.5737 7.6%, 0.8382 11.87%, 0.9463 14.19%, 1.0292 16.54%, 1.0886 18.97%, 1.1258 21.53%, 1.137 22.97%, 1.1424 24.48%, 1.1423 26.1%, 1.1366 27.86%, 1.1165 31.01%, 1.0507 38.62%, 1.0219 42.57%, 0.9995 46.99%, 0.9872 51.63%, 0.9842 58.77%, 1.0011 81.26%, 1), background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1), color 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.tab-style-one .nav-link.active {
+    background-color: var(--main-two-600) !important;
+    color: hsl(var(--heading-color));
+}
+
+.tab-style-one .nav-link.active .nav-link__icon {
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.tab-style-one .nav-link.active .nav-link__yellow {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+.tab-style-one .nav-link__yellow {
+    transform: translateX(100%);
+    visibility: hidden;
+    opacity: 0;
 }
 
 /* ================================= Tab Css End =========================== */
@@ -833,7 +859,7 @@ h6,
     margin: 0;
     font-family: var(--heading-font);
     color: hsl(var(--heading-color));
-    line-height: 1.2;
+    line-height: 1.5;
     font-weight: 700;
 }
 
@@ -3323,10 +3349,18 @@ input:focus-visible {
     max-height: 100vh;
 }
 
+.tw-max-h-376-px {
+    max-height: 376px;
+}
+
 /* Max Height Css Class End */
 /* Max width Css Class Start */
 .max-w-200-px {
     max-width: 200px;
+}
+
+.max-w-346-px {
+    max-width: 346px;
 }
 
 .max-w-1140-px {
@@ -3351,6 +3385,10 @@ input:focus-visible {
 
 .max-w-845-px {
     max-width: 845px;
+}
+
+.max-w-890-px {
+    max-width: 890px;
 }
 
 /* Max width Css Class End */
@@ -4671,6 +4709,10 @@ input:focus-visible {
     min-width: max-content;
 }
 
+.tw-w-w-max {
+    width: max-content;
+}
+
 .tw-w-px {
     width: 1px;
 }
@@ -4679,8 +4721,8 @@ input:focus-visible {
     width: 300px;
 }
 
-.tw-w-w-max {
-    width: max-content;
+.tw-w-92-px {
+    width: 92px;
 }
 
 /* width Css Class End */
