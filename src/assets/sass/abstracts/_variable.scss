@@ -3,6 +3,8 @@
 
 $colors: (
   "main": (
+    "40":
+      hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.93)),
     "50":
       hsl(
         var(--main-h),

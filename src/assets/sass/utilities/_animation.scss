@@ -162,7 +162,7 @@
 }
 
 .animation-upDown {
-  animation: animationUpDown 4s ease-in-out infinite;
+  animation: animationUpDown 6s ease-in-out infinite;
 }
 
 .animation-rotate-scale {
@@ -239,7 +239,7 @@
 }
 
 .left-right-animation {
-  animation: 4s leftRightAnimation linear infinite;
+  animation: 6s leftRightAnimation ease-in-out infinite;
 }
 
 @keyframes leftRightAnimation {

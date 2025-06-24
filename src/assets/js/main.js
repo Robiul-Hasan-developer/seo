@@ -450,7 +450,14 @@
       },
     });
     // ================================= Brand slider End =========================
-
+    
+    // ========================== Add Attribute For Bg Image Js Start ====================
+    $(".background-img").css('background', function () {
+      var bg = ('url(' + $(this).data("background-image") + ')');
+      return bg;
+    });
+    // ========================== Add Attribute For Bg Image Js End =====================
+    
     // ================== Password Show Hide Js Start ==========
     // $(".toggle-password").on("click", function () {
     //   $(this).toggleClass("active");
@@ -466,12 +473,6 @@
     // });
     // ========================= Password Show Hide Js End ===========================
 
-    // ========================== Add Attribute For Bg Image Js Start ====================
-    // $(".background-img").css('background', function () {
-    //   var bg = ('url(' + $(this).data("background-image") + ')');
-    //   return bg;
-    // });
-    // ========================== Add Attribute For Bg Image Js End =====================
   });
   // ==========================================
   //      End Document Ready function

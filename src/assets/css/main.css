@@ -154,6 +154,7 @@
     --size-15: 3.75rem;
     --size-16: 4rem;
     --size-17: 4.25rem;
+    --main-40: hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.93));
     --main-50: hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.9));
     --main-100: hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.8));
     --main-200: hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.7));
@@ -960,15 +961,19 @@ input:focus-visible {
 /* ================================= Typography Css End =========================== */
 /* Bg Image Css Start */
 .bg-img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
     width: 100%;
     height: 100%;
 }
 
 /* Bg Image Css End */
 /* hover bg class start */
+.bg-main-40 {
+    background-color: var(--main-40) !important;
+}
+
 .bg-main-50 {
     background-color: var(--main-50) !important;
 }
@@ -1091,6 +1096,10 @@ input:focus-visible {
 
 .bg-neutral-950 {
     background-color: var(--neutral-950) !important;
+}
+
+.hover-bg-main-40:hover {
+    background-color: var(--main-40) !important;
 }
 
 .hover-bg-main-50:hover {
@@ -1237,7 +1246,19 @@ input:focus-visible {
     background-color: hsl(var(--white)/0.06);
 }
 
+.bg-red-50 {
+    background-color: #fff8e9;
+}
+
+.hover-bg-red-100:hover {
+    background-color: #fbeccb;
+}
+
 /* hover bg class end */
+.border-main-40 {
+    border-color: var(--main-40) !important;
+}
+
 .border-main-50 {
     border-color: var(--main-50) !important;
 }
@@ -1362,6 +1383,10 @@ input:focus-visible {
     border-color: var(--neutral-950) !important;
 }
 
+.hover-border-main-40:hover {
+    border-color: var(--main-40) !important;
+}
+
 .hover-border-main-50:hover {
     border-color: var(--main-50) !important;
 }
@@ -1484,6 +1509,10 @@ input:focus-visible {
 
 .hover-border-neutral-950:hover {
     border-color: var(--neutral-950) !important;
+}
+
+.focus-border-main-40:focus {
+    border-color: var(--main-40) !important;
 }
 
 .focus-border-main-50:focus {
@@ -1619,6 +1648,10 @@ input:focus-visible {
 }
 
 /* Colors class start */
+.text-main-40 {
+    color: var(--main-40);
+}
+
 .text-main-50 {
     color: var(--main-50);
 }
@@ -1761,6 +1794,10 @@ input:focus-visible {
 
 /* Colors class End */
 /* Hover color class start */
+.hover-text-main-40:hover {
+    color: var(--main-40) !important;
+}
+
 .hover-text-main-50:hover {
     color: var(--main-50) !important;
 }
@@ -2120,6 +2157,24 @@ input:focus-visible {
     font-family: var(--playfair-font);
 }
 
+/* Gradient BG & Overlay start */
+.gradient-overlay-1 {
+    position: relative;
+    z-index: 1;
+}
+
+.gradient-overlay-1::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    z-index: -1;
+    background: linear-gradient(179.9deg, rgba(13, 16, 23, 0) -1.34%, rgba(13, 16, 23, 0.8) 72.25%);
+}
+
+/* Gradient BG & Overlay End */
 /* Height Css Class Start */
 .tw-h-05 {
     height: 0.125rem;
@@ -2394,6 +2449,10 @@ input:focus-visible {
 
 .tw-gap-74-px {
     gap: clamp(1.5rem, -24.8393rem + 28.0952vw, 4.625rem);
+}
+
+.tw-gap-92-px {
+    gap: clamp(2rem, -24.8393rem + 28.0952vw, 5.75rem);
 }
 
 /* Gap Css end */
@@ -3261,6 +3320,10 @@ input:focus-visible {
     margin-inline-start: -20px;
 }
 
+.tw--mt-30-px {
+    margin-block-start: -30px;
+}
+
 .my-120 {
     margin-block-start: 60px;
     margin-block-end: 60px;
@@ -3389,6 +3452,10 @@ input:focus-visible {
 
 .max-w-890-px {
     max-width: 890px;
+}
+
+.max-w-455-px {
+    max-width: 455px;
 }
 
 /* Max width Css Class End */
@@ -4938,7 +5005,7 @@ input:focus-visible {
 }
 
 .animation-upDown {
-    animation: animationUpDown 4s ease-in-out infinite;
+    animation: animationUpDown 6s ease-in-out infinite;
 }
 
 .animation-rotate-scale {
@@ -5024,7 +5091,7 @@ input:focus-visible {
 }
 
 .left-right-animation {
-    animation: 4s leftRightAnimation linear infinite;
+    animation: 6s leftRightAnimation ease-in-out infinite;
 }
 
 @keyframes leftRightAnimation {
