@@ -451,7 +451,6 @@
     });
     // ================================= Brand slider End =========================
 
-    
     // ================== Password Show Hide Js Start ==========
     // $(".toggle-password").on("click", function () {
     //   $(this).toggleClass("active");
