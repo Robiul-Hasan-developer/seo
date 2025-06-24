@@ -4151,6 +4151,10 @@ input:focus-visible {
     padding-inline-start: clamp(1.5rem, -12.1677rem + 32.9177vw, 7.5rem);
 }
 
+.tw-ps-100-px {
+    padding-inline-start: clamp(1.5rem, -12.1677rem + 32.9177vw, 6.25rem);
+}
+
 .py-120 {
     padding-block-start: 60px;
     padding-block-end: 60px;
@@ -4486,6 +4490,10 @@ input:focus-visible {
 /* Box shadow start */
 .common-shadow {
     box-shadow: 0 6px 30px 0px #0000000a;
+}
+
+.common-shadow-2 {
+    box-shadow: 8px 4.98px 24.88px 11px #060C3B0D;
 }
 
 /* Box shadow End */

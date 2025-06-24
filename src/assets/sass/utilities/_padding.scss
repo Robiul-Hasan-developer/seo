@@ -57,6 +57,9 @@
     &-120-px {
       padding-inline-start: clamp(1.5rem, -12.1677rem + 32.9177vw, 7.5rem);
     }
+    &-100-px {
+      padding-inline-start: clamp(1.5rem, -12.1677rem + 32.9177vw, 6.25rem);
+    }
   }
 }
 
@@ -73,51 +76,51 @@
   }
 }
 .pt-120 {
-    padding-block-start: 60px;
-    @media (min-width: 576px) {
-      padding-block-start: 80px;
-    }
-    @media (min-width: 992px) {
+  padding-block-start: 60px;
+  @media (min-width: 576px) {
+    padding-block-start: 80px;
+  }
+  @media (min-width: 992px) {
     padding-block-start: 120px;
   }
 }
 .pb-120 {
-    padding-block-end: 60px;
-    @media (min-width: 576px) {
-      padding-block-end: 80px;
-    }
-    @media (min-width: 992px) {
-      padding-block-end: 120px;
-    }
+  padding-block-end: 60px;
+  @media (min-width: 576px) {
+    padding-block-end: 80px;
+  }
+  @media (min-width: 992px) {
+    padding-block-end: 120px;
+  }
 }
 .py-60 {
-    padding-block-start: 30px;
-    padding-block-end: 30px;
-    @media (min-width: 576px) {
-      padding-block-start: 40px;
-      padding-block-end: 40px;
-    }
-    @media (min-width: 992px) {
-      padding-block-start: 60px;
-      padding-block-end: 60px;
-    }
+  padding-block-start: 30px;
+  padding-block-end: 30px;
+  @media (min-width: 576px) {
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+  }
+  @media (min-width: 992px) {
+    padding-block-start: 60px;
+    padding-block-end: 60px;
+  }
 }
 .pt-60 {
-    padding-block-start: 30px;
-    @media (min-width: 576px) {
-      padding-block-start: 40px;
-    }
-    @media (min-width: 992px) {
-      padding-block-start: 60px;
-    }
+  padding-block-start: 30px;
+  @media (min-width: 576px) {
+    padding-block-start: 40px;
+  }
+  @media (min-width: 992px) {
+    padding-block-start: 60px;
+  }
 }
-  .pb-60 {
-    padding-block-end: 30px;
-    @media (min-width: 576px) {
-      padding-block-end: 40px;
-    }
-    @media (min-width: 992px) {
-      padding-block-end: 60px;
-    }
+.pb-60 {
+  padding-block-end: 30px;
+  @media (min-width: 576px) {
+    padding-block-end: 40px;
+  }
+  @media (min-width: 992px) {
+    padding-block-end: 60px;
+  }
 }
 /* ================================= Padding Css End =========================== */
