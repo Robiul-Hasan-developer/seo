@@ -1064,7 +1064,9 @@
             data-aos-duration="600"
             data-aos-delay="100"
           >
-            <img src="assets/images/thumbs/brand-img1.png" alt="Logo" />
+            <div class="filter-grayscale-100 hover-filter-grayscale-0 tw-duration-300">
+              <img src="assets/images/thumbs/brand-img1.png" alt="Logo" />
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
@@ -1074,7 +1076,9 @@
             data-aos-duration="600"
             data-aos-delay="200"
           >
-            <img src="assets/images/thumbs/brand-img2.png" alt="Logo" />
+            <div class="filter-grayscale-100 hover-filter-grayscale-0 tw-duration-300">
+              <img src="assets/images/thumbs/brand-img2.png" alt="Logo" />
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
@@ -1084,7 +1088,9 @@
             data-aos-duration="600"
             data-aos-delay="300"
           >
-            <img src="assets/images/thumbs/brand-img3.png" alt="Logo" />
+            <div class="filter-grayscale-100 hover-filter-grayscale-0 tw-duration-300">
+              <img src="assets/images/thumbs/brand-img3.png" alt="Logo" />
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
@@ -1094,7 +1100,9 @@
             data-aos-duration="600"
             data-aos-delay="400"
           >
-            <img src="assets/images/thumbs/brand-img4.png" alt="Logo" />
+            <div class="filter-grayscale-100 hover-filter-grayscale-0 tw-duration-300">
+              <img src="assets/images/thumbs/brand-img4.png" alt="Logo" />
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
@@ -1104,7 +1112,9 @@
             data-aos-duration="600"
             data-aos-delay="500"
           >
-            <img src="assets/images/thumbs/brand-img5.png" alt="Logo" />
+            <div class="filter-grayscale-100 hover-filter-grayscale-0 tw-duration-300">
+              <img src="assets/images/thumbs/brand-img5.png" alt="Logo" />
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
@@ -1114,7 +1124,9 @@
             data-aos-duration="600"
             data-aos-delay="600"
           >
-            <img src="assets/images/thumbs/brand-img6.png" alt="Logo" />
+            <div class="filter-grayscale-100 hover-filter-grayscale-0 tw-duration-300">
+              <img src="assets/images/thumbs/brand-img6.png" alt="Logo" />
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
@@ -1124,7 +1136,9 @@
             data-aos-duration="600"
             data-aos-delay="700"
           >
-            <img src="assets/images/thumbs/brand-img3.png" alt="Logo" />
+            <div class="filter-grayscale-100 hover-filter-grayscale-0 tw-duration-300">
+              <img src="assets/images/thumbs/brand-img3.png" alt="Logo" />
+            </div>
           </div>
         </div>
       </div>
@@ -1139,7 +1153,25 @@
     </div>
 
     <!-- =============================== Service section start ================================== -->
-<section class="service py-120 bg-main-600">
+<section
+  class="service py-120 bg-main-600 position-relative z-1 overflow-hidden"
+>
+  <img
+    src="assets/images/shapes/service-shape1.png"
+    alt="Shape"
+    class="position-absolute z-n1 d-sm-block d-none tw-start-0 tw-ms-17 tw-ps-17 animated-upDown"
+  />
+  <img
+    src="assets/images/shapes/service-shape2.png"
+    alt="Shape"
+    class="position-absolute z-n1 d-sm-block d-none tw-end-0 tw-me-8 animation-rotate-right"
+  />
+  <img
+    src="assets/images/shapes/service-shape3.png"
+    alt="Shape"
+    class="position-absolute z-n1 d-sm-block d-none tw-end-0 tw-me-17 tw-pe-17 animation-scalation"
+  />
+
   <div class="container">
     <!-- Section heading start -->
     <div
@@ -1163,9 +1195,7 @@
     </div>
     <!-- Section heading end -->
     <div class="row gy-4">
-      <div
-        class="col-lg-4"
-      >
+      <div class="col-lg-4">
         <div
           class="tab-style-one nav flex-column nav-pills tw-gap-4"
           id="v-pills-tab"
@@ -1290,6 +1320,64 @@
               </span>
             </span>
           </button>
+          <button
+            class="nav-link bg-white overflow-hidden tw-p-1 rounded-pill group text-heading fw-semibold h6 d-flex align-items-center"
+            id="v-pills-uxui-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-uxui"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-uxui"
+            aria-selected="false"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="400"
+          >
+            <span
+              class="nav-link__icon tw-w-15 tw-h-15 border border-neutral-300 rounded-circle text-main-600 tw-text-lg d-flex justify-content-center align-items-center group-hover-bg-main-600 group-hover-text-white tw-duration-300"
+            >
+              <i class="ph-bold ph-caret-right"></i>
+            </span>
+            <span
+              class="tw-ps-6 d-flex align-items-center justify-content-between tw-gap-2 flex-grow-1"
+            >
+              <span class="nav-link__text line-clamp-1">UX/UI Design</span>
+              <span
+                class="nav-link__yellow tw-w-15 tw-h-15 border border-black bg-black text-main-two-600 rounded-circle tw-text-lg d-flex justify-content-center align-items-center"
+              >
+                <i class="ph-bold ph-caret-right"></i>
+              </span>
+            </span>
+          </button>
+          <button
+            class="nav-link bg-white overflow-hidden tw-p-1 rounded-pill group text-heading fw-semibold h6 d-flex align-items-center"
+            id="v-pills-wp-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-wp"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-wp"
+            aria-selected="false"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="400"
+          >
+            <span
+              class="nav-link__icon tw-w-15 tw-h-15 border border-neutral-300 rounded-circle text-main-600 tw-text-lg d-flex justify-content-center align-items-center group-hover-bg-main-600 group-hover-text-white tw-duration-300"
+            >
+              <i class="ph-bold ph-caret-right"></i>
+            </span>
+            <span
+              class="tw-ps-6 d-flex align-items-center justify-content-between tw-gap-2 flex-grow-1"
+            >
+              <span class="nav-link__text line-clamp-1">WP Development</span>
+              <span
+                class="nav-link__yellow tw-w-15 tw-h-15 border border-black bg-black text-main-two-600 rounded-circle tw-text-lg d-flex justify-content-center align-items-center"
+              >
+                <i class="ph-bold ph-caret-right"></i>
+              </span>
+            </span>
+          </button>
         </div>
       </div>
 
@@ -1299,7 +1387,7 @@
         data-aos-duration="600"
         data-aos-delay="300"
       >
-        <div class="tab-content ps-lg-5" id="v-pills-tabContent">
+        <div class="tab-content ps-lg-5 tw-pt-6" id="v-pills-tabContent">
           <div
             class="tab-pane fade show active"
             id="v-pills-web"
@@ -1308,9 +1396,9 @@
             tabindex="0"
           >
             <div
-  class="bg-white tw-p-705 tw-rounded-xl d-flex flex-column flex-lg-row tw-gap-74-px animation-item"
+  class="step-bg-shape position-relative bg-white tw-p-705 tw-rounded-xl d-flex flex-column flex-lg-row tw-gap-74-px animation-item"
 >
-  <div class="position-relative max-w-346-px w-100">
+  <div class="position-relative max-w-346-px w-100 tw-h-402-px">
     <span
       class="bg-main-600 text-white tw-text-sm fw-medium tw-py-105 tw-px-405 tw-rounded position-absolute top-0 tw-start-0 tw-mt-3 tw-ms-3"
     >
@@ -1374,9 +1462,9 @@
             tabindex="0"
           >
             <div
-  class="bg-white tw-p-705 tw-rounded-xl d-flex flex-column flex-lg-row tw-gap-74-px animation-item"
+  class="step-bg-shape position-relative bg-white tw-p-705 tw-rounded-xl d-flex flex-column flex-lg-row tw-gap-74-px animation-item"
 >
-  <div class="position-relative max-w-346-px w-100">
+  <div class="position-relative max-w-346-px w-100 tw-h-402-px">
     <span
       class="bg-main-600 text-white tw-text-sm fw-medium tw-py-105 tw-px-405 tw-rounded position-absolute top-0 tw-start-0 tw-mt-3 tw-ms-3"
     >
@@ -1440,9 +1528,9 @@
             tabindex="0"
           >
             <div
-  class="bg-white tw-p-705 tw-rounded-xl d-flex flex-column flex-lg-row tw-gap-74-px animation-item"
+  class="step-bg-shape position-relative bg-white tw-p-705 tw-rounded-xl d-flex flex-column flex-lg-row tw-gap-74-px animation-item"
 >
-  <div class="position-relative max-w-346-px w-100">
+  <div class="position-relative max-w-346-px w-100 tw-h-402-px">
     <span
       class="bg-main-600 text-white tw-text-sm fw-medium tw-py-105 tw-px-405 tw-rounded position-absolute top-0 tw-start-0 tw-mt-3 tw-ms-3"
     >
@@ -1506,9 +1594,141 @@
             tabindex="0"
           >
             <div
-  class="bg-white tw-p-705 tw-rounded-xl d-flex flex-column flex-lg-row tw-gap-74-px animation-item"
+  class="step-bg-shape position-relative bg-white tw-p-705 tw-rounded-xl d-flex flex-column flex-lg-row tw-gap-74-px animation-item"
 >
-  <div class="position-relative max-w-346-px w-100">
+  <div class="position-relative max-w-346-px w-100 tw-h-402-px">
+    <span
+      class="bg-main-600 text-white tw-text-sm fw-medium tw-py-105 tw-px-405 tw-rounded position-absolute top-0 tw-start-0 tw-mt-3 tw-ms-3"
+    >
+      Web Development
+    </span>
+    <figure
+      class="hover-animation-white split-reveal position-relative overflow-hidden h-100"
+    >
+      <img
+        src="assets/images/thumbs/service-img1.png"
+        alt="Thumb"
+        class="split-reveal-element tw-rounded-xl w-100 h-100 object-fit-cover origin-left"
+      />
+    </figure>
+  </div>
+  <div class="d-flex flex-column justify-content-between tw-gap-6">
+    <span
+      class="tw-h-92-px tw-w-92-px bg-main-600 rounded-circle d-flex justify-content-center align-items-center tw-max-h-376-px"
+    >
+      <img
+        src="assets/images/icons/web-tag.png"
+        alt="Icon"
+        class="animate__heartBeat"
+      />
+    </span>
+    <div class="">
+      <h5 class="splitTextStyleOne">
+        Innovative Expert in Web Development Services
+      </h5>
+      <p class="text-neutral-500 tw-mt-9 tw-text-lg">
+        Our orthopedic specialists are to helping you move freely an without
+        pain.
+      </p>
+      <div class="tw-mt-9">
+        <a
+          href="contact.html"
+          class="btn btn-main-two hover-style-two group group-item button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-205 group active--translate-y-2 pointer-events-auto rounded-pill"
+          data-block="button"
+        >
+          <span class="button__flair"></span>
+          <span class="button__label">Get Started</span>
+          <span class="tw-text-lg tw-leading-none z-1 position-relative">
+            <img
+              src="assets/images/icons/arrow-right.png"
+              alt="Arrow"
+              class="group-hover-item-text-invert-white tw-duration-300 group-hover-item-rotate-45-deg"
+            />
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-uxui"
+            role="tabpanel"
+            aria-labelledby="v-pills-uxui-tab"
+            tabindex="0"
+          >
+            <div
+  class="step-bg-shape position-relative bg-white tw-p-705 tw-rounded-xl d-flex flex-column flex-lg-row tw-gap-74-px animation-item"
+>
+  <div class="position-relative max-w-346-px w-100 tw-h-402-px">
+    <span
+      class="bg-main-600 text-white tw-text-sm fw-medium tw-py-105 tw-px-405 tw-rounded position-absolute top-0 tw-start-0 tw-mt-3 tw-ms-3"
+    >
+      Web Development
+    </span>
+    <figure
+      class="hover-animation-white split-reveal position-relative overflow-hidden h-100"
+    >
+      <img
+        src="assets/images/thumbs/service-img1.png"
+        alt="Thumb"
+        class="split-reveal-element tw-rounded-xl w-100 h-100 object-fit-cover origin-left"
+      />
+    </figure>
+  </div>
+  <div class="d-flex flex-column justify-content-between tw-gap-6">
+    <span
+      class="tw-h-92-px tw-w-92-px bg-main-600 rounded-circle d-flex justify-content-center align-items-center tw-max-h-376-px"
+    >
+      <img
+        src="assets/images/icons/web-tag.png"
+        alt="Icon"
+        class="animate__heartBeat"
+      />
+    </span>
+    <div class="">
+      <h5 class="splitTextStyleOne">
+        Innovative Expert in Web Development Services
+      </h5>
+      <p class="text-neutral-500 tw-mt-9 tw-text-lg">
+        Our orthopedic specialists are to helping you move freely an without
+        pain.
+      </p>
+      <div class="tw-mt-9">
+        <a
+          href="contact.html"
+          class="btn btn-main-two hover-style-two group group-item button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-205 group active--translate-y-2 pointer-events-auto rounded-pill"
+          data-block="button"
+        >
+          <span class="button__flair"></span>
+          <span class="button__label">Get Started</span>
+          <span class="tw-text-lg tw-leading-none z-1 position-relative">
+            <img
+              src="assets/images/icons/arrow-right.png"
+              alt="Arrow"
+              class="group-hover-item-text-invert-white tw-duration-300 group-hover-item-rotate-45-deg"
+            />
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-wp"
+            role="tabpanel"
+            aria-labelledby="v-pills-wp-tab"
+            tabindex="0"
+          >
+            <div
+  class="step-bg-shape position-relative bg-white tw-p-705 tw-rounded-xl d-flex flex-column flex-lg-row tw-gap-74-px animation-item"
+>
+  <div class="position-relative max-w-346-px w-100 tw-h-402-px">
     <span
       class="bg-main-600 text-white tw-text-sm fw-medium tw-py-105 tw-px-405 tw-rounded position-absolute top-0 tw-start-0 tw-mt-3 tw-ms-3"
     >

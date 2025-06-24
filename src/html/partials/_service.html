@@ -1,5 +1,23 @@
 <!-- =============================== Service section start ================================== -->
-<section class="service py-120 bg-main-600">
+<section
+  class="service py-120 bg-main-600 position-relative z-1 overflow-hidden"
+>
+  <img
+    src="assets/images/shapes/service-shape1.png"
+    alt="Shape"
+    class="position-absolute z-n1 d-sm-block d-none tw-start-0 tw-ms-17 tw-ps-17 animated-upDown"
+  />
+  <img
+    src="assets/images/shapes/service-shape2.png"
+    alt="Shape"
+    class="position-absolute z-n1 d-sm-block d-none tw-end-0 tw-me-8 animation-rotate-right"
+  />
+  <img
+    src="assets/images/shapes/service-shape3.png"
+    alt="Shape"
+    class="position-absolute z-n1 d-sm-block d-none tw-end-0 tw-me-17 tw-pe-17 animation-scalation"
+  />
+
   <div class="container">
     <!-- Section heading start -->
     <div
@@ -23,9 +41,7 @@
     </div>
     <!-- Section heading end -->
     <div class="row gy-4">
-      <div
-        class="col-lg-4"
-      >
+      <div class="col-lg-4">
         <div
           class="tab-style-one nav flex-column nav-pills tw-gap-4"
           id="v-pills-tab"
@@ -150,6 +166,64 @@
               </span>
             </span>
           </button>
+          <button
+            class="nav-link bg-white overflow-hidden tw-p-1 rounded-pill group text-heading fw-semibold h6 d-flex align-items-center"
+            id="v-pills-uxui-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-uxui"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-uxui"
+            aria-selected="false"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="400"
+          >
+            <span
+              class="nav-link__icon tw-w-15 tw-h-15 border border-neutral-300 rounded-circle text-main-600 tw-text-lg d-flex justify-content-center align-items-center group-hover-bg-main-600 group-hover-text-white tw-duration-300"
+            >
+              <i class="ph-bold ph-caret-right"></i>
+            </span>
+            <span
+              class="tw-ps-6 d-flex align-items-center justify-content-between tw-gap-2 flex-grow-1"
+            >
+              <span class="nav-link__text line-clamp-1">UX/UI Design</span>
+              <span
+                class="nav-link__yellow tw-w-15 tw-h-15 border border-black bg-black text-main-two-600 rounded-circle tw-text-lg d-flex justify-content-center align-items-center"
+              >
+                <i class="ph-bold ph-caret-right"></i>
+              </span>
+            </span>
+          </button>
+          <button
+            class="nav-link bg-white overflow-hidden tw-p-1 rounded-pill group text-heading fw-semibold h6 d-flex align-items-center"
+            id="v-pills-wp-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-wp"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-wp"
+            aria-selected="false"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="400"
+          >
+            <span
+              class="nav-link__icon tw-w-15 tw-h-15 border border-neutral-300 rounded-circle text-main-600 tw-text-lg d-flex justify-content-center align-items-center group-hover-bg-main-600 group-hover-text-white tw-duration-300"
+            >
+              <i class="ph-bold ph-caret-right"></i>
+            </span>
+            <span
+              class="tw-ps-6 d-flex align-items-center justify-content-between tw-gap-2 flex-grow-1"
+            >
+              <span class="nav-link__text line-clamp-1">WP Development</span>
+              <span
+                class="nav-link__yellow tw-w-15 tw-h-15 border border-black bg-black text-main-two-600 rounded-circle tw-text-lg d-flex justify-content-center align-items-center"
+              >
+                <i class="ph-bold ph-caret-right"></i>
+              </span>
+            </span>
+          </button>
         </div>
       </div>
 
@@ -159,7 +233,7 @@
         data-aos-duration="600"
         data-aos-delay="300"
       >
-        <div class="tab-content ps-lg-5" id="v-pills-tabContent">
+        <div class="tab-content ps-lg-5 tw-pt-6" id="v-pills-tabContent">
           <div
             class="tab-pane fade show active"
             id="v-pills-web"
@@ -195,6 +269,26 @@
             id="v-pills-messages"
             role="tabpanel"
             aria-labelledby="v-pills-messages-tab"
+            tabindex="0"
+          >
+            @@include('../partials/_service-tab-content.html', { 'imageSrc':
+            'assets/images/thumbs/service-img1.png' })
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-uxui"
+            role="tabpanel"
+            aria-labelledby="v-pills-uxui-tab"
+            tabindex="0"
+          >
+            @@include('../partials/_service-tab-content.html', { 'imageSrc':
+            'assets/images/thumbs/service-img1.png' })
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-wp"
+            role="tabpanel"
+            aria-labelledby="v-pills-wp-tab"
             tabindex="0"
           >
             @@include('../partials/_service-tab-content.html', { 'imageSrc':

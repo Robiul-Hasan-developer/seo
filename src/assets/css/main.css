@@ -2300,6 +2300,10 @@ input:focus-visible {
     height: 320px;
 }
 
+.tw-h-402-px {
+    height: 402px;
+}
+
 .tw-min-h-184-px {
     min-height: 184px;
 }
@@ -3316,7 +3320,7 @@ input:focus-visible {
     margin-inline-end: auto;
 }
 
-.tw--ms-10-px {
+.tw--ms-20-px {
     margin-inline-start: -20px;
 }
 
@@ -5716,6 +5720,40 @@ input:focus-visible {
     }
 }
 /* ========================= Banner one css End ============================= */
+/* brand section css start */
+.hover-filter-grayscale-0 {
+    filter: grayscale(100%);
+    opacity: 0.6;
+}
+
+.hover-filter-grayscale-0:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+/* brand section css end */
+/* Service section css start */
+.step-bg-shape::before, .step-bg-shape::after {
+    position: absolute;
+    content: "";
+    width: 92%;
+    height: 100%;
+    z-index: -2;
+    inset-inline-start: 50%;
+    inset-block-start: -12px;
+    border-radius: inherit;
+    transform: translateX(-50%);
+    box-shadow: 0 0.5rem 1.5rem #00000030;
+    background-color: #6d96f8;
+}
+
+.step-bg-shape::after {
+    inset-block-start: -24px;
+    width: 86%;
+    z-index: -3;
+}
+
+/* Service section css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
