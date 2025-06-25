@@ -6,6 +6,9 @@
   &-84-px {
       font-size: clamp(2.125rem, -0.5476rem + 5.5679vw, 5.25rem);
   }
+  &-64-px {
+    font-size:4rem;
+  }
 }
 
 @each $property, $value in $font-sizes {
