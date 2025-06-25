@@ -2579,6 +2579,10 @@ input:focus-visible {
     visibility: hidden;
 }
 
+.invert {
+    filter: invert(100%);
+}
+
 .group-item:hover .group-hover-item-visible {
     visibility: visible;
 }
@@ -3416,6 +3420,10 @@ input:focus-visible {
 
 .tw--ms-20-px {
     margin-inline-start: -20px;
+}
+
+.tw--me-80-px {
+    margin-inline-end: -80px;
 }
 
 .tw--mt-30-px {
@@ -5186,6 +5194,24 @@ input:focus-visible {
 
 .animated-upDown {
     animation: floatAnimation 3s ease-in-out infinite;
+}
+
+.animated-upDown-two {
+    animation: animatedUpdownTwo 4s ease-in-out infinite;
+}
+
+@keyframes animatedUpdownTwo {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(24px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .left-right-animation {

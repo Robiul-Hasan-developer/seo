@@ -26,6 +26,9 @@
 .tw-invisible {
   visibility: hidden;
 }
+.invert {
+  filter: invert(100%);
+}
 
 .group-item {
   &:hover {

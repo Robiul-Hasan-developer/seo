@@ -238,6 +238,22 @@
   animation: floatAnimation 3s ease-in-out infinite;
 }
 
+.animated-upDown-two {
+  animation: animatedUpdownTwo 4s ease-in-out infinite;
+}
+
+@keyframes animatedUpdownTwo {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(24px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .left-right-animation {
   animation: 6s leftRightAnimation ease-in-out infinite;
 }
