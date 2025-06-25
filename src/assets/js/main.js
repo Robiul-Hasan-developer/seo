@@ -554,6 +554,13 @@
     });
     // ================================ Project slider js End =================================
 
+    // ========================= Team Section Social icons Js Start =====================
+    $(document).on("click", ".show-social-icon-button", function () {
+      $(this).toggleClass("active");
+      $(this).closest("div").find(".show-socials-icons").toggleClass("active");
+    });
+    // ========================= Team Section Social icons Js End =====================
+
     // ================== Password Show Hide Js Start ==========
     // $(".toggle-password").on("click", function () {
     //   $(this).toggleClass("active");

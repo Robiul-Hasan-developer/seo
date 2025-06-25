@@ -3502,6 +3502,10 @@ input:focus-visible {
     margin-inline-end: -80px;
 }
 
+.tw--mt-26-px {
+    margin-block-start: -26px;
+}
+
 .tw--mt-30-px {
     margin-block-start: -30px;
 }
@@ -4620,6 +4624,10 @@ input:focus-visible {
 
 /* Rotate Css End */
 /* Hover Scale Css start */
+.tw-scale-0 {
+    transform: scale(0);
+}
+
 .tw-scale-04 {
     transform: scale(0.4);
 }
@@ -6014,6 +6022,20 @@ input:focus-visible {
 }
 
 /* Project section css end */
+/* Social icons css start */
+.show-socials-icons.active .show-socials-icons__item {
+    transform: scale(1);
+}
+
+.show-social-icon-button.active {
+    background-color: hsl(var(--heading-color)) !important;
+}
+
+.show-social-icon-button.active .icon {
+    transform: rotate(45deg);
+}
+
+/* Social icons css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

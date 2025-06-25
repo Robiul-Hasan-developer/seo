@@ -1,0 +1,15 @@
+/* Social icons css start */
+.show-socials-icons.active .show-socials-icons__item {
+  transform: scale(1);
+}
+
+.show-social-icon-button {
+  //   transform: translateY(-26px);
+  &.active {
+    background-color: hsl(var(--heading-color)) !important;
+    .icon {
+      transform: rotate(45deg);
+    }
+  }
+}
+/* Social icons css end */
