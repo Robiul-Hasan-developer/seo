@@ -1794,7 +1794,12 @@ input:focus-visible {
 
 .text-stroke {
     color: transparent;
-    -webkit-text-stroke: 2px #000;
+    -webkit-text-stroke: 2px hsl(var(--heading-color));
+}
+
+.text-stroke:hover {
+    color: hsl(var(--heading-color));
+    -webkit-text-stroke: 2px hsl(var(--heading-color));
 }
 
 /* Colors class End */
@@ -5784,6 +5789,25 @@ input:focus-visible {
 }
 
 /* Service section css end */
+/* Marquee css start */
+.marquee {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.js-marquee-wrapper {
+    display: flex;
+    gap: 64px;
+}
+
+.js-marquee {
+    display: flex;
+    gap: 64px;
+    min-width: max-content;
+}
+
+/* Marquee css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

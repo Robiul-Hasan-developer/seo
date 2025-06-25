@@ -450,14 +450,42 @@
       },
     });
     // ================================= Brand slider End =========================
-    
+
     // ========================== Add Attribute For Bg Image Js Start ====================
-    $(".background-img").css('background', function () {
-      var bg = ('url(' + $(this).data("background-image") + ')');
+    $(".background-img").css("background", function () {
+      var bg = "url(" + $(this).data("background-image") + ")";
       return bg;
     });
     // ========================== Add Attribute For Bg Image Js End =====================
-    
+
+    // ====================== Marquee Js Start ========================
+    if ($(".marquee_left").length) {
+      $(".marquee_left").marquee({
+        speed: 100,
+        gap: 0,
+        delayBeforeStart: 0,
+        direction: $("html").attr("dir") === "rtl" ? "right" : "left",
+        duplicated: true,
+        pauseOnHover: true,
+        startVisible: true,
+        direction: "left",
+      });
+    }
+
+    if ($(".marquee_right").length) {
+      $(".marquee_right").marquee({
+        speed: 100,
+        gap: 0,
+        delayBeforeStart: 0,
+        direction: $("html").attr("dir") === "rtl" ? "right" : "left",
+        duplicated: true,
+        pauseOnHover: true,
+        startVisible: true,
+        direction: "right",
+      });
+    }
+    // ====================== Marquee Js End ========================
+
     // ================== Password Show Hide Js Start ==========
     // $(".toggle-password").on("click", function () {
     //   $(this).toggleClass("active");
@@ -472,7 +500,6 @@
     //   }
     // });
     // ========================= Password Show Hide Js End ===========================
-
   });
   // ==========================================
   //      End Document Ready function
