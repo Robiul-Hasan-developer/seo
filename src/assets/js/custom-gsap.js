@@ -159,7 +159,7 @@ if ($(".splitTextStyleOne").length) {
       autoAlpha: 0,
       stagger: staggerAmount,
       ease: easeType,
-      scrollTrigger: { trigger: element, start: "top 85%" },
+      scrollTrigger: { trigger: element, start: "top 95%" },
     });
   });
 }
