@@ -334,6 +334,16 @@
     border-color: transparent;
 }
 
+.btn-main-outline {
+    background-color: transparent !important;
+    color: var(--main-600) !important;
+    border: 1px solid var(--main-600) !important;
+}
+
+.btn-main-outline.button--stroke::after {
+    border-color: transparent;
+}
+
 .btn-main-two {
     background-color: var(--main-two-600) !important;
     color: hsl(var(--heading-color)) !important;
@@ -669,6 +679,22 @@ input[type=number] {
 }
 
 /* Floating Progress css end */
+/* Swiper css start */
+.style-one .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+
+.style-one .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 32px;
+    border-radius: 50rem;
+}
+
+/* Swiper css end */
 /* ================================= Tab Css Start =========================== */
 .tab-style-one .nav-link__icon {
     transition: width 0.7s linear(0, 0.5737 7.6%, 0.8382 11.87%, 0.9463 14.19%, 1.0292 16.54%, 1.0886 18.97%, 1.1258 21.53%, 1.137 22.97%, 1.1424 24.48%, 1.1423 26.1%, 1.1366 27.86%, 1.1165 31.01%, 1.0507 38.62%, 1.0219 42.57%, 0.9995 46.99%, 0.9872 51.63%, 0.9842 58.77%, 1.0011 81.26%, 1), background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1), color 0.5s cubic-bezier(0.25, 1, 0.5, 1);
@@ -1324,6 +1350,10 @@ input:focus-visible {
 
 .bg-white-06 {
     background-color: hsl(var(--white)/0.06);
+}
+
+.bg-heading {
+    background-color: hsl(var(--heading-color));
 }
 
 .bg-red-50 {
@@ -2541,6 +2571,10 @@ input:focus-visible {
     gap: clamp(1.5rem, 0.0938rem + 4.5vw, 2.625rem);
 }
 
+.tw-gap-52-px {
+    gap: clamp(1.5rem, -4.48rem + 7.98vw, 3.25rem);
+}
+
 .tw-gap-56-px {
     gap: clamp(1.5rem, -4.48rem + 7.98vw, 3.5rem);
 }
@@ -3564,6 +3598,10 @@ input:focus-visible {
     max-width: 455px;
 }
 
+.max-w-510-px {
+    max-width: 510px;
+}
+
 /* Max width Css Class End */
 /* Overlay Start */
 .overlay {
@@ -4310,6 +4348,10 @@ input:focus-visible {
 
 .tw-p-36-px {
     padding: clamp(1rem, -6.1013rem + 9.4763vw, 2.25rem);
+}
+
+.tw-p-24-px {
+    padding: clamp(1rem, -6.1013rem + 9.4763vw, 1.5rem);
 }
 
 .tw-p-48-px {
@@ -5916,6 +5958,16 @@ input:focus-visible {
 /* Marquee css end */
 /* =========================== Work with us section css start ============================ */
 /* =========================== Work with us section css end ============================ */
+/* Project section css start */
+.project-slider .swiper-slide {
+    transition: 0.5s ease-in-out;
+}
+
+.project-slider .swiper-slide.swiper-slide-active {
+    transform: translateY(-40px);
+}
+
+/* Project section css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

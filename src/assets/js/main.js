@@ -220,8 +220,8 @@
     // ========================= AOS Js Start ===========================
     AOS.init({
       once: false, // animation will happen every time you scroll
-      offset: 0, // start animation when element enters the viewport
-      anchorPlacement: "bottom-bottom", // when the bottom of the element hits the bottom of the screen
+      offset: -200, // start animation when element enters the viewport
+      anchorPlacement: "top-bottom", // when the bottom of the element hits the bottom of the screen
     });
     // ========================= AOS Js End ===========================
 
@@ -529,6 +529,30 @@
       observer.observe(progressContainer);
     });
     // ================================ Floating Progress js End =================================
+
+    // ================================ Project slider js Start =================================
+    var projectSlider = new Swiper(".project-slider", {
+      slidesPerView: 2,
+      spaceBetween: 24,
+      centeredSlides: true,
+      grabCursor: true,
+      loop: true,
+      speed: 1000,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+       breakpoints: {
+        0: {
+          centeredSlides: false,
+          slidesPerView: 1,
+        },
+        576: {
+          centeredSlides: true, 
+        },
+      },
+    });
+    // ================================ Project slider js End =================================
 
     // ================== Password Show Hide Js Start ==========
     // $(".toggle-password").on("click", function () {
