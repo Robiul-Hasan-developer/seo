@@ -20,6 +20,9 @@
   &-main {
     color: var(--main-600);
   }
+  &-yellow {
+    color: #ecbb37;
+  }
   &-stroke {
     color: transparent;
     -webkit-text-stroke: 2px hsl(var(--heading-color));

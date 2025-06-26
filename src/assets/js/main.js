@@ -561,6 +561,35 @@
     });
     // ========================= Team Section Social icons Js End =====================
 
+    // ================================= Brand slider Start =========================
+    var testimonialsSlider = new Swiper(".testimonials-slider", {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      autoplay: true,
+      speed: 1500,
+      grabCursor: true,
+      loop: true,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: ".testi-button-next",
+        prevEl: ".testi-button-prev",
+      },
+      effect: "cube",
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+
+      // effect: "flip",
+      // grabCursor: true,
+    });
+    // ================================= Brand slider End =========================
+
     // ================== Password Show Hide Js Start ==========
     // $(".toggle-password").on("click", function () {
     //   $(this).toggleClass("active");

@@ -694,6 +694,10 @@ input[type=number] {
     border-radius: 50rem;
 }
 
+.swiper-cube .swiper-cube-shadow:before {
+    background: #0000002e;
+}
+
 /* Swiper css end */
 /* ================================= Tab Css Start =========================== */
 .tab-style-one .nav-link__icon {
@@ -973,11 +977,13 @@ h6,
 h1,
 .h1 {
     font-size: var(--heading-one);
+    line-height: 1.3;
 }
 
 h2,
 .h2 {
     font-size: var(--heading-two);
+    line-height: 1.3;
 }
 
 h3,
@@ -1902,6 +1908,10 @@ input:focus-visible {
     color: var(--main-600);
 }
 
+.text-yellow {
+    color: #ecbb37;
+}
+
 .text-stroke {
     color: transparent;
     -webkit-text-stroke: 2px hsl(var(--heading-color));
@@ -2129,6 +2139,10 @@ input:focus-visible {
 /* Font Size Class Start */
 .text-inherit {
     font-size: inherit;
+}
+
+.text-22-px {
+    font-size: clamp(1rem, -0.5476rem + 5.5679vw, 1.375rem);
 }
 
 .text-84-px {
