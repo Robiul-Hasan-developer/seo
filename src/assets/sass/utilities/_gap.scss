@@ -25,4 +25,8 @@
     gap: clamp(2rem, -24.8393rem + 28.0952vw, 5.75rem);
   }
 }
+
+.g-40-px, .gy-40-px {
+    --bs-gutter-y: 40px;
+}
 /* Gap Css end */

@@ -2442,6 +2442,10 @@ input:focus-visible {
     height: 402px;
 }
 
+.tw-min-h-150-px {
+    min-height: 150px;
+}
+
 .tw-min-h-184-px {
     min-height: 184px;
 }
@@ -2641,6 +2645,10 @@ input:focus-visible {
 
 .tw-gap-92-px {
     gap: clamp(2rem, -24.8393rem + 28.0952vw, 5.75rem);
+}
+
+.g-40-px, .gy-40-px {
+    --bs-gutter-y: 40px;
 }
 
 /* Gap Css end */
@@ -4426,12 +4434,20 @@ input:focus-visible {
     padding: clamp(1rem, -6.1013rem + 9.4763vw, 1.5rem);
 }
 
+.tw-p-40-px {
+    padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 2.5rem);
+}
+
 .tw-p-48-px {
     padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3rem);
 }
 
 .tw-p-60-px {
     padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
+}
+
+.tw-p-74-px {
+    padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 4.625rem);
 }
 
 .tw-ps-120-px {
