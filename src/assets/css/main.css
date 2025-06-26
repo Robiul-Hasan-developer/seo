@@ -3494,6 +3494,10 @@ input:focus-visible {
     margin-inline-end: auto;
 }
 
+.tw-me-250-px {
+    margin-inline-end: 250px;
+}
+
 .tw--ms-20-px {
     margin-inline-start: -20px;
 }
@@ -3508,6 +3512,10 @@ input:focus-visible {
 
 .tw--mt-30-px {
     margin-block-start: -30px;
+}
+
+.tw--mt-160-px {
+    margin-block-start: -160px;
 }
 
 .my-120 {
@@ -5901,6 +5909,7 @@ input:focus-visible {
     line-height: 1.6;
     text-transform: capitalize;
     text-align: center;
+    box-shadow: 0px 0px 40px #0000001c;
 }
 
 /* Custom Cursor Css End */
@@ -6064,14 +6073,15 @@ input:focus-visible {
     transform: rotate(45deg);
 }
 
-.team-item-wrapper div[class*=col]:nth-child(2) .team-item {
-    margin-top: 116px;
-}
+@media (min-width: 1200px) {
+    .team-item-wrapper div[class*=col]:nth-child(2) .team-item {
+        margin-top: 116px;
+    }
 
-.team-item-wrapper div[class*=col]:nth-child(3) .team-item {
-    margin-top: 58px;
+    .team-item-wrapper div[class*=col]:nth-child(3) .team-item {
+        margin-top: 58px;
+    }
 }
-
 /* Social icons css end */
 /* ================================== rtl css start ================================== */
 .text-start {

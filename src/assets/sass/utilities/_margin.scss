@@ -45,8 +45,13 @@
   &-ms-auto {
     margin-inline-start: auto;
   }
-  &-me-auto {
-    margin-inline-end: auto;
+  &-me {
+    &-auto {
+      margin-inline-end: auto;
+    }
+    &-250-px {
+      margin-inline-end: 250px;
+    }
   }
 }
 
@@ -67,6 +72,9 @@
     }
     &-30-px {
       margin-block-start: -30px;
+    }
+    &-160-px {
+      margin-block-start: -160px;
     }
   }
 }
