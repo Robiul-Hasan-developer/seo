@@ -40,7 +40,7 @@ body.addEventListener("mousemove", function (event) {
   gsap.to(dot, {
     x: event.x,
     y: event.y,
-    duration: 1.5,
+    duration: 1,
     visibility: "visible",
     ease: "expo.out",
   });
@@ -96,6 +96,50 @@ cursorBigs.forEach((cursorBig) => {
   });
 });
 // **************************** Custom Cursor Js End ****************************
+
+// **************************** Hover Cursor Js Start ****************************
+const viewCursor = document.querySelector(".view-cursor");
+const viewCursorShows = document.querySelectorAll(".view-cursor-show");
+
+// Move .view-cursor with mouse
+document.body.addEventListener("mousemove", function (event) {
+  gsap.to(viewCursor, {
+    x: event.clientX + 20, // offset right
+    y: event.clientY + 20, // offset down
+    duration: 0.3,
+    ease: "expo.out",
+  });
+});
+
+// Loop through all .view-cursor-show
+viewCursorShows.forEach((item) => {
+  item.addEventListener("mouseenter", function () {
+    gsap.to(viewCursor, {
+      autoAlpha: 1, // opacity + visibility
+      scale: 1,
+    });
+    gsap.to(dot, {
+      scale: 0,
+    });
+    gsap.to(cursor, {
+      scale: 0,
+    });
+  });
+
+  item.addEventListener("mouseleave", function () {
+    gsap.to(viewCursor, {
+      autoAlpha: 0,
+      scale: 0,
+    });
+    gsap.to(dot, {
+      scale: 1,
+    });
+    gsap.to(cursor, {
+      scale: 1,
+    });
+  });
+});
+// **************************** Hover Cursor Js End ****************************
 
 // **************************** Mobile Menu js Start ****************************
 var mmm = gsap.matchMedia();
@@ -373,6 +417,28 @@ hoverBtns.forEach((btn, i) => {
   });
 });
 // **************************** Hover Parallax animation js End ****************************
+
+// **************************** Team Item animation start ****************************
+window.addEventListener("load", function () {
+  let tlTwo = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".team-item-wrapper",
+      start: "top 80%",
+      toggleActions: "play none none reverse",
+      ease: "power3.out",
+      stagger: 0.2,
+    },
+  });
+
+  tlTwo.addLabel("start").from(".team-item", {
+    scale: 0.8,
+    rotation: 20,
+    autoAlpha: 0,
+    duration: 1,
+  });
+});
+
+// **************************** Team Item animation end ****************************
 
 /* **************************************************************************** 
                           Custom GSAP js start 

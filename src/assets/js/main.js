@@ -220,7 +220,7 @@
     // ========================= AOS Js Start ===========================
     AOS.init({
       once: false, // animation will happen every time you scroll
-      offset: -200, // start animation when element enters the viewport
+      offset: 0, // start animation when element enters the viewport
       anchorPlacement: "top-bottom", // when the bottom of the element hits the bottom of the screen
     });
     // ========================= AOS Js End ===========================
@@ -542,13 +542,13 @@
         el: ".swiper-pagination",
         clickable: true,
       },
-       breakpoints: {
+      breakpoints: {
         0: {
           centeredSlides: false,
           slidesPerView: 1,
         },
         576: {
-          centeredSlides: true, 
+          centeredSlides: true,
         },
       },
     });

@@ -25,4 +25,34 @@
   background-color: hsl(var(--white));
   mix-blend-mode: difference;
 }
+
+.view-cursor {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  color: hsl(var(--heading-color));
+  background: rgba(0, 0, 0, 0.7);
+  padding: 6px 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: hsl(var(--white) / 0.85);
+  border: 2px solid hsl(var(--white));
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.6;
+  text-transform: capitalize;
+  text-align: center;
+  // mix-blend-mode: difference;
+}
 /* Custom Cursor Css End */
