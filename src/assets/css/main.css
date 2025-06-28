@@ -6121,6 +6121,18 @@ input:focus-visible {
     }
 }
 /* Social icons css end */
+/* Footer css start */
+.line-y-axies {
+    inset-inline-start: 32%;
+    background-color: #ffffff61;
+}
+
+@media (max-width: 1199px) {
+    .line-y-axies {
+        display: none;
+    }
+}
+/* Footer css END */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
