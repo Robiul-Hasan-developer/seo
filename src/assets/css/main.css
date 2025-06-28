@@ -1366,6 +1366,10 @@ input:focus-visible {
     background-color: #fff5e0;
 }
 
+.bg-yellow-950 {
+    background-color: #292D20;
+}
+
 .hover-bg-red-100:hover {
     background-color: #fbeccb;
 }
@@ -1761,6 +1765,10 @@ input:focus-visible {
 
 .border-transparent {
     border-color: transparent !important;
+}
+
+.border-white-38 {
+    border-color: #ffffff61 !important;
 }
 
 /* Colors class start */
