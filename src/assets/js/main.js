@@ -217,6 +217,15 @@
     });
     // ========================= Form Submit Js End ===================
 
+    // ========================= Search Popup Js Start ===================
+    $(".search-popup__button").on("click", function () {
+      $(".search-popup").addClass("active");
+    });
+    $(".search-popup__close").on("click", function () {
+      $(".search-popup").removeClass("active");
+    });
+    // ========================= Search Popup Js End ===================
+
     // ========================= AOS Js Start ===========================
     AOS.init({
       once: false, // animation will happen every time you scroll
@@ -584,9 +593,6 @@
         shadowOffset: 20,
         shadowScale: 0.94,
       },
-
-      // effect: "flip",
-      // grabCursor: true,
     });
     // ================================= Brand slider End =========================
 
