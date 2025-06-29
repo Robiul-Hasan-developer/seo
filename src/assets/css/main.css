@@ -2307,6 +2307,10 @@ input:focus-visible {
     font-family: var(--playfair-font);
 }
 
+.text-balance {
+    text-wrap: balance;
+}
+
 /* Gradient BG & Overlay start */
 .gradient-overlay-1 {
     position: relative;
@@ -3704,6 +3708,10 @@ input:focus-visible {
 
 .max-w-510-px {
     max-width: 510px;
+}
+
+.max-w-280-px {
+    max-width: 280px;
 }
 
 /* Max width Css Class End */
