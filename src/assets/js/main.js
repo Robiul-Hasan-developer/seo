@@ -596,6 +596,14 @@
     });
     // ================================= Brand slider End =========================
 
+    // ========================= magnific Popup Js Start =====================
+    $(".play-button").magnificPopup({
+      type: "iframe",
+      removalDelay: 300,
+      mainClass: "mfp-fade",
+    });
+    // ========================= magnific Popup Js End =====================
+
     // ================== Password Show Hide Js Start ==========
     // $(".toggle-password").on("click", function () {
     //   $(this).toggleClass("active");
