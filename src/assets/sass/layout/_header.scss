@@ -13,7 +13,6 @@
     backdrop-filter: blur(24px);
     animation: slideDown 0.35s ease-out;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
-    background-color: hsl(var(--heading-color));
     @include md-screen {
       inset-block-start: -1px;
     }
@@ -26,6 +25,10 @@
   to {
     transform: translateY(0);
   }
+}
+
+.fixedHeaderBlack.fixed-header {
+    background-color: hsl(var(--heading-color));
 }
 
 /* Header Menu and Submenu Css Start */

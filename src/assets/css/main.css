@@ -2161,6 +2161,10 @@ input:focus-visible {
     font-size: 4rem;
 }
 
+.text-36-px {
+    font-size: 2.5rem;
+}
+
 .tw-text-xs {
     font-size: 0.75rem;
 }
@@ -2442,6 +2446,10 @@ input:focus-visible {
     height: 92px;
 }
 
+.tw-h-96-px {
+    height: 96px;
+}
+
 .tw-h-320-px {
     height: 320px;
 }
@@ -2711,6 +2719,10 @@ input:focus-visible {
 
 .group-item:hover .group-hover-item-rotate-45-deg {
     transform: translateY(-3px) rotate(-35deg);
+}
+
+.group-item:hover .group-hover-item-rotate-0-deg {
+    transform: rotate(0deg);
 }
 
 .group-item:hover .group-hover-item-translate-x-0 {
@@ -3648,6 +3660,10 @@ input:focus-visible {
 
 .max-w-346-px {
     max-width: 346px;
+}
+
+.max-w-576-px {
+    max-width: 576px;
 }
 
 .max-w-1140-px {
@@ -4664,8 +4680,12 @@ input:focus-visible {
 
 /* Border Radius Css End */
 /* Rotate Css Start */
+.tw-rotate--45-deg {
+    transform: rotate(-45deg);
+}
+
 .tw-hover-rotate-360:hover {
-    transform: rotate(260deg);
+    transform: rotate(360deg);
 }
 
 /* Rotate Css End */
@@ -5400,6 +5420,14 @@ input:focus-visible {
     animation-delay: 3s;
 }
 
+.animation-duration-6 {
+    animation-duration: 6s;
+}
+
+.animation-duration-40 {
+    animation-duration: 40s;
+}
+
 /* Latest Animation */
 .animate-hand-move {
     animation: handMove 2.5s ease-in-out infinite;
@@ -5585,7 +5613,6 @@ input:focus-visible {
     backdrop-filter: blur(24px);
     animation: slideDown 0.35s ease-out;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
-    background-color: hsl(var(--heading-color));
 }
 
 @media screen and (max-width: 991px) {
@@ -5603,6 +5630,11 @@ input:focus-visible {
         transform: translateY(0);
     }
 }
+
+.fixedHeaderBlack.fixed-header {
+    background-color: hsl(var(--heading-color));
+}
+
 /* Header Menu and Submenu Css Start */
 .nav-menu__item.activePage > a {
     color: var(--main-600) !important;
@@ -6212,6 +6244,86 @@ input:focus-visible {
     }
 }
 /* Footer css END */
+.fontSizeStyleTwo:root {
+    --heading-one: clamp(
+    2.125rem,
+    -0.9752rem + 6.4588vw,
+    3.625rem
+  );
+}
+
+.fontSizeStyleTwo h1,
+.fontSizeStyleTwo .h1 {
+    font-size: var(--heading-one);
+}
+
+/* ===================== Banner Two css start ============================== */
+.banner-two {
+    background-color: #eef3fe;
+    padding: 234px 0 366px;
+}
+
+@media (max-width: 1200px) {
+    .banner-two {
+        padding: 160px 0 366px;
+    }
+}
+
+@media (max-width: 575px) {
+    .banner-two {
+        padding: 120px 0 366px;
+    }
+}
+
+.banner-image-1 {
+    inset-inline-start: clamp(0.5rem, -10.5rem + 16vw, 6.5rem);
+}
+
+.banner-image-2 {
+    inset-inline-end: clamp(0.5rem, -10.5rem + 16vw, 6.5rem);
+}
+
+.banner-image-1,
+.banner-image-2 {
+    max-width: 27%;
+}
+
+.social-icon-2 {
+    inset-inline-start: 15%;
+    inset-block-start: 12%;
+}
+
+.social-icon-4 {
+    inset-inline-start: 48%;
+    inset-block-start: 6%;
+}
+
+.social-icon-1 {
+    inset-inline-end: 25%;
+    inset-block-start: 43%;
+}
+
+.social-icon-3 {
+    inset-inline-start: 32%;
+    inset-block-end: 23%;
+}
+
+.banner-two-shape-1 {
+    inset-inline-start: 8%;
+    inset-block-start: 12%;
+}
+
+.banner-two-shape-5 {
+    inset-inline-end: 30%;
+    inset-block-end: 26%;
+}
+
+.banner-two-shape-3 {
+    inset-inline-end: 24%;
+    inset-block-start: 16%;
+}
+
+/* ===================== Banner Two css end ============================== */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

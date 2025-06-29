@@ -297,6 +297,14 @@
     animation-delay: 3s;
   }
 }
+.animation-duration {
+  &-6 {
+    animation-duration: 6s;
+  }
+  &-40 {
+    animation-duration: 40s;
+  }
+}
 /* Latest Animation */
 .animate-hand-move {
   animation: handMove 2.5s ease-in-out infinite;

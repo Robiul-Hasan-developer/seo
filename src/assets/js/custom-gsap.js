@@ -419,24 +419,26 @@ hoverBtns.forEach((btn, i) => {
 // **************************** Hover Parallax animation js End ****************************
 
 // **************************** Team Item animation start ****************************
-window.addEventListener("load", function () {
-  let tlTwo = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".team-item-wrapper",
-      start: "top 80%",
-      toggleActions: "play none none reverse",
-      ease: "power3.out",
-      stagger: 0.2,
-    },
-  });
+if ($(".team-item").length) {
+  window.addEventListener("load", function () {
+    let tlTwo = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".team-item-wrapper",
+        start: "top 80%",
+        toggleActions: "play none none reverse",
+        ease: "power3.out",
+        stagger: 0.2,
+      },
+    });
 
-  tlTwo.addLabel("start").from(".team-item", {
-    scale: 0.8,
-    rotation: 20,
-    autoAlpha: 0,
-    duration: 1,
+    tlTwo.addLabel("start").from(".team-item", {
+      scale: 0.8,
+      rotation: 20,
+      autoAlpha: 0,
+      duration: 1,
+    });
   });
-});
+}
 
 // **************************** Team Item animation end ****************************
 
