@@ -3706,6 +3706,10 @@ input:focus-visible {
     max-width: 1720px;
 }
 
+.max-w-630-px {
+    max-width: 630px;
+}
+
 .max-w-680-px {
     max-width: 680px;
 }
