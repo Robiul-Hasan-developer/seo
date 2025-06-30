@@ -4894,6 +4894,10 @@ input:focus-visible {
     box-shadow: 8px 4.98px 24.88px 11px #060C3B0D;
 }
 
+.common-shadow-3 {
+    box-shadow: 17px 19px 80.8px 12px #10053A08;
+}
+
 /* Box shadow End */
 /* transition Css Class start */
 .tw-transition {
