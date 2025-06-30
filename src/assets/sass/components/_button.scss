@@ -93,6 +93,16 @@
       }
     }
   }
+  &-black-outline {
+    background-color: transparent !important;
+    color: hsl(var(--heading-color)) !important;
+    border: 1px solid hsl(var(--heading-color)) !important;
+    &.button--stroke {
+      &::after {
+        border-color: transparent;
+      }
+    }
+  }
 }
 
 .hover-style {
@@ -125,6 +135,22 @@
     .button__flair {
       &::before {
         background-color: var(--main-600);
+      }
+    }
+  }
+  &-two {
+    &:hover,
+    &:active {
+      color: hsl(var(--white)) !important;
+      &.button--stroke {
+        &::after {
+          border-color: transparent;
+        }
+      }
+    }
+    .button__flair {
+      &::before {
+        background-color: hsl(var(--heading-color));
       }
     }
   }

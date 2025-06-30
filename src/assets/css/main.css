@@ -353,6 +353,16 @@
     border-color: transparent;
 }
 
+.btn-black-outline {
+    background-color: transparent !important;
+    color: hsl(var(--heading-color)) !important;
+    border: 1px solid hsl(var(--heading-color)) !important;
+}
+
+.btn-black-outline.button--stroke::after {
+    border-color: transparent;
+}
+
 .hover-style-one:hover, .hover-style-one:active {
     background-color: var(--main-600);
 }
@@ -375,6 +385,18 @@
 
 .hover-style-two .button__flair::before {
     background-color: var(--main-600);
+}
+
+.hover-style-two:hover, .hover-style-two:active {
+    color: hsl(var(--white)) !important;
+}
+
+.hover-style-two:hover.button--stroke::after, .hover-style-two:active.button--stroke::after {
+    border-color: transparent;
+}
+
+.hover-style-two .button__flair::before {
+    background-color: hsl(var(--heading-color));
 }
 
 /* =========================== Button Css End =================== */
@@ -1378,6 +1400,10 @@ input:focus-visible {
 
 .bg-white-06 {
     background-color: hsl(var(--white)/0.06);
+}
+
+.bg-white-54 {
+    background-color: #FFFFFF54;
 }
 
 .bg-heading {
@@ -3734,6 +3760,10 @@ input:focus-visible {
 
 .max-w-680-px {
     max-width: 680px;
+}
+
+.max-w-410-px {
+    max-width: 410px;
 }
 
 .max-w-590-px {
@@ -6463,6 +6493,30 @@ input:focus-visible {
 }
 
 /* service two section css end */
+/* Price and experience section css start */
+.price-experience-wrapper {
+    position: relative;
+}
+
+.price-experience-wrapper::before, .price-experience-wrapper::after {
+    position: absolute;
+    content: "";
+    height: 55%;
+    width: 100%;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    background-color: #fefaf6;
+    z-index: -1;
+}
+
+.price-experience-wrapper::after {
+    background-color: var(--main-two-600);
+    inset-block-start: auto;
+    inset-block-end: 0;
+    height: 45%;
+}
+
+/* Price and experience section css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
