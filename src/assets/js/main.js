@@ -220,9 +220,11 @@
     // ========================= Search Popup Js Start ===================
     $(".search-popup__button").on("click", function () {
       $(".search-popup").addClass("active");
+      $(".overlay").addClass("show-overlay");
     });
-    $(".search-popup__close").on("click", function () {
+    $(".search-popup__close, .overlay").on("click", function () {
       $(".search-popup").removeClass("active");
+      $(".overlay").removeClass("show-overlay");
     });
     // ========================= Search Popup Js End ===================
 
@@ -603,6 +605,34 @@
       mainClass: "mfp-fade",
     });
     // ========================= magnific Popup Js End =====================
+
+    // ********************* Animate Background *********************
+    function moveBorder(wrapper) {
+      var $activeTab = $(wrapper).find(".active").parent("li");
+      var position = $activeTab.position();
+      var width = $activeTab.width();
+
+      $(wrapper)
+        .find(".animate-background")
+        .css({
+          left: position.left + "px",
+          width: width + "px",
+        });
+    }
+
+    // Move Background on page load for each tab group
+    $(".animate-background-wrapper").each(function () {
+      moveBorder(this);
+    });
+
+    // Move Background on tab click
+    $(".animate-background-wrapper .nav-link").on("click", function () {
+      var wrapper = $(this).closest(".animate-background-wrapper");
+      wrapper.find(".nav-link").removeClass("active");
+      $(this).addClass("active");
+      moveBorder(wrapper);
+    });
+    // ========================= Active Tab Background animation Js End ===================
 
     // ================== Password Show Hide Js Start ==========
     // $(".toggle-password").on("click", function () {
