@@ -28,7 +28,10 @@
 }
 
 .fixedHeaderBlack.fixed-header {
-    background-color: hsl(var(--heading-color));
+  background-color: hsl(var(--heading-color));
+}
+.fixedHeaderBgWhite.fixed-header {
+  background-color: hsl(var(--white) / 0.85);
 }
 
 /* Header Menu and Submenu Css Start */

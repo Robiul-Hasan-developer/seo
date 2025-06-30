@@ -1367,7 +1367,23 @@ input:focus-visible {
 }
 
 .bg-yellow-950 {
-    background-color: #292D20;
+    background-color: #292d20;
+}
+
+.bg-mint-sky {
+    background-color: #dbfff9;
+}
+
+.bg-soft-pink {
+    background-color: #ffdee4;
+}
+
+.bg-lavender-blue {
+    background-color: #e3e8ff;
+}
+
+.bg-creamy-lemon {
+    background-color: #fff3d8;
 }
 
 .hover-bg-red-100:hover {
@@ -4470,6 +4486,10 @@ input:focus-visible {
     padding: clamp(1rem, -6.1013rem + 9.4763vw, 1.5rem);
 }
 
+.tw-p-36-px {
+    padding: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.25rem);
+}
+
 .tw-p-40-px {
     padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 2.5rem);
 }
@@ -4688,6 +4708,11 @@ input:focus-visible {
 .tw-rounded-3xl {
     border-radius: 1.5rem;
   /* 24px */
+}
+
+.tw-rounded-32-px {
+    border-radius: 2rem;
+  /* 32px */
 }
 
 /* Border Radius Css End */
@@ -5647,6 +5672,10 @@ input:focus-visible {
     background-color: hsl(var(--heading-color));
 }
 
+.fixedHeaderBgWhite.fixed-header {
+    background-color: hsl(var(--white)/0.85);
+}
+
 /* Header Menu and Submenu Css Start */
 .nav-menu__item.activePage > a {
     color: var(--main-600) !important;
@@ -6385,6 +6414,21 @@ input:focus-visible {
 }
 
 /* customer statistics css end */
+/* service two section css start */
+.service-two .animated-bg {
+    height: 72%;
+}
+
+.service-two__shape-1 {
+    margin-block-start: 12%;
+    margin-inline-start: 4%;
+}
+
+.service-two__shape-2 {
+    margin-block-start: 6%;
+}
+
+/* service two section css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
