@@ -18,17 +18,17 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 // });
 // **************************** Nav Menu js End ****************************
 
-document.addEventListener("DOMContentLoaded", function () {
-  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+// **************************** ScrollSmoother js start ****************************
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-  const smoother = ScrollSmoother.create({
-    wrapper: "#smooth-wrapper",
-    content: "#smooth-content",
-    smooth: 0.6,
-    effects: true,
-    smoothTouch: 0.1,
-  });
+const smoother = ScrollSmoother.create({
+  wrapper: "#smooth-wrapper",
+  content: "#smooth-content",
+  smooth: 0.6,
+  effects: true,
+  smoothTouch: 0.1,
 });
+// **************************** ScrollSmoother js End ****************************
 
 // **************************** Custom Cursor Js Start ****************************
 var body = document.body;
@@ -451,8 +451,38 @@ if ($(".team-item").length) {
     });
   });
 }
-
 // **************************** Team Item animation end ****************************
+
+// **************************** Choose Us Two Image reveal js start ****************************
+if ($(".choose-us-big-image").length) {
+  gsap.registerPlugin(ScrollTrigger);
+
+  window.addEventListener("load", () => {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".choose-us-two-big-image-wrapper",
+          start: "top 20%",
+          end: "+=150%",
+          pin: true,
+          scrub: 0.5,
+          markers: false,
+        },
+      })
+      .fromTo(
+        ".choose-us-big-image",
+        {
+          clipPath: "inset(0% 25% 0% 25%)", // Start with center 50%
+          borderRadius: 30,
+        },
+        {
+          clipPath: "inset(0% 0% 0% 0%)", // Full reveal
+          borderRadius: 30,
+        }
+      );
+  });
+}
+// **************************** Choose Us Two Image reveal js end ****************************
 
 /* **************************************************************************** 
                           Custom GSAP js start 
