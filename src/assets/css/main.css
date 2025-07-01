@@ -387,15 +387,15 @@
     background-color: var(--main-600);
 }
 
-.hover-style-two:hover, .hover-style-two:active {
+.hover-style-three:hover, .hover-style-three:active {
     color: hsl(var(--white)) !important;
 }
 
-.hover-style-two:hover.button--stroke::after, .hover-style-two:active.button--stroke::after {
+.hover-style-three:hover.button--stroke::after, .hover-style-three:active.button--stroke::after {
     border-color: transparent;
 }
 
-.hover-style-two .button__flair::before {
+.hover-style-three .button__flair::before {
     background-color: hsl(var(--heading-color));
 }
 
@@ -1403,7 +1403,7 @@ input:focus-visible {
 }
 
 .bg-white-54 {
-    background-color: #FFFFFF54;
+    background-color: #ffffff54;
 }
 
 .bg-heading {
@@ -1431,6 +1431,14 @@ input:focus-visible {
 }
 
 .bg-creamy-lemon {
+    background-color: #fff3d8;
+}
+
+.bg-creamy-lemon {
+    background-color: #fff3d8;
+}
+
+.bg-linen-white, .price-experience-wrapper::before, .price-experience-wrapper::after {
     background-color: #fff3d8;
 }
 
@@ -4928,6 +4936,10 @@ input:focus-visible {
     box-shadow: 17px 19px 80.8px 12px #10053A08;
 }
 
+.common-shadow-4 {
+    box-shadow: 17px 19px 80.8px 12px #10053A08;
+}
+
 /* Box shadow End */
 /* transition Css Class start */
 .tw-transition {
@@ -6505,7 +6517,6 @@ input:focus-visible {
     width: 100%;
     inset-block-start: 0;
     inset-inline-start: 0;
-    background-color: #fefaf6;
     z-index: -1;
 }
 
