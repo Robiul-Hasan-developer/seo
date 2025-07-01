@@ -18,6 +18,18 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 // });
 // **************************** Nav Menu js End ****************************
 
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+  const smoother = ScrollSmoother.create({
+    wrapper: "#smooth-wrapper",
+    content: "#smooth-content",
+    smooth: 0.6,
+    effects: true,
+    smoothTouch: 0.1,
+  });
+});
+
 // **************************** Custom Cursor Js Start ****************************
 var body = document.body;
 var cursor = document.querySelector(".cursor");

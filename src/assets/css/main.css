@@ -6220,6 +6220,17 @@ input:focus-visible {
     }
 }
 /* Play Animation css end */
+/* Header spacer for fixed header */
+.header-space {
+    height: 96px;
+}
+
+@media (max-width: 991px) {
+    .header-space {
+        height: 74px;
+    }
+}
+/* Smooth Wrapper css end */
 .fontSizeStyleOne:root {
     --heading-one: clamp(
     2.125rem,
