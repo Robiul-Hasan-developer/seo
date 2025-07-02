@@ -3774,6 +3774,10 @@ input:focus-visible {
     max-width: 680px;
 }
 
+.max-w-780-px {
+    max-width: 780px;
+}
+
 .max-w-410-px {
     max-width: 410px;
 }
@@ -6555,6 +6559,17 @@ input:focus-visible {
 }
 
 /* Choose us two css end  */
+/* Project Two css start */
+.project-two-shape-1 {
+    margin-block-start: -4%;
+    margin-inline-start: -3%;
+}
+
+.project-two-shape-2 {
+    margin-inline-start: 9%;
+}
+
+/* Project Two css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

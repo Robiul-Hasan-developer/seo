@@ -634,6 +634,39 @@
     });
     // ========================= Active Tab Background animation Js End ===================
 
+    // ================================ Project Two slider js Start =================================
+    var projectTwoSlider = new Swiper(".project-two-slider", {
+      slidesPerView: 4,
+      spaceBetween: 24,
+      centeredSlides: true,
+      grabCursor: true,
+      loop: true,
+      speed: 1000,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          centeredSlides: false,
+          slidesPerView: 1,
+        },
+        576: {
+          centeredSlides: true,
+        },
+        991: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+        1365: {
+          slidesPerView: 4,
+        },
+      },
+    });
+    // ================================ Project Two slider js End =================================
+
     // ================== Password Show Hide Js Start ==========
     // $(".toggle-password").on("click", function () {
     //   $(this).toggleClass("active");
