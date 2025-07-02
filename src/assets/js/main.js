@@ -653,6 +653,7 @@
         },
         576: {
           centeredSlides: true,
+          slidesPerView: 2,
         },
         991: {
           slidesPerView: 2,

@@ -6574,6 +6574,21 @@ input:focus-visible {
 }
 
 /* Project Two css end */
+/* Counter Two Css start */
+@media (max-width: 767px) {
+    .counter-two-wrapper {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 575px) {
+    .counter-two-wrapper {
+        gap: 24px;
+    }
+}
+/* Counter Two Css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
