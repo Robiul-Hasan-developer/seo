@@ -473,11 +473,9 @@ if ($(".choose-us-big-image").length) {
         ".choose-us-big-image",
         {
           clipPath: "inset(0% 25% 0% 25%)", // Start with center 50%
-          borderRadius: 30,
         },
         {
           clipPath: "inset(0% 0% 0% 0%)", // Full reveal
-          borderRadius: 30,
         }
       );
   });
