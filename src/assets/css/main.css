@@ -3742,6 +3742,14 @@ input:focus-visible {
     max-width: 200px;
 }
 
+.max-w-114-px {
+    max-width: 114px;
+}
+
+.max-w-214-px {
+    max-width: 214px;
+}
+
 .max-w-346-px {
     max-width: 346px;
 }
@@ -6598,7 +6606,6 @@ input:focus-visible {
     .testimonials-two__navigations {
         position: relative !important;
         margin-inline-end: 0 !important;
-        margin-block-start: 24px;
     }
 }
 /* testimonials two css end */
