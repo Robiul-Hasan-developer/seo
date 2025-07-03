@@ -6609,6 +6609,20 @@ input:focus-visible {
     }
 }
 /* testimonials two css end */
+/* Blog two css start */
+@media (max-width: 1199px) {
+    .blog-two-item {
+        flex-direction: column;
+        align-items: unset !important;
+    }
+}
+
+@media (max-width: 1199px) {
+    .blog-two-item__thumb {
+        max-width: 100%;
+    }
+}
+/* Blog two css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
