@@ -19,15 +19,15 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 // **************************** Nav Menu js End ****************************
 
 // **************************** ScrollSmoother js start ****************************
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+// gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-const smoother = ScrollSmoother.create({
-  wrapper: "#smooth-wrapper",
-  content: "#smooth-content",
-  smooth: 0.6,
-  effects: true,
-  smoothTouch: 0.1,
-});
+// const smoother = ScrollSmoother.create({
+//   wrapper: "#smooth-wrapper",
+//   content: "#smooth-content",
+//   smooth: 0.6,
+//   effects: true,
+//   smoothTouch: 0.1,
+// });
 // **************************** ScrollSmoother js End ****************************
 
 // **************************** Custom Cursor Js Start ****************************

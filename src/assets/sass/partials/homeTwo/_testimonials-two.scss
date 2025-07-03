@@ -4,4 +4,12 @@
 .aspect-square {
   aspect-ratio: 1;
 }
+
+.testimonials-two__navigations {
+  @media (max-width: 425px) {
+    position: relative !important;
+    margin-inline-end: 0 !important;
+    margin-block-start: 24px;
+  }
+}
 /* testimonials two css end */

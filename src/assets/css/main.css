@@ -6594,6 +6594,13 @@ input:focus-visible {
     aspect-ratio: 1;
 }
 
+@media (max-width: 425px) {
+    .testimonials-two__navigations {
+        position: relative !important;
+        margin-inline-end: 0 !important;
+        margin-block-start: 24px;
+    }
+}
 /* testimonials two css end */
 /* ================================== rtl css start ================================== */
 .text-start {

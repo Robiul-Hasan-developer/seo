@@ -668,6 +668,25 @@
     });
     // ================================ Project Two slider js End =================================
 
+    // ================================ Testimonials Two slider js Start =================================
+    var testimonialsTwoSlider = new Swiper(".testimonials-two-slider", {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      centeredSlides: true,
+      grabCursor: true,
+      loop: true,
+      speed: 1000,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".testimonials-two-button-next",
+        prevEl: ".testimonials-two-button-prev",
+      },
+    });
+    // ================================ Testimonials Two slider js End =================================
+
     // ================== Password Show Hide Js Start ==========
     // $(".toggle-password").on("click", function () {
     //   $(this).toggleClass("active");
