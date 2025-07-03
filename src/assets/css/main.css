@@ -6589,6 +6589,12 @@ input:focus-visible {
     }
 }
 /* Counter Two Css end */
+/* testimonials two css start */
+.aspect-square {
+    aspect-ratio: 1;
+}
+
+/* testimonials two css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
