@@ -53,24 +53,34 @@
       padding: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.25rem);
     }
     &-40-px {
-      padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 2.5rem);
+      padding: clamp(1.5rem, -12.1677rem + 28.9177vw, 2.5rem);
     }
     &-48-px {
-      padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3rem);
+      padding: clamp(1.5rem, -12.1677rem + 28.9177vw, 3rem);
     }
     &-60-px {
-      padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
+      padding: clamp(1.5rem, -12.1677rem + 28.9177vw, 3.75rem);
     }
     &-74-px {
-      padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 4.625rem);
+      padding: clamp(1.5rem, -12.1677rem + 28.9177vw, 4.625rem);
+    }
+  }
+  &-px {
+    &-90-px {
+      padding-inline: clamp(1.5rem, -12.1677rem + 28.9177vw, 5.625rem);
+    }
+  }
+  &-py {
+    &-90-px {
+      padding-block: clamp(1.5rem, -12.1677rem + 28.9177vw, 5.625rem);
     }
   }
   &-ps {
     &-120-px {
-      padding-inline-start: clamp(1.5rem, -12.1677rem + 32.9177vw, 7.5rem);
+      padding-inline-start: clamp(1.5rem, -12.1677rem + 28.9177vw, 7.5rem);
     }
     &-100-px {
-      padding-inline-start: clamp(1.5rem, -12.1677rem + 32.9177vw, 6.25rem);
+      padding-inline-start: clamp(1.5rem, -12.1677rem + 28.9177vw, 6.25rem);
     }
   }
 }

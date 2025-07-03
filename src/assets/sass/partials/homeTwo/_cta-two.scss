@@ -1,0 +1,15 @@
+/* cta two css start */
+.animation-rotate-y-50 {
+  transform: translateY(50%);
+  animation: rotateRightY 30s linear infinite;
+}
+@keyframes rotateRightY {
+  0% {
+    transform: translateY(50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(50%) rotate(360deg);
+  }
+}
+/* cta two css end */

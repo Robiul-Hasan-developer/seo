@@ -4571,27 +4571,35 @@ input:focus-visible {
 }
 
 .tw-p-40-px {
-    padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 2.5rem);
+    padding: clamp(1.5rem, -12.1677rem + 28.9177vw, 2.5rem);
 }
 
 .tw-p-48-px {
-    padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3rem);
+    padding: clamp(1.5rem, -12.1677rem + 28.9177vw, 3rem);
 }
 
 .tw-p-60-px {
-    padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
+    padding: clamp(1.5rem, -12.1677rem + 28.9177vw, 3.75rem);
 }
 
 .tw-p-74-px {
-    padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 4.625rem);
+    padding: clamp(1.5rem, -12.1677rem + 28.9177vw, 4.625rem);
+}
+
+.tw-px-90-px {
+    padding-inline: clamp(1.5rem, -12.1677rem + 28.9177vw, 5.625rem);
+}
+
+.tw-py-90-px {
+    padding-block: clamp(1.5rem, -12.1677rem + 28.9177vw, 5.625rem);
 }
 
 .tw-ps-120-px {
-    padding-inline-start: clamp(1.5rem, -12.1677rem + 32.9177vw, 7.5rem);
+    padding-inline-start: clamp(1.5rem, -12.1677rem + 28.9177vw, 7.5rem);
 }
 
 .tw-ps-100-px {
-    padding-inline-start: clamp(1.5rem, -12.1677rem + 32.9177vw, 6.25rem);
+    padding-inline-start: clamp(1.5rem, -12.1677rem + 28.9177vw, 6.25rem);
 }
 
 .py-120 {
@@ -6623,6 +6631,22 @@ input:focus-visible {
     }
 }
 /* Blog two css end */
+/* cta two css start */
+.animation-rotate-y-50 {
+    transform: translateY(50%);
+    animation: rotateRightY 30s linear infinite;
+}
+
+@keyframes rotateRightY {
+    0% {
+        transform: translateY(50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(50%) rotate(360deg);
+    }
+}
+/* cta two css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
