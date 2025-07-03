@@ -2006,6 +2006,10 @@ input:focus-visible {
     -webkit-text-stroke: 2px hsl(var(--heading-color));
 }
 
+.text-white-8 {
+    color: hsl(var(--white)/0.8);
+}
+
 /* Colors class End */
 /* Hover color class start */
 .hover-text-main-40:hover {
@@ -3742,6 +3746,10 @@ input:focus-visible {
     max-width: 200px;
 }
 
+.max-w-1700-px {
+    max-width: 1700px;
+}
+
 .max-w-114-px {
     max-width: 114px;
 }
@@ -4592,6 +4600,10 @@ input:focus-visible {
 
 .tw-py-90-px {
     padding-block: clamp(1.5rem, -12.1677rem + 28.9177vw, 5.625rem);
+}
+
+.tw-py-100-px {
+    padding-block: clamp(1.5rem, -12.1677rem + 28.9177vw, 6.25rem);
 }
 
 .tw-ps-120-px {
@@ -6647,6 +6659,24 @@ input:focus-visible {
     }
 }
 /* cta two css end */
+/* Footer Two css start */
+.footer-two-middle__box {
+    border-radius: 66px 66px 0 0;
+    background-color: #20202b;
+}
+
+@media (max-width: 991px) {
+    .footer-two-middle__box {
+        border-radius: 40px 40px 0 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer-two-middle__box {
+        border-radius: 20px 20px 0 0;
+    }
+}
+/* Footer Two css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
