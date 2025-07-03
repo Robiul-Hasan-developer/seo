@@ -19,15 +19,15 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 // **************************** Nav Menu js End ****************************
 
 // **************************** ScrollSmoother js start ****************************
-// gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-// const smoother = ScrollSmoother.create({
-//   wrapper: "#smooth-wrapper",
-//   content: "#smooth-content",
-//   smooth: 0.6,
-//   effects: true,
-//   smoothTouch: 0.1,
-// });
+const smoother = ScrollSmoother.create({
+  wrapper: "#smooth-wrapper",
+  content: "#smooth-content",
+  smooth: 0.6,
+  effects: true,
+  smoothTouch: 0.1,
+});
 // **************************** ScrollSmoother js End ****************************
 
 // **************************** Custom Cursor Js Start ****************************
@@ -481,6 +481,104 @@ if ($(".choose-us-big-image").length) {
   });
 }
 // **************************** Choose Us Two Image reveal js end ****************************
+
+// **************************** Service Two js start ****************************
+document.addEventListener("DOMContentLoaded", function () {
+  if ($(".service-two-item").length) {
+    if (window.innerWidth > 1200) {
+      const items = document.querySelectorAll(".service-two-item");
+
+      const advanced = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".service-two-item-wrapper",
+          start: "top 60%",
+          toggleActions: "play none none reverse",
+          markers: false,
+        },
+        defaults: {
+          ease: "ease1",
+          duration: 1,
+        },
+      });
+      advanced
+        .from(items[0], {
+          xPercent: 100,
+          rotate: 8,
+        })
+        .from(
+          items[1],
+          {
+            xPercent: 30,
+            rotate: 4.13,
+          },
+          "<"
+        )
+        .from(
+          items[2],
+          {
+            xPercent: -30,
+            rotate: -6.42,
+          },
+          "<"
+        )
+        .from(
+          items[3],
+          {
+            xPercent: -60,
+            rotate: -12.15,
+          },
+          "<"
+        );
+    }
+  }
+});
+// **************************** Service Two js end ****************************
+
+// **************************** Pricing plan js start ****************************
+document.addEventListener("DOMContentLoaded", function () {
+  if ($(".pricing-plan-two-item").length) {
+    if (window.innerWidth > 1200) {
+      const items = document.querySelectorAll(".pricing-plan-two-item");
+
+      const advanced = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".pricing-plan-two-wrapper",
+          start: "top 60%",
+          toggleActions: "play none none reverse",
+          markers: false,
+        },
+        defaults: {
+          ease: "ease1",
+          duration: 1,
+        },
+      });
+
+      advanced
+        .from(items[0], {
+          xPercent: 100,
+          rotate: 2,
+        })
+        .from(
+          items[1],
+          {
+            xPercent: 30,
+            zIndex: 2,
+            rotate: 1.13,
+          },
+          "<"
+        )
+        .from(
+          items[2],
+          {
+            xPercent: -30,
+            rotate: -2.42,
+          },
+          "<"
+        );
+    }
+  }
+});
+// **************************** Pricing plan js end ****************************
 
 /* **************************************************************************** 
                           Custom GSAP js start 

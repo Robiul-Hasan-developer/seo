@@ -1438,7 +1438,7 @@ input:focus-visible {
     background-color: #fff3d8;
 }
 
-.bg-linen-white, .price-experience-wrapper::before, .price-experience-wrapper::after {
+.bg-linen-white {
     background-color: #fff3d8;
 }
 
@@ -6568,6 +6568,7 @@ input:focus-visible {
     width: 100%;
     inset-block-start: 0;
     inset-inline-start: 0;
+    background-color: #FEFAF6;
     z-index: -1;
 }
 
@@ -6644,7 +6645,7 @@ input:focus-visible {
 }
 /* Blog two css end */
 /* cta two css start */
-.bg-half-white::before {
+.bg-half-black::before {
     position: absolute;
     content: "";
     width: 100%;

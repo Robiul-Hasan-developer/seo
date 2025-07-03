@@ -9,8 +9,7 @@
     width: 100%;
     inset-block-start: 0;
     inset-inline-start: 0;
-    // background-color: #fefaf6;
-    @extend .bg-linen-white;
+    background-color: #FEFAF6;
     z-index: -1;
   }
   &::after {
