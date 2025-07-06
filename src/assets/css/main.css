@@ -2560,6 +2560,10 @@ input:focus-visible {
     height: 96px;
 }
 
+.tw-h-120-px {
+    height: 120px;
+}
+
 .tw-h-320-px {
     height: 320px;
 }
@@ -4648,6 +4652,10 @@ input:focus-visible {
     padding-block: clamp(1.5rem, -12.1677rem + 28.9177vw, 6.25rem);
 }
 
+.tw-py-280-px {
+    padding-block: clamp(5rem, -17.2222rem + 46.2963vw, 17.5rem);
+}
+
 .tw-ps-120-px {
     padding-inline-start: clamp(1.5rem, -12.1677rem + 28.9177vw, 7.5rem);
 }
@@ -5261,6 +5269,10 @@ input:focus-visible {
 
 .tw-w-92-px {
     width: 92px;
+}
+
+.tw-w-120-px {
+    width: 120px;
 }
 
 /* width Css Class End */
@@ -6271,7 +6283,7 @@ input:focus-visible {
     content: "";
     width: inherit;
     height: inherit;
-    background: var(--main-two-600);
+    background: inherit;
     border-radius: 50%;
     inset-inline-start: 0;
     top: 0;

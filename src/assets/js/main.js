@@ -687,6 +687,10 @@
     });
     // ================================ Testimonials Two slider js End =================================
 
+    $(".parallax-window").parallax({
+      // imageSrc: "assets/images/thumbs/popup-three-img.png",
+    });
+
     // ================== Password Show Hide Js Start ==========
     // $(".toggle-password").on("click", function () {
     //   $(this).toggleClass("active");
