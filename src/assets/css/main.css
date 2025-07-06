@@ -5573,6 +5573,10 @@ input:focus-visible {
     animation-delay: 3s;
 }
 
+.animation-delay-5 {
+    animation-delay: 5s;
+}
+
 .animation-duration-6 {
     animation-duration: 6s;
 }
@@ -6689,6 +6693,28 @@ input:focus-visible {
     }
 }
 /* Footer Two css end */
+/* Header Three Css start */
+.logo-three {
+    position: relative;
+}
+
+.logo-three::before {
+    position: absolute;
+    width: 100%;
+    inset-inline-start: 0;
+    inset-block-start: 100%;
+    content: "";
+    background-color: inherit;
+    z-index: 1;
+    height: 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+.logo-three img {
+    transform: translateY(15px);
+}
+
+/* Header Three end start */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

@@ -580,6 +580,92 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // **************************** Pricing plan js end ****************************
 
+// **************************** Banner Two js Start ****************************
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener("DOMContentLoaded", function () {
+  if ($(".animated-element").length) {
+    if (window.innerWidth > 575) {
+      const items = document.querySelectorAll(".animated-element");
+
+      const elements = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".animated-element-wrapper",
+          start: "top 60%",
+          toggleActions: "play none none reverse",
+          markers: false,
+        },
+        defaults: {
+          ease: "ease1",
+          duration: 1.5,
+        },
+      });
+      elements
+        .from(items[0], {
+          xPercent: 500,
+          yPercent: 500,
+          scale: 0.6,
+          filter: "blur(10px)",
+          rotate: 8,
+        })
+        .from(
+          items[1],
+          {
+            xPercent: -500,
+            yPercent: 500,
+            scale: 0.6,
+            filter: "blur(10px)",
+            rotate: 4.13,
+          },
+          "<"
+        )
+        .from(
+          items[2],
+          {
+            xPercent: 500,
+            yPercent: -500,
+            scale: 0.6,
+            filter: "blur(10px)",
+          },
+          "<"
+        )
+        .from(
+          items[3],
+          {
+            xPercent: -500,
+            yPercent: -500,
+            scale: 0.6,
+            filter: "blur(10px)",
+            rotate: -12.15,
+          },
+          "<"
+        );
+    }
+  }
+
+  // Banner Two image
+  if ($(".banner-two-image").length) {
+    const blurImage = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".banner-two",
+        start: "top 60%",
+        toggleActions: "play none none reverse",
+        markers: false,
+      },
+      defaults: {
+        ease: "ease1",
+        duration: 3,
+      },
+    });
+
+    blurImage.from(".banner-two-image", {
+      scale: 0.85,
+      filter: "blur(10px)",
+    });
+  }
+});
+// **************************** Banner Two js End ****************************
+
 /* **************************************************************************** 
                           Custom GSAP js start 
 ****************************************************************************  */
