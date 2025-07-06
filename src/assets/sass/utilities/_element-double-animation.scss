@@ -5,7 +5,6 @@
   &__element {
     transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
     -webkit-transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
-
     &::after {
       content: attr(data-content);
       position: absolute;
@@ -13,7 +12,7 @@
       left: 0;
       right: 0;
       top: 100%;
-      color: var(--main-600);
+      color: inherit;
       transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
       -webkit-transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
     }
