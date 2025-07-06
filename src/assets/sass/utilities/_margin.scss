@@ -82,6 +82,16 @@
       margin-block-end: clamp(3rem, -2.5082rem + 11.4754vw, 8.25rem);
     }
   }
+  &-mt {
+    &-10-percent {
+      margin-block-start: 10%;
+    }
+  }
+  &-ms {
+    &-10-percent {
+      margin-inline-start: 10%;
+    }
+  }
 }
 
 .my-120 {
