@@ -1450,6 +1450,10 @@ input:focus-visible {
     background-color: #F2FFF9;
 }
 
+.bg-blue-light, .banner-two {
+    background-color: #eef3fe;
+}
+
 .hover-bg-red-100:hover {
     background-color: #fbeccb;
 }
@@ -2261,6 +2265,10 @@ input:focus-visible {
     .text-200-px {
         font-size: 9.25rem !important;
     }
+}
+
+.text-120-px {
+    font-size: clamp(3rem, 1.5789rem + 6.3158vw, 7.5rem) !important;
 }
 
 .tw-text-xs {
@@ -6498,7 +6506,6 @@ input:focus-visible {
 
 /* ===================== Banner Two css start ============================== */
 .banner-two {
-    background-color: #eef3fe;
     padding: 234px 0 366px;
 }
 
@@ -6762,6 +6769,13 @@ input:focus-visible {
     }
 }
 /* Banner three css end */
+/* Counter Three css start */
+.counter-three-shape {
+    margin-inline-end: -25%;
+    margin-block-start: -34%;
+}
+
+/* Counter Three css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
