@@ -77,6 +77,11 @@
       margin-block-start: -160px;
     }
   }
+  &-mb {
+    &-132-px {
+      margin-block-end: clamp(3rem, -2.5082rem + 11.4754vw, 8.25rem);
+    }
+  }
 }
 
 .my-120 {

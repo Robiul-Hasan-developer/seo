@@ -1446,6 +1446,10 @@ input:focus-visible {
     background-color: #fefaf6;
 }
 
+.bg-mint-ice {
+    background-color: #F2FFF9;
+}
+
 .hover-bg-red-100:hover {
     background-color: #fbeccb;
 }
@@ -2247,6 +2251,16 @@ input:focus-visible {
 
 .text-48-px {
     font-size: clamp(1.5rem, 3.2246rem - 0.2246vw, 3rem);
+}
+
+.text-200-px {
+    font-size: clamp(4.75rem, 2.3026rem + 10.8772vw, 12.5rem) !important;
+}
+
+@media (min-width: 1200px) and (max-width: 1350px) {
+    .text-200-px {
+        font-size: 9.25rem !important;
+    }
 }
 
 .tw-text-xs {
@@ -3648,6 +3662,10 @@ input:focus-visible {
     margin-block-start: -160px;
 }
 
+.tw-mb-132-px {
+    margin-block-end: clamp(3rem, -2.5082rem + 11.4754vw, 8.25rem);
+}
+
 .my-120 {
     margin-block-start: 60px;
     margin-block-end: 60px;
@@ -3750,6 +3768,10 @@ input:focus-visible {
     max-width: 1700px;
 }
 
+.max-w-1854-px {
+    max-width: 1854px;
+}
+
 .max-w-114-px {
     max-width: 114px;
 }
@@ -3816,6 +3838,10 @@ input:focus-visible {
 
 .max-w-510-px {
     max-width: 510px;
+}
+
+.max-w-550-px {
+    max-width: 550px;
 }
 
 .max-w-280-px {
@@ -6702,7 +6728,7 @@ input:focus-visible {
     position: absolute;
     width: 100%;
     inset-inline-start: 0;
-    inset-block-start: 100%;
+    inset-block-start: calc(100% - 1px);
     content: "";
     background-color: inherit;
     z-index: 1;
@@ -6715,6 +6741,27 @@ input:focus-visible {
 }
 
 /* Header Three end start */
+/* Banner three css start */
+.banner-three__inner {
+    background-color: #141b37;
+}
+
+.banner-three__content {
+    padding: 332px 0 222px;
+}
+
+@media (max-width: 1199px) {
+    .banner-three__content {
+        padding: 140px 0 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-three__content {
+        padding: 100px 0 60px;
+    }
+}
+/* Banner three css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

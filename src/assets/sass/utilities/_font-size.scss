@@ -18,6 +18,12 @@
   &-48-px {
     font-size: clamp(1.5rem, 3.2246rem + -0.2246vw, 3rem);
   }
+  &-200-px {
+    font-size: clamp(4.75rem, 2.3026rem + 10.8772vw, 12.5rem) !important;
+    @media (min-width: 1200px) and (max-width: 1350px) {
+      font-size: 9.25rem !important;
+    }
+  }
 }
 
 @each $property, $value in $font-sizes {
