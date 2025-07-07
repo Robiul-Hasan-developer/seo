@@ -687,9 +687,33 @@
     });
     // ================================ Testimonials Two slider js End =================================
 
-    $(".parallax-window").parallax({
-      // imageSrc: "assets/images/thumbs/popup-three-img.png",
+    $(".parallax-window").parallax();
+
+    // ======================= Statistics Three Js Start ==================
+
+    // ================================= Brand slider Start =========================
+    var statisticsBrandSlider = new Swiper(".statistics-brand-slider", {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      autoplay: true,
+      speed: 1500,
+      grabCursor: true,
+      loop: true,
+      slidesPerView: 4,
+      breakpoints: {
+        425: {
+          slidesPerView: 3,
+        },
+        575: {
+          slidesPerView: 4,
+        },
+      },
     });
+    // ================================= Brand slider End =========================
+
+    // ======================= Statistics Three Js End ==================
 
     // ================== Password Show Hide Js Start ==========
     // $(".toggle-password").on("click", function () {

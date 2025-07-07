@@ -2564,6 +2564,10 @@ input:focus-visible {
     height: 120px;
 }
 
+.tw-h-104-px {
+    height: 104px;
+}
+
 .tw-h-320-px {
     height: 320px;
 }
@@ -5283,6 +5287,10 @@ input:focus-visible {
     width: 92px;
 }
 
+.tw-w-104-px {
+    width: 104px;
+}
+
 .tw-w-120-px {
     width: 120px;
 }
@@ -6417,7 +6425,8 @@ input:focus-visible {
     opacity: 1;
 }
 
-.left-right-gradient::before, .left-right-gradient::after {
+.left-right-gradient::before,
+.left-right-gradient::after {
     position: absolute;
     content: "";
     width: 48px;
@@ -6434,8 +6443,14 @@ input:focus-visible {
     inset-inline-end: 0;
 }
 
-.gradient-width-200::before, .gradient-width-200::after {
+.gradient-width-200::before,
+.gradient-width-200::after {
     width: 200px;
+}
+
+.gradient-width-50::before,
+.gradient-width-50::after {
+    width: 50px;
 }
 
 /* brand section css end */
