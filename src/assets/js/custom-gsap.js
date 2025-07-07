@@ -666,6 +666,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // **************************** Banner Two js End ****************************
 
+// **************************** Blog Three js Start ****************************
+gsap.utils.toArray(".side-sticky").forEach((sticky) => {
+  if (window.innerWidth > 991) {
+    ScrollTrigger.create({
+      trigger: sticky,
+      start: "top top+=160",
+      end: "53%",
+      pin: true,
+      scrub: true,
+    });
+  }
+});
+// **************************** Blog Three js End ****************************
+
 /* **************************************************************************** 
                           Custom GSAP js start 
 ****************************************************************************  */
