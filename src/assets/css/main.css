@@ -3706,6 +3706,10 @@ input:focus-visible {
     margin-inline-end: -7%;
 }
 
+.tw--mb-12-percent {
+    margin-block-end: -12%;
+}
+
 .my-120 {
     margin-block-start: 60px;
     margin-block-end: 60px;
