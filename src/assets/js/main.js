@@ -687,7 +687,9 @@
     });
     // ================================ Testimonials Two slider js End =================================
 
+    // ================================ Parallax js Start =================================
     $(".parallax-window").parallax();
+    // ================================ Parallax js End =================================
 
     // ======================= Statistics Three Js Start ==================
 
@@ -712,6 +714,32 @@
       },
     });
     // ================================= Brand slider End =========================
+
+    // ================================ Testimonials Two slider js Start =================================
+    var testimonialsThreeSlider = new Swiper(".testimonials-three-slider", {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      centeredSlides: true,
+      grabCursor: true,
+      loop: true,
+      speed: 1000,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      effect: "cube",
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      navigation: {
+        nextEl: ".testimonials-three-next",
+        prevEl: ".testimonials-three-prev",
+      },
+    });
+    // ================================ Testimonials Two slider js End =================================
 
     // ======================= Statistics Three Js End ==================
 
