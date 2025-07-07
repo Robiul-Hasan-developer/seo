@@ -4684,6 +4684,10 @@ input:focus-visible {
     padding-inline-start: clamp(1.5rem, -12.1677rem + 28.9177vw, 6.25rem);
 }
 
+.tw-ps-40-px {
+    padding-inline-start: clamp(1.5rem, -12.1677rem + 28.9177vw, 2.5rem);
+}
+
 .py-120 {
     padding-block-start: 60px;
     padding-block-end: 60px;
