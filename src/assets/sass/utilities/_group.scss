@@ -78,4 +78,8 @@
     }
   }
 }
+
+  .text-invert-white {
+    filter: brightness(0) invert(1);
+  }
 /* ======================== Group Css End =============================== */

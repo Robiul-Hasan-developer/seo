@@ -210,48 +210,8 @@
     border-radius: 5px;
 }
 
-.common-accordion .accordion-button::after {
-    background-image: none;
-}
-
 .common-accordion .accordion-button:focus {
     box-shadow: none;
-}
-
-.common-accordion .accordion-button:not(.collapsed) {
-    background-color: transparent !important;
-    box-shadow: none;
-    color: var(--main-600);
-}
-
-.common-accordion .accordion-button:not(.collapsed)::after {
-    background-image: none;
-    color: var(--main-600);
-}
-
-.common-accordion .accordion-button[aria-expanded=true]::after, .common-accordion .accordion-button[aria-expanded=false]::after {
-    font-family: "Phosphor";
-    font-weight: 900;
-    content: "\f106";
-    color: var(--main-600);
-    display: inline-block;
-    position: absolute;
-    inset-block-start: 50%;
-    transform: translateY(-50%);
-    inset-inline-end: 30px;
-    height: unset;
-    text-align: center;
-}
-
-@media screen and (max-width: 575px) {
-    .common-accordion .accordion-button[aria-expanded=true]::after, .common-accordion .accordion-button[aria-expanded=false]::after {
-        inset-inline-end: 20px;
-    }
-}
-
-.common-accordion .accordion-button[aria-expanded=false]::after {
-    content: "\f107";
-    color: hsl(var(--heading-color));
 }
 
 /* ================================= Accordion Css End =========================== */
@@ -2442,6 +2402,10 @@ input:focus-visible {
     background: linear-gradient(179.9deg, rgba(13, 16, 23, 0) -1.34%, rgba(13, 16, 23, 0.8) 72.25%);
 }
 
+.gradient-overlay-1.z-index-1::before {
+    z-index: unset;
+}
+
 /* Gradient BG & Overlay End */
 /* Height Css Class Start */
 .tw-h-05 {
@@ -2881,6 +2845,10 @@ input:focus-visible {
 
 .group-item:hover .group-hover-item-text-invert-black {
     filter: brightness(0) invert(0);
+}
+
+.text-invert-white {
+    filter: brightness(0) invert(1);
 }
 
 /* ======================== Group Css End =============================== */

@@ -16,6 +16,11 @@
       rgba(13, 16, 23, 0.8) 72.25%
     );
   }
+  &.z-index-1 {
+    &::before {
+      z-index: unset;
+    }
+  }
 }
 
 /* Gradient BG & Overlay End */
