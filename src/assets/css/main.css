@@ -1855,6 +1855,10 @@ input:focus-visible {
     border-color: #ffffff61 !important;
 }
 
+.border-white-28 {
+    border-color: #FFFFFF47 !important;
+}
+
 /* Colors class start */
 .text-main-40 {
     color: var(--main-40);
@@ -4672,6 +4676,10 @@ input:focus-visible {
     padding-inline: clamp(1.5rem, -12.1677rem + 28.9177vw, 5.625rem);
 }
 
+.tw-ps-60-px {
+    padding-inline-start: clamp(1.5rem, -12.1677rem + 28.9177vw, 3.75rem);
+}
+
 .tw-pt-72-px {
     padding-block-start: 4.5rem;
 }
@@ -6873,6 +6881,12 @@ input:focus-visible {
 }
 
 /* Service Three css end */
+/* Footer Three section css start  */
+.footer-three__left {
+    width: 35%;
+}
+
+/* Footer Three section css end  */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
