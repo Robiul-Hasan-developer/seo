@@ -1450,7 +1450,7 @@ input:focus-visible {
     background-color: #F2FFF9;
 }
 
-.bg-blue-light, .banner-two {
+.bg-blue-light, .bg-half-blue-light::before, .banner-two {
     background-color: #eef3fe;
 }
 
@@ -1856,7 +1856,7 @@ input:focus-visible {
 }
 
 .border-white-28 {
-    border-color: #FFFFFF47 !important;
+    border-color: #22222d !important;
 }
 
 /* Colors class start */
@@ -6776,6 +6776,20 @@ input:focus-visible {
     z-index: -1;
 }
 
+.bg-half-blue-light::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    z-index: -1;
+}
+
+.rounded-top-34-px {
+    border-radius: 34px 34px 0 0;
+}
+
 .animation-rotate-y-50 {
     transform: translateY(50%);
     animation: rotateRightY 30s linear infinite;
@@ -6882,10 +6896,49 @@ input:focus-visible {
 
 /* Service Three css end */
 /* Footer Three section css start  */
-.footer-three__left {
-    width: 35%;
+.footer-three {
+    position: relative;
+    z-index: 1;
 }
 
+.footer-three::before {
+    position: absolute;
+    content: "";
+    width: 38.5%;
+    height: 100%;
+    background-color: #22222d;
+    z-index: -1;
+}
+
+@media (max-width: 1500px) {
+    .footer-three::before {
+        width: 36%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer-three::before {
+        width: 33%;
+    }
+}
+
+@media (max-width: 991px) {
+    .footer-three::before {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-three__left {
+        width: 35%;
+    }
+}
+
+@media (max-width: 991px) {
+    .footer-three__right-content {
+        padding-inline-start: 0 !important;
+    }
+}
 /* Footer Three section css end  */
 /* ================================== rtl css start ================================== */
 .text-start {
