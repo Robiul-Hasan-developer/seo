@@ -1,0 +1,51 @@
+@@include('../partials/_template-top.html', {
+    'pageClass' : 'fontSizeStyleOne'
+})
+
+    @@include('../partials/_header.html', {
+        'headerClass': 'headerAbsoluteStyle menuColorWhite menuPositionEnd fixedHeaderBlack border-line-full border-bottom border-white-22'
+    })
+
+    <div id="smooth-wrapper" class="">
+        <div id="smooth-content">
+               @@include('../partials/_breadcrumb.html', {
+                    'breadcrumbTitle': 'About Company',
+                    'breadcrumbText': 'About Us'
+                })  
+
+            @@include('../partials/_counter-three.html', {
+                'sectionPadding': 'pt-120'
+            })
+
+            @@include('../partials/_about-two.html')
+
+            @@include('../partials/_marquee.html')
+
+            <div class="price-experience-wrapper position-relative z-1 overflow-hidden">
+                <img src="assets/images/shapes/about-shape1.png" alt="Shape" class="position-absolute d-lg-block d-none z-1 tw-start-0 top-0 tw-mt-17 tw-pt-6 animated-upDown">
+                <img src="assets/images/shapes/about-shape2.png" alt="Shape" class="position-absolute d-lg-block d-none z-1 tw-end-0 top-0 tw-mb-11 animated-upDown">
+                
+                @@include('../partials/_pricing-plan-two.html')
+            
+                @@include('../partials/_experience.html')
+            </div>
+
+            @@include('../partials/_our-project.html')
+
+            @@include('../partials/_team-three.html')
+
+             @@include('../partials/_get-in-touch.html', {
+                'sectionPadding': 'pt-120'
+             })
+
+            @@include('../partials/_blog.html')
+
+            @@include('../partials/_footer.html')
+
+        </div>
+    </div>
+
+    @@include('../partials/_template-bottom.html')
+
+    </body>
+</html>
