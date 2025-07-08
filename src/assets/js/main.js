@@ -405,7 +405,7 @@
         const el = entry.target;
         if (entry.isIntersecting && !el.classList.contains("is-visible")) {
           counterUp(el, {
-            duration: 3500,
+            duration: 1500,
             delay: 16,
           });
           el.classList.add("is-visible");
