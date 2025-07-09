@@ -91,6 +91,9 @@
     &-10-percent {
       margin-inline-start: 10%;
     }
+    &-100-px {
+      margin-inline-start: clamp(1.5rem, -2.8846rem + 9.1346vw, 6.25rem);;
+    }
   }
   &--me {
     &-7-percent {
