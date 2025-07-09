@@ -1,4 +1,12 @@
 /* ================================= Form Css Start =========================== */
+.placeholder-text {
+    &-sm {
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+}
+
 /* input File Start */
 .common-file[type="file"] {
     line-height: 50px;
@@ -73,7 +81,6 @@ input[type=number]{
             }
         }
     }
-
     .form-check-input {
         transition: .2s linear;
         box-shadow: none;
@@ -134,39 +141,4 @@ input[type=number]{
 }
 /* Custom Checkbox & Radio Css End */
 
-
-/* Switch Css Start */
-.form-switch {
-    padding-inline-start: 0;
-    .form-check-input {
-      box-shadow: none !important;  
-      margin: 0;
-      position: relative;
-      background-color: var(--gray-100);
-      border: 0;
-      background-image: none !important;
-      width: 30px;
-      height: 18px;
-      &:checked {
-        background-color: var(--primary-600);
-        &::before {
-          inset-inline-start: calc(100% - 15px);
-          transition: .2s linear;
-        }
-      }    
-      &::before {
-        position: absolute;
-        content: "";
-        width: 12px;
-        height: 12px;
-        background: #fff;
-        border-radius: 50%;
-        top: 50%;
-        transform: translateY(-50%);
-        inset-inline-start: 3px;
-        transition: .2s linear;
-      }
-    }
-}
-/* Switch Css End */
 /* ================================= Form Css End =========================== */

@@ -210,8 +210,34 @@
     border-radius: 5px;
 }
 
+.common-accordion .accordion-button::after {
+    background-image: none;
+}
+
 .common-accordion .accordion-button:focus {
     box-shadow: none;
+}
+
+.common-accordion .accordion-button {
+    position: relative;
+    padding-inline-end: 1rem !important;
+}
+
+.common-accordion .accordion-button::before {
+    position: absolute;
+    content: "\e136";
+    inset-inline-end: 0;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+    font-family: "Phosphor";
+    font-weight: 40;
+    font-size: 1rem;
+    color: var(--neutral-600);
+    transition: 0.2s ease-in-out;
+}
+
+.common-accordion .accordion-button[aria-expanded=true]::before {
+    transform: translateY(-50%) rotate(180deg);
 }
 
 /* ================================= Accordion Css End =========================== */
@@ -361,6 +387,10 @@
 
 /* =========================== Button Css End =================== */
 /* ================================= Form Css Start =========================== */
+.placeholder-text-sm::placeholder {
+    font-size: 14px;
+}
+
 /* input File Start */
 .common-file[type=file] {
     line-height: 50px;
@@ -509,45 +539,6 @@ input[type=number] {
 }
 
 /* Custom Checkbox & Radio Css End */
-/* Switch Css Start */
-.form-switch {
-    padding-inline-start: 0;
-}
-
-.form-switch .form-check-input {
-    box-shadow: none !important;
-    margin: 0;
-    position: relative;
-    background-color: var(--gray-100);
-    border: 0;
-    background-image: none !important;
-    width: 30px;
-    height: 18px;
-}
-
-.form-switch .form-check-input:checked {
-    background-color: var(--primary-600);
-}
-
-.form-switch .form-check-input:checked::before {
-    inset-inline-start: calc(100% - 15px);
-    transition: 0.2s linear;
-}
-
-.form-switch .form-check-input::before {
-    position: absolute;
-    content: "";
-    width: 12px;
-    height: 12px;
-    background: #fff;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    inset-inline-start: 3px;
-    transition: 0.2s linear;
-}
-
-/* Switch Css End */
 /* ================================= Form Css End =========================== */
 /* =========================== Flowmap css start ================================ */
 .animated-bg {
