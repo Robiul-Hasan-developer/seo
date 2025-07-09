@@ -1,0 +1,45 @@
+@@include('../partials/_template-top.html', {
+'pageClass' : 'fontSizeStyleOne'
+})
+
+<!-- @@include('../partials/_header.html', {
+'headerClass': 'headerAbsoluteStyle menuColorWhite menuPositionEnd fixedHeaderBlack border-line-full border-bottom border-white-22'
+}) -->
+
+<div id="smooth-wrapper" class="">
+    <div id="smooth-content">
+        @@include('../partials/_breadcrumb.html', {
+        'breadcrumbTitle': 'Team Details',
+        'breadcrumbText': 'Team Details'
+        })
+
+        <!-- =========================== Team Details section start =============================== -->
+        <section class="team-details py-120">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <div class="">
+                            <img src="assets/images/thumbs/team-details-img.png" alt="Thumbnail"
+                                class="tw-rounded-xl w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========================== Team Details section end =============================== -->
+
+        @@include('../partials/_footer.html')
+
+    </div>
+</div>
+
+@@include('../partials/_template-bottom.html')
+
+</body>
+
+</html>
