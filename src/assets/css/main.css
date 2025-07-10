@@ -6971,10 +6971,6 @@ input:focus-visible {
     transform: translateX(50%);
 }
 
-[dir=rtl] .select-domain {
-    margin-inline-end: 0;
-}
-
 [dir=rtl] .pricing-plan .form-check {
     padding-left: 0 !important;
 }
@@ -6983,16 +6979,13 @@ input:focus-visible {
     transform: translate(50%, -50%);
 }
 
-[dir=rtl] .distraction-icon.seven {
-    transform: translate(50%, -50%);
+[dir=rtl] .tw--translate-middle {
+    transform: var(--translate-x-50) var(--translate-y-50);
+    transform: translateX(50%) var(--translate-y-50);
 }
 
 [dir=rtl] .translate-middle-x {
     transform: translateX(50%) !important;
-}
-
-[dir=rtl] .translate-x-100-16 {
-    transform: translateX(calc(100% - 105px));
 }
 
 [dir=rtl] .toast-message {
@@ -7003,7 +6996,7 @@ input:focus-visible {
     transform: translateX(0) !important;
 }
 
-[dir=rtl] .arrow-long {
+[dir=rtl] .arrow-right-img {
     transform: scaleX(-1);
 }
 
@@ -7015,8 +7008,8 @@ input:focus-visible {
     margin-right: -1.5em;
 }
 
-[dir=rtl] .top-features-slider {
-    direction: rtl;
+[dir=rtl] .form-select {
+    background-position: left 0.75rem center;
 }
 
 [dir=rtl] .left-right-gradient::before {
@@ -7061,6 +7054,10 @@ input:focus-visible {
 
 [dir=rtl] .ph-bold.ph-caret-left:before {
     content: "\e13a";
+}
+
+[dir=rtl] .ph-bold.ph-arrow-right:before {
+    content: "\e058";
 }
 
 /* ================================== rtl css End ================================== */

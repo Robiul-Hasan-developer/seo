@@ -16,31 +16,35 @@
   .tw-translate-x-50 {
     transform: translateX(50%);
   }
-  .select-domain {
-    margin-inline-end: 0;
-  }
+  // .select-domain {
+  //   margin-inline-end: 0;
+  // }
   .pricing-plan .form-check {
     padding-left: 0 !important;
   }
   .common-check-two .form-check-input::before {
     transform: translate(50%, -50%);
   }
-  .distraction-icon.seven {
-    transform: translate(50%, -50%);
+  // .distraction-icon.seven {
+  //   transform: translate(50%, -50%);
+  // }
+  .tw--translate-middle {
+      transform: var(--translate-x-50) var(--translate-y-50);
+      transform: translateX(50%)  var(--translate-y-50);
   }
   .translate-middle-x {
     transform: translateX(50%) !important;
   }
-  .translate-x-100-16 {
-    transform: translateX(calc(100% - 105px));
-  }
+  // .translate-x-100-16 {
+  //   transform: translateX(calc(100% - 105px));
+  // }
   .toast-message {
     transform: translateX(-110%);
   }
   .toast-message.active {
     transform: translateX(0) !important;
   }
-  .arrow-long {
+  .arrow-right-img {
     transform: scaleX(-1);
   }
   .common-check .form-check-input::before {
@@ -49,10 +53,13 @@
   .form-check .form-check-input {
     margin-right: -1.5em;
   }
+  .form-select {
+    background-position: left .75rem center;
+ }
 
-  .top-features-slider {
-    direction: rtl;
-  }
+  // .top-features-slider {
+  //   direction: rtl;
+  // }
   .left-right-gradient::before {
     background: linear-gradient(-90deg, #fff, transparent);
   }
@@ -86,6 +93,9 @@
   }
   .ph-bold.ph-caret-left:before {
     content: "\E13A";
+  }
+  .ph-bold.ph-arrow-right:before {
+    content: "\E058";
   }
 }
 /* ================================== rtl css End ================================== */
