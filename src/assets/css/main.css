@@ -221,6 +221,7 @@
 .common-accordion .accordion-button {
     position: relative;
     padding-inline-end: 1rem !important;
+    text-align: start;
 }
 
 .common-accordion .accordion-button::before {

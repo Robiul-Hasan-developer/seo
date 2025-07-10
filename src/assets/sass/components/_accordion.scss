@@ -23,6 +23,7 @@
     .accordion-button {
         position: relative;
         padding-inline-end: 1rem !important;
+        text-align: start;
         &::before {
             position: absolute;
             content: "\E136";
