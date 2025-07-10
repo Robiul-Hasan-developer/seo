@@ -6942,6 +6942,14 @@ input:focus-visible {
 }
 
 /* Breadcrumb css end */
+/* 404 page css start */
+.error-section {
+    padding: 210px 0 100px;
+    background-color: hsl(var(--heading-color));
+    min-height: 100vh;
+}
+
+/* 404 page css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
