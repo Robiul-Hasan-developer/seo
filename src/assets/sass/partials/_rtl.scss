@@ -16,18 +16,12 @@
   .tw-translate-x-50 {
     transform: translateX(50%);
   }
-  // .select-domain {
-  //   margin-inline-end: 0;
-  // }
   .pricing-plan .form-check {
     padding-left: 0 !important;
   }
   .common-check-two .form-check-input::before {
     transform: translate(50%, -50%);
   }
-  // .distraction-icon.seven {
-  //   transform: translate(50%, -50%);
-  // }
   .tw--translate-middle {
       transform: var(--translate-x-50) var(--translate-y-50);
       transform: translateX(50%)  var(--translate-y-50);
@@ -35,9 +29,6 @@
   .translate-middle-x {
     transform: translateX(50%) !important;
   }
-  // .translate-x-100-16 {
-  //   transform: translateX(calc(100% - 105px));
-  // }
   .toast-message {
     transform: translateX(-110%);
   }
@@ -56,10 +47,9 @@
   .form-select {
     background-position: left .75rem center;
  }
-
-  // .top-features-slider {
-  //   direction: rtl;
-  // }
+  .tw-rotate--45-deg {
+    transform: rotate(45deg);
+  }
   .left-right-gradient::before {
     background: linear-gradient(-90deg, #fff, transparent);
   }
@@ -97,5 +87,8 @@
   .ph-bold.ph-arrow-right:before {
     content: "\E058";
   }
+  .ph-bold.ph-arrow-left:before {
+    content: "\e06c";
+}
 }
 /* ================================== rtl css End ================================== */

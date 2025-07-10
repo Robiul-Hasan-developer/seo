@@ -7012,6 +7012,10 @@ input:focus-visible {
     background-position: left 0.75rem center;
 }
 
+[dir=rtl] .tw-rotate--45-deg {
+    transform: rotate(45deg);
+}
+
 [dir=rtl] .left-right-gradient::before {
     background: linear-gradient(-90deg, #fff, transparent);
 }
@@ -7058,6 +7062,10 @@ input:focus-visible {
 
 [dir=rtl] .ph-bold.ph-arrow-right:before {
     content: "\e058";
+}
+
+[dir=rtl] .ph-bold.ph-arrow-left:before {
+    content: "\e06c";
 }
 
 /* ================================== rtl css End ================================== */
