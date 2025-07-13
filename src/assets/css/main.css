@@ -6920,6 +6920,15 @@ input:focus-visible {
     }
 }
 /* Footer Three section css end  */
+.fontSizeStyleFour:root {
+    --heading-one: clamp(2.5rem, -0.9615rem + 7.2115vw, 6.25rem);
+}
+
+.fontSizeStyleFour h1,
+.fontSizeStyleFour .h1 {
+    font-size: var(--heading-one);
+}
+
 /* Breadcrumb css start */
 .breadcrumb {
     padding: 256px 0 160px;
