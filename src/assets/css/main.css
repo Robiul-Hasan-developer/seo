@@ -6929,6 +6929,12 @@ input:focus-visible {
     font-size: var(--heading-one);
 }
 
+/* Banner four css start */
+.banner-four__content {
+    padding: 300px 0 88px;
+}
+
+/* Banner four css end */
 /* Breadcrumb css start */
 .breadcrumb {
     padding: 256px 0 160px;
