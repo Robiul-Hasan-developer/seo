@@ -5062,6 +5062,10 @@ input:focus-visible {
     box-shadow: 0px 0px 80.8px 12px #10053A0D;
 }
 
+.common-shadow-6 {
+    box-shadow: -7px -7px 80.8px 12px #10053A08;
+}
+
 /* Box shadow End */
 /* transition Css Class start */
 .tw-transition {
@@ -6796,6 +6800,10 @@ input:focus-visible {
     inset-block-start: 0;
     inset-inline-start: 0;
     z-index: -1;
+}
+
+.bg-half-blue-light.bg-overlay-white::before {
+    background-color: hsl(var(--white));
 }
 
 .rounded-top-34-px {

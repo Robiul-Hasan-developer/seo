@@ -741,6 +741,34 @@
     });
     // ================================ Testimonials Two slider js End =================================
 
+    // ================================ Service Four slider js Start =================================
+    var serviceFourThumbsSlider = new Swiper(".service-four-thumbs-slider", {
+      slidesPerView: 1,
+      effect: "fade",
+      loop: true,
+      watchSlidesProgress: true,
+    });
+
+    var serviceFourItemSlider = new Swiper(".service-four-item-slider", {
+      spaceBetween: 10,
+      slidesPerView: 1,
+      loop: true,
+      freeMode: true,
+      watchSlidesProgress: true,
+      pagination: {
+        el: ".service-four-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".service-four-next",
+        prevEl: ".service-four-prev",
+      },
+        thumbs: {
+        swiper: serviceFourThumbsSlider,
+      },
+    });
+    // ================================ Service Four slider js End =================================
+
   });
   // ==========================================
   //      End Document Ready function
