@@ -164,4 +164,22 @@
     height: 96px;
   }
 }
+
+
+.header-four {
+   @media (min-width: 768px) {
+     margin-block-start: 20px;
+   }
+  .container > nav {
+    @media (max-width: 1760px) and (min-width: 768px) {
+     padding-inline: 20px;
+   }
+  }
+  .container {
+    max-width: 1710px;
+  }
+  &.fixed-header {
+    margin-block-start: 0;
+  }
+}
 /* ================================= Header Css End =========================== */
