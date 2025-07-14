@@ -2213,6 +2213,10 @@ input:focus-visible {
     font-size: 2.5rem;
 }
 
+.text-42-px {
+    font-size: clamp(1.5rem, 0.4615rem + 2.1635vw, 2.625rem);
+}
+
 .text-48-px {
     font-size: clamp(1.5rem, 3.2246rem - 0.2246vw, 3rem);
 }
@@ -7017,6 +7021,12 @@ input:focus-visible {
 }
 
 /* Banner four css end */
+/* experience four section css start */
+.experience-four {
+    margin-inline: 20px;
+}
+
+/* experience four section css end */
 /* Breadcrumb css start */
 .breadcrumb {
     padding: 256px 0 160px;
