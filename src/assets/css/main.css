@@ -3662,6 +3662,10 @@ input:focus-visible {
     margin-inline-end: -80px;
 }
 
+.tw--mt-20-px {
+    margin-block-start: -20px;
+}
+
 .tw--mt-26-px {
     margin-block-start: -26px;
 }
@@ -3676,6 +3680,10 @@ input:focus-visible {
 
 .tw-mb-132-px {
     margin-block-end: clamp(3rem, -2.5082rem + 11.4754vw, 8.25rem);
+}
+
+.tw-mb-78-px {
+    margin-block-end: 78px;
 }
 
 .tw-mt-10-percent {
