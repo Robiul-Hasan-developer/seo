@@ -2153,6 +2153,10 @@ input:focus-visible {
     opacity: 0.1;
 }
 
+.aspect-ratio-1 {
+    aspect-ratio: 1;
+}
+
 /* ================================= Classes Css End =========================== */
 /* element double animation css start */
 .element-double-animation {
@@ -2747,6 +2751,10 @@ input:focus-visible {
 
 .tw-gap-56-px {
     gap: clamp(1.5rem, -4.48rem + 7.98vw, 3.5rem);
+}
+
+.tw-gap-64-px {
+    gap: clamp(1.5rem, -5rem + 8vw, 4rem);
 }
 
 .tw-gap-74-px {
@@ -7039,6 +7047,8 @@ input:focus-visible {
 }
 
 /* experience four section css end */
+/* Value Four section css start */
+/* Value Four section css end */
 /* Breadcrumb css start */
 .breadcrumb {
     padding: 256px 0 160px;
