@@ -769,6 +769,32 @@
     });
     // ================================ Service Four slider js End =================================
 
+    // ================================ Testimonials four slider js Start =================================
+    var testimonialsFourSlider = new Swiper(".testimonials-four-slider", {
+      slidesPerView: 2,
+      spaceBetween: 24,
+      grabCursor: true,
+      loop: true,
+      speed: 1000,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".testimonials-four-next",
+        prevEl: ".testimonials-four-prev",
+      },
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+        },
+        1199: {
+          slidesPerView: 2,
+        },
+      },
+    });
+    // ================================ Testimonials four slider js End =================================
+
   });
   // ==========================================
   //      End Document Ready function

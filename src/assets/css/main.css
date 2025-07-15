@@ -7053,6 +7053,17 @@ input:focus-visible {
 /* experience four section css end */
 /* Value Four section css start */
 /* Value Four section css end */
+/* Testimonials Four css start */
+@media (max-width: 1300px) {
+    .testimonials-four-next {
+        margin-inline-start: -32px;
+    }
+
+    .testimonials-four-prev {
+        margin-inline-end: -32px;
+    }
+}
+/* Testimonials Four css end */
 /* Breadcrumb css start */
 .breadcrumb {
     padding: 256px 0 160px;
