@@ -2002,6 +2002,16 @@ input:focus-visible {
     -webkit-text-stroke: 2px hsl(var(--heading-color));
 }
 
+.text-stroke-white {
+    color: transparent;
+    -webkit-text-stroke: 2px hsl(var(--white));
+}
+
+.text-stroke-white:hover {
+    color: hsl(var(--white));
+    -webkit-text-stroke: 2px hsl(var(--white));
+}
+
 .text-white-8 {
     color: hsl(var(--white)/0.8);
 }
@@ -6592,6 +6602,14 @@ input:focus-visible {
     display: flex;
     gap: 64px;
     min-width: max-content;
+}
+
+.cta-four .js-marquee-wrapper {
+    gap: 24px;
+}
+
+.cta-four .js-marquee {
+    gap: 24px;
 }
 
 /* Marquee css end */

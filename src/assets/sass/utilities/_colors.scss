@@ -11,24 +11,40 @@
   &--white {
     color: hsl(var(--white));
   }
+
   &-heading {
     color: hsl(var(--heading-color));
   }
+
   &-body {
     color: hsl(var(--body-color));
   }
+
   &-main {
     color: var(--main-600);
   }
+
   &-yellow {
     color: #ecbb37;
   }
+
   &-stroke {
     color: transparent;
     -webkit-text-stroke: 2px hsl(var(--heading-color));
+
     &:hover {
       color: hsl(var(--heading-color));
       -webkit-text-stroke: 2px hsl(var(--heading-color));
+    }
+  }
+
+  &-stroke-white {
+    color: transparent;
+    -webkit-text-stroke: 2px hsl(var(--white));
+
+    &:hover {
+      color: hsl(var(--white));
+      -webkit-text-stroke: 2px hsl(var(--white));
     }
   }
 
@@ -38,4 +54,5 @@
     }
   }
 }
+
 /* Colors class End */
