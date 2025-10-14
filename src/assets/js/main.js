@@ -763,7 +763,7 @@
         nextEl: ".service-four-next",
         prevEl: ".service-four-prev",
       },
-        thumbs: {
+      thumbs: {
         swiper: serviceFourThumbsSlider,
       },
     });
@@ -794,7 +794,6 @@
       },
     });
     // ================================ Testimonials four slider js End =================================
-
   });
   // ==========================================
   //      End Document Ready function
