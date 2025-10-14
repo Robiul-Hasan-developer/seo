@@ -1,0 +1,46 @@
+<!-- ==================== Header Start Here ==================== -->
+<header class="header tw-transition-all tw-z-99 @@headerClass">
+    <div class="container max-w-1520-px">
+        <nav class="d-flex align-items-center justify-content-between position-relative">
+            <!-- Logo Start -->
+            <div class="logo">
+                <a href="index.html" class="link">
+                    <img src="assets/images/logo/logo.png" alt="Logo" class="max-w-200-px">
+                </a>
+            </div>
+            <!-- Logo End  -->
+
+            <!-- Menu Start  -->
+            <div class="header-menu d-lg-block d-none">
+                @@include('../partials/_nav-menu.html', { "class" : "tw-gap-6" })
+            </div>
+            <!-- Menu End  -->
+
+            <!-- Header Right start -->
+            <div class="d-lg-block d-none tw-ms-8">
+                <div class="d-flex align-items-center tw-gap-8">
+                    <button type="button"
+                        class="search-popup__button tw-text-2xl tw-leading-none text-white hover-text-main-600">
+                        <i class="ph-bold ph-magnifying-glass"></i>
+                    </button>
+                    <!-- Rotate Text Start -->
+                    <div
+                        class="rotate-text-wrapper rotate-text-one hover-parallax-wrapper">
+                        <a href="about.html"
+                            class="position-relative pointer-events-auto group group-item hover-parallax-item">
+                            <img src="assets/images/shapes/menu-rotate-img.png" alt="Rotate Text"
+                                class="animation-rotate-right">
+                            </span>
+                        </a>
+                    </div>
+                    <!-- Rotate Text End -->
+                </div>
+            </div>
+            <button type="button" class="toggle-mobileMenu leading-none d-lg-none ms-3 text-white tw-text-9">
+                <i class="ph ph-list"></i>
+            </button>
+            <!-- Header Right End  -->
+        </nav>
+    </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
