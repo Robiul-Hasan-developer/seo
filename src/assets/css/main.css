@@ -2599,6 +2599,10 @@ input:focus-visible {
     height: 440px;
 }
 
+.tw-h-876-px {
+    height: 876px;
+}
+
 .tw-min-h-150-px {
     min-height: 150px;
 }
