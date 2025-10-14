@@ -45,10 +45,12 @@
   &-ms-auto {
     margin-inline-start: auto;
   }
+
   &-me {
     &-auto {
       margin-inline-end: auto;
     }
+
     &-250-px {
       margin-inline-end: 250px;
     }
@@ -61,51 +63,64 @@
       margin-inline-start: -20px;
     }
   }
+
   &--me {
     &-80-px {
       margin-inline-end: -80px;
     }
   }
+
   &--mt {
     &-20-px {
       margin-block-start: -20px;
     }
+
     &-26-px {
       margin-block-start: -26px;
     }
+
     &-30-px {
       margin-block-start: -30px;
     }
+
     &-160-px {
       margin-block-start: -160px;
     }
   }
+
   &-mb {
     &-132-px {
       margin-block-end: clamp(3rem, -2.5082rem + 11.4754vw, 8.25rem);
     }
+
     &-78-px {
       margin-block-end: 78px;
     }
   }
+
   &-mt {
     &-10-percent {
       margin-block-start: 10%;
     }
   }
+
   &-ms {
     &-10-percent {
       margin-inline-start: 10%;
     }
+
     &-100-px {
-      margin-inline-start: clamp(1.5rem, -2.8846rem + 9.1346vw, 6.25rem);;
+      margin-inline-start: clamp(1.5rem, -2.8846rem + 9.1346vw, 6.25rem);
+      ;
     }
   }
+
   &--me {
     &-7-percent {
       margin-inline-end: -7%;
     }
   }
+
   &--mb {
     &-12-percent {
       margin-block-end: -12%;
@@ -116,49 +131,64 @@
 .my-120 {
   margin-block-start: 60px;
   margin-block-end: 60px;
+
   @media (min-width: 576px) {
     margin-block-start: 80px;
     margin-block-end: 80px;
   }
+
   @media (min-width: 992px) {
     margin-block-start: 120px;
     margin-block-end: 120px;
   }
 }
+
 .mt-120 {
   margin-block-start: 60px;
+
   @media (min-width: 576px) {
     margin-block-start: 80px;
   }
+
   @media (min-width: 992px) {
     margin-block-start: 120px;
   }
 }
+
 .mb-120 {
   margin-block-end: 60px;
+
   @media (min-width: 576px) {
     margin-block-end: 80px;
   }
+
   @media (min-width: 992px) {
     margin-block-end: 120px;
   }
 }
+
 .mt-60 {
   margin-block-start: 30px;
+
   @media (min-width: 576px) {
     margin-block-start: 40px;
   }
+
   @media (min-width: 992px) {
     margin-block-start: 60px;
   }
 }
+
 .mb-60 {
   margin-block-end: 30px;
+
   @media (min-width: 576px) {
     margin-block-end: 40px;
   }
+
   @media (min-width: 992px) {
     margin-block-end: 60px;
   }
 }
+
 /* ================================= Margin Css End =========================== */

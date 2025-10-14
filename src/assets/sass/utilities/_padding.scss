@@ -82,6 +82,9 @@
     &-72-px {
       padding-block-start: 4.5rem;
     }
+    &-164-px {
+      padding-block-start: clamp(6.25rem, 2.5577rem + 7.6923vw, 10.25rem);
+    }
   }
   &-pb {
     &-120-px {

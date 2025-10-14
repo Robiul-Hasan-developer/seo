@@ -73,13 +73,14 @@
 
    ================================== Css table of contents End======================================== */
 /* Font Family*/
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 /* ========================= Variable Css Start ======================== */
 :root {
   /* Font Family Variable */
     --heading-font: "Manrope", sans-serif;
     --body-font: "Satoshi", sans-serif;
     --playfair-font: "Playfair Display", serif;
+    --big-shoulders-font: "Big Shoulders", sans-serif;
   /* Font Size Variable Start */
     --heading-one: clamp(
     2rem,
@@ -2419,6 +2420,10 @@ input:focus-visible {
     font-family: var(--playfair-font);
 }
 
+.font-big-shoulders {
+    font-family: var(--big-shoulders-font);
+}
+
 .text-balance {
     text-wrap: balance;
 }
@@ -3842,6 +3847,10 @@ input:focus-visible {
     max-width: 200px;
 }
 
+.max-w-1680-px {
+    max-width: 1680px;
+}
+
 .max-w-1700-px {
     max-width: 1700px;
 }
@@ -4728,6 +4737,10 @@ input:focus-visible {
 
 .tw-pt-72-px {
     padding-block-start: 4.5rem;
+}
+
+.tw-pt-164-px {
+    padding-block-start: clamp(6.25rem, 2.5577rem + 7.6923vw, 10.25rem);
 }
 
 .tw-pb-120-px {
@@ -7118,6 +7131,57 @@ input:focus-visible {
     }
 }
 /* Testimonials Four css end */
+.fontSizeStyleNew:root {
+    --display-one: clamp(11.25rem, 4.3269rem + 14.4231vw, 18.75rem);
+    --display-two: clamp(6.25rem, 1.6346rem + 9.6154vw, 11.25rem);
+    --heading-one: clamp(3rem, 0.4615rem + 5.2885vw, 5.75rem);
+    --heading-two: clamp(2.5rem, 1rem + 3.125vw, 4.125rem);
+    --heading-three: clamp(1.875rem, 1.0673rem + 1.6827vw, 2.75rem);
+    --heading-four: clamp(1.5rem, 0.8077rem + 1.4423vw, 2.25rem);
+    --heading-five: clamp(1.125rem, 0.7788rem + 0.7212vw, 1.5rem);
+    --heading-six: clamp(1rem, 0.7692rem + 0.4808vw, 1.25rem);
+}
+
+.fontSizeStyleNew h1,
+.fontSizeStyleNew .h1,
+.fontSizeStyleNew h2,
+.fontSizeStyleNew .h2,
+.fontSizeStyleNew h3,
+.fontSizeStyleNew .h3,
+.fontSizeStyleNew h4,
+.fontSizeStyleNew .h4,
+.fontSizeStyleNew h5,
+.fontSizeStyleNew .h5,
+.fontSizeStyleNew h6,
+.fontSizeStyleNew .h6 {
+    font-family: var(--big-shoulders-font);
+}
+
+.fontSizeStyleNew .display-1 {
+    font-size: var(--display-one);
+}
+
+.fontSizeStyleNew .display-2 {
+    font-size: var(--display-two);
+}
+
+.fontSizeStyleNew h1,
+.fontSizeStyleNew .h1 {
+    line-height: 1.1;
+}
+
+/* ======================== banner new section start ======================= */
+.banner-new__inner {
+    padding-block-start: 224px;
+    padding-block-end: 96px;
+}
+
+.blur-style-two {
+    background-color: #FFFFFF0F !important;
+    backdrop-filter: blur(20px);
+}
+
+/* ======================== banner new section End ======================= */
 /* Breadcrumb css start */
 .breadcrumb {
     padding: 256px 0 160px;

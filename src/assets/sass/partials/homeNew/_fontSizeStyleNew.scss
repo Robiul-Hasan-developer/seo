@@ -1,0 +1,39 @@
+.fontSizeStyleNew:root {
+    --display-one: clamp(11.25rem, 4.3269rem + 14.4231vw, 18.75rem); // Min:180px - Max:300px
+    --display-two: clamp(6.25rem, 1.6346rem + 9.6154vw, 11.25rem); // Min:100px - Max:180px
+
+    --heading-one: clamp(3rem, 0.4615rem + 5.2885vw, 5.75rem); // Min:48px - Max:92px
+    --heading-two: clamp(2.5rem, 1rem + 3.125vw, 4.125rem); // Min: 40px - Max: 66px
+    --heading-three: clamp(1.875rem, 1.0673rem + 1.6827vw, 2.75rem); // Min: 30px - Max: 44px
+    --heading-four: clamp(1.5rem, 0.8077rem + 1.4423vw, 2.25rem); // Min: 24px - Max: 36px
+    --heading-five: clamp(1.125rem, 0.7788rem + 0.7212vw, 1.5rem); // Min: 18px - Max: 24px
+    --heading-six: clamp(1rem, 0.7692rem + 0.4808vw, 1.25rem); // Min: 16px - Max-20px
+}
+
+.fontSizeStyleNew h1,
+.fontSizeStyleNew .h1,
+.fontSizeStyleNew h2,
+.fontSizeStyleNew .h2,
+.fontSizeStyleNew h3,
+.fontSizeStyleNew .h3,
+.fontSizeStyleNew h4,
+.fontSizeStyleNew .h4,
+.fontSizeStyleNew h5,
+.fontSizeStyleNew .h5,
+.fontSizeStyleNew h6,
+.fontSizeStyleNew .h6 {
+    font-family: var(--big-shoulders-font);
+}
+
+.fontSizeStyleNew .display-1 {
+    font-size: var(--display-one);
+}
+
+.fontSizeStyleNew .display-2 {
+    font-size: var(--display-two);
+}
+
+.fontSizeStyleNew h1,
+.fontSizeStyleNew .h1 {
+    line-height: 1.10;
+}
