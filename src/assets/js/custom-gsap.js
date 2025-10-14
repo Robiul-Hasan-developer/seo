@@ -741,7 +741,7 @@ document.querySelectorAll(".scale-up-wrapper").forEach((section) => {
       start: "top 95%",
       end: "bottom 10%",
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
 
