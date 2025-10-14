@@ -7132,7 +7132,7 @@ input:focus-visible {
 }
 /* Testimonials Four css end */
 .fontSizeStyleNew:root {
-    --display-one: clamp(11.25rem, 4.3269rem + 14.4231vw, 18.75rem);
+    --display-one: clamp(7.5rem, -2.8846rem + 21.6346vw, 18.75rem);
     --display-two: clamp(6.25rem, 1.6346rem + 9.6154vw, 11.25rem);
     --heading-one: clamp(3rem, 0.4615rem + 5.2885vw, 5.75rem);
     --heading-two: clamp(2.5rem, 1rem + 3.125vw, 4.125rem);
@@ -7174,6 +7174,12 @@ input:focus-visible {
 .banner-new__inner {
     padding-block-start: 224px;
     padding-block-end: 96px;
+}
+
+@media (max-width: 991px) {
+    .banner-new__inner {
+        padding-block-start: 160px;
+    }
 }
 
 .blur-style-two {

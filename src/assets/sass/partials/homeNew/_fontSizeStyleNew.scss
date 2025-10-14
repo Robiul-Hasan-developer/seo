@@ -1,5 +1,6 @@
 .fontSizeStyleNew:root {
-    --display-one: clamp(11.25rem, 4.3269rem + 14.4231vw, 18.75rem); // Min:180px - Max:300px
+    // --display-one: clamp(11.25rem, 4.3269rem + 14.4231vw, 18.75rem); // Min:180px - Max:3000px
+    --display-one: clamp(7.5rem, -2.8846rem + 21.6346vw, 18.75rem); // Min:120px - Max:3000px
     --display-two: clamp(6.25rem, 1.6346rem + 9.6154vw, 11.25rem); // Min:100px - Max:180px
 
     --heading-one: clamp(3rem, 0.4615rem + 5.2885vw, 5.75rem); // Min:48px - Max:92px
