@@ -369,6 +369,16 @@
     border-color: transparent;
 }
 
+.btn-main-two-outline {
+    background-color: transparent !important;
+    color: var(--main-two-600) !important;
+    border: 1px solid var(--main-two-600) !important;
+}
+
+.btn-main-two-outline.button--stroke::after {
+    border-color: transparent;
+}
+
 .btn-black-outline {
     background-color: transparent !important;
     color: hsl(var(--heading-color)) !important;
@@ -2822,6 +2832,12 @@ input:focus-visible {
 
 .g-40-px, .gy-40-px {
     --bs-gutter-y: 40px;
+}
+
+.g-90-px {
+    --bs-gutter-y: 3rem;
+    --bs-gutter-y: 90px;
+    --bs-gutter-x: 90px;
 }
 
 /* Gap Css end */

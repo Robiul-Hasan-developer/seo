@@ -93,6 +93,16 @@
       }
     }
   }
+  &-main-two-outline {
+    background-color: transparent !important;
+    color: var(--main-two-600) !important;
+    border: 1px solid var(--main-two-600) !important;
+    &.button--stroke {
+      &::after {
+        border-color: transparent;
+      }
+    }
+  }
   &-black-outline {
     background-color: transparent !important;
     color: hsl(var(--heading-color)) !important;

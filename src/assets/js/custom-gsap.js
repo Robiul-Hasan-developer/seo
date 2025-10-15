@@ -747,58 +747,78 @@ document.querySelectorAll(".scale-up-wrapper").forEach((section) => {
 
   tl.to(section.querySelector(".scale-up__img"), {
     scale: 1.1,
-  })
-  .to(section.querySelector(".scale-up__img"), {
-     scale: 1.15,
+  }).to(section.querySelector(".scale-up__img"), {
+    scale: 1.15,
     y: "200px",
   });
 });
 // **************************** Scale Image up scale js End ****************************
 
-
 // **************************** Text To right animation js start ****************************
-	if ($('.text-to-left').length > 0) {
-		gsap.timeline({
-			scrollTrigger: {
-				trigger: '.text-to-right-left',
-				start: 'top 80%',
-				end: 'bottom 20%',
-				scrub: true,
-				invalidateOnRefresh: true
-			}
-		})
-			.to('.text-to-left', {
-				x: '-15%'
-			});
-		gsap.set('.text-to-left', {
-			x: '10%'
-		});
+if ($(".text-to-left").length > 0) {
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".text-to-right-left",
+        start: "top 80%",
+        end: "bottom 20%",
+        scrub: true,
+        invalidateOnRefresh: true,
+      },
+    })
+    .to(".text-to-left", {
+      x: "-15%",
+    });
+  gsap.set(".text-to-left", {
+    x: "10%",
+  });
+}
 
-	}
-
-	if ($('.text-to-right').length > 0) {
-		gsap.timeline({
-			scrollTrigger: {
-				trigger: '.text-to-right-left',
-				start: 'top 80%',
-				end: 'bottom 20%',
-				scrub: true,
-				invalidateOnRefresh: true
-			}
-		})
-			.to('.text-to-right', {
-				x: '15%'
-			});
-		gsap.set('.text-to-right', {
-			x: '-10%'
-		});
-	}
+if ($(".text-to-right").length > 0) {
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".text-to-right-left",
+        start: "top 80%",
+        end: "bottom 20%",
+        scrub: true,
+        invalidateOnRefresh: true,
+      },
+    })
+    .to(".text-to-right", {
+      x: "15%",
+    });
+  gsap.set(".text-to-right", {
+    x: "-10%",
+  });
+}
 // **************************** Text To right animation js End ****************************
 
 
+// **************************** Sticky sidebar js start ****************************
+let mmSidebar = gsap.matchMedia();
+const metaElement = document.querySelector(".sidebar-sticky");
+
+mmSidebar.add("(min-width: 1401px)", () => {
+  if (!metaElement) return; // safety check
+
+  gsap.to(metaElement, {
+    scrollTrigger: {
+      trigger: metaElement,
+      start: "top 120px",
+      endTrigger: ".sidebar-sticky-wrapper",
+      end: "bottom 60%",
+      pin: true,
+      pinSpacing: false,
+      markers: false,
+      invalidateOnRefresh: true,
+    },
+  });
+});
+// **************************** Sticky sidebar js End ****************************
 
 
 
-/* **************************************************************************** 
-                          Custom GSAP js start 
-****************************************************************************  */
+// /* ****************************************************************************
+//                           Custom GSAP js start
+// ****************************************************************************  */
