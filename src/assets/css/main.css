@@ -3705,6 +3705,10 @@ input:focus-visible {
     margin-inline-start: -20px;
 }
 
+.tw--ms-160-px {
+    margin-inline-start: -160px;
+}
+
 .tw--me-80-px {
     margin-inline-end: -80px;
 }
@@ -4773,6 +4777,57 @@ input:focus-visible {
 
 .tw-ps-40-px {
     padding-inline-start: clamp(1.5rem, -12.1677rem + 28.9177vw, 2.5rem);
+}
+
+.py-140 {
+    padding-block-start: 80px;
+    padding-block-end: 80px;
+}
+
+@media (min-width: 576px) {
+    .py-140 {
+        padding-block-start: 100px;
+        padding-block-end: 100px;
+    }
+}
+
+@media (min-width: 992px) {
+    .py-140 {
+        padding-block-start: 140px;
+        padding-block-end: 140px;
+    }
+}
+
+.pt-140 {
+    padding-block-start: 80px;
+}
+
+@media (min-width: 576px) {
+    .pt-140 {
+        padding-block-start: 100px;
+    }
+}
+
+@media (min-width: 992px) {
+    .pt-140 {
+        padding-block-start: 140px;
+    }
+}
+
+.pb-140 {
+    padding-block-end: 80px;
+}
+
+@media (min-width: 576px) {
+    .pb-140 {
+        padding-block-end: 100px;
+    }
+}
+
+@media (min-width: 992px) {
+    .pb-140 {
+        padding-block-end: 140px;
+    }
 }
 
 .py-120 {

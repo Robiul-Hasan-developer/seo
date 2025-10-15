@@ -755,6 +755,50 @@ document.querySelectorAll(".scale-up-wrapper").forEach((section) => {
 });
 // **************************** Scale Image up scale js End ****************************
 
+
+// **************************** Text To right animation js start ****************************
+	if ($('.text-to-right-left').length > 0) {
+		gsap.timeline({
+			scrollTrigger: {
+				trigger: '.text-to-right-left',
+				start: 'top 80%',
+				end: 'bottom 20%',
+				scrub: true,
+				invalidateOnRefresh: true
+			}
+		})
+			.to('.text-to-left', {
+				x: '-15%'
+			});
+		gsap.set('.text-to-left', {
+			x: '10%'
+		});
+
+	}
+
+	if ($('.text-to-right-left').length > 0) {
+		gsap.timeline({
+			scrollTrigger: {
+				trigger: '.text-to-right-left',
+				start: 'top 80%',
+				end: 'bottom 20%',
+				scrub: true,
+				invalidateOnRefresh: true
+			}
+		})
+			.to('.text-to-right', {
+				x: '15%'
+			});
+		gsap.set('.text-to-right', {
+			x: '-10%'
+		});
+	}
+// **************************** Text To right animation js End ****************************
+
+
+
+
+
 /* **************************************************************************** 
                           Custom GSAP js start 
 ****************************************************************************  */
