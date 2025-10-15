@@ -187,6 +187,7 @@
     --neutral-800: #1f2937;
     --neutral-900: #111827;
     --neutral-950: #030712;
+    --neutral-1000: #070713;
     --font-xs: 0.75rem;
     --font-sm: 0.875rem;
     --font-base: 1rem;
@@ -1245,6 +1246,10 @@ input:focus-visible {
     background-color: var(--neutral-950) !important;
 }
 
+.bg-neutral-1000 {
+    background-color: var(--neutral-1000) !important;
+}
+
 .hover-bg-main-40:hover {
     background-color: var(--main-40) !important;
 }
@@ -1371,6 +1376,10 @@ input:focus-visible {
 
 .hover-bg-neutral-950:hover {
     background-color: var(--neutral-950) !important;
+}
+
+.hover-bg-neutral-1000:hover {
+    background-color: var(--neutral-1000) !important;
 }
 
 .hover-bg-white:hover {
@@ -1578,6 +1587,10 @@ input:focus-visible {
     border-color: var(--neutral-950) !important;
 }
 
+.border-neutral-1000 {
+    border-color: var(--neutral-1000) !important;
+}
+
 .hover-border-main-40:hover {
     border-color: var(--main-40) !important;
 }
@@ -1706,6 +1719,10 @@ input:focus-visible {
     border-color: var(--neutral-950) !important;
 }
 
+.hover-border-neutral-1000:hover {
+    border-color: var(--neutral-1000) !important;
+}
+
 .focus-border-main-40:focus {
     border-color: var(--main-40) !important;
 }
@@ -1832,6 +1849,10 @@ input:focus-visible {
 
 .focus-border-neutral-950:focus {
     border-color: var(--neutral-950) !important;
+}
+
+.focus-border-neutral-1000:focus {
+    border-color: var(--neutral-1000) !important;
 }
 
 .tw-border-dashed {
@@ -1981,6 +2002,10 @@ input:focus-visible {
 
 .text-neutral-950 {
     color: var(--neutral-950);
+}
+
+.text-neutral-1000 {
+    color: var(--neutral-1000);
 }
 
 .text--white {
@@ -2155,6 +2180,10 @@ input:focus-visible {
 
 .hover-text-neutral-950:hover {
     color: var(--neutral-950) !important;
+}
+
+.hover-text-neutral-1000:hover {
+    color: var(--neutral-1000) !important;
 }
 
 /* Text Color */
@@ -3863,6 +3892,28 @@ input:focus-visible {
         margin-block-end: 60px;
     }
 }
+
+.tw-mb-100-px {
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1199px) {
+    .tw-mb-100-px {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 992px) {
+    .tw-mb-100-px {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tw-mb-100-px {
+        margin-bottom: 40px;
+    }
+}
 /* ================================= Margin Css End =========================== */
 /* Max Height Css Class Start */
 .tw-max-h-screen {
@@ -3909,6 +3960,14 @@ input:focus-visible {
 
 .max-w-430-px {
     max-width: 430px;
+}
+
+.max-w-770-px {
+    max-width: 770px;
+}
+
+.max-w-400-px {
+    max-width: 400px;
 }
 
 .max-w-330-px {

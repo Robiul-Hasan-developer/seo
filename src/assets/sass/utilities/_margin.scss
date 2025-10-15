@@ -192,5 +192,16 @@
     margin-block-end: 60px;
   }
 }
-
+.tw-mb-100-px {
+  margin-bottom: 100px;
+  @media (max-width: 1199px) {
+    margin-bottom: 80px;
+  }
+  @media (max-width: 992px) {
+    margin-bottom: 60px;
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
 /* ================================= Margin Css End =========================== */
