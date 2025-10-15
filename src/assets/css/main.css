@@ -2579,6 +2579,10 @@ input:focus-visible {
     height: 120px;
 }
 
+.tw-h-160-px {
+    height: 160px;
+}
+
 .tw-h-104-px {
     height: 104px;
 }
@@ -6598,6 +6602,7 @@ input:focus-visible {
     inset-block-start: 0;
     background: linear-gradient(90deg, #ffffff, transparent);
     z-index: 2;
+    pointer-events: none;
 }
 
 .left-right-gradient::after {
