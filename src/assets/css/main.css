@@ -4780,15 +4780,8 @@ input:focus-visible {
 }
 
 .py-140 {
-    padding-block-start: 80px;
-    padding-block-end: 80px;
-}
-
-@media (min-width: 576px) {
-    .py-140 {
-        padding-block-start: 100px;
-        padding-block-end: 100px;
-    }
+    padding-block-start: 100px;
+    padding-block-end: 100px;
 }
 
 @media (min-width: 992px) {
@@ -4799,13 +4792,7 @@ input:focus-visible {
 }
 
 .pt-140 {
-    padding-block-start: 80px;
-}
-
-@media (min-width: 576px) {
-    .pt-140 {
-        padding-block-start: 100px;
-    }
+    padding-block-start: 100px;
 }
 
 @media (min-width: 992px) {
@@ -4815,13 +4802,7 @@ input:focus-visible {
 }
 
 .pb-140 {
-    padding-block-end: 80px;
-}
-
-@media (min-width: 576px) {
-    .pb-140 {
-        padding-block-end: 100px;
-    }
+    padding-block-end: 100px;
 }
 
 @media (min-width: 992px) {
@@ -4831,8 +4812,8 @@ input:focus-visible {
 }
 
 .py-120 {
-    padding-block-start: 60px;
-    padding-block-end: 60px;
+    padding-block-start: 80px;
+    padding-block-end: 80px;
 }
 
 @media (min-width: 576px) {
@@ -4850,7 +4831,7 @@ input:focus-visible {
 }
 
 .pt-120 {
-    padding-block-start: 60px;
+    padding-block-start: 80px;
 }
 
 @media (min-width: 576px) {
@@ -4866,7 +4847,7 @@ input:focus-visible {
 }
 
 .pb-120 {
-    padding-block-end: 60px;
+    padding-block-end: 80px;
 }
 
 @media (min-width: 576px) {
@@ -4895,8 +4876,8 @@ input:focus-visible {
 
 @media (min-width: 992px) {
     .py-60 {
-        padding-block-start: 60px;
-        padding-block-end: 60px;
+        padding-block-start: 80px;
+        padding-block-end: 80px;
     }
 }
 
@@ -4912,7 +4893,7 @@ input:focus-visible {
 
 @media (min-width: 992px) {
     .pt-60 {
-        padding-block-start: 60px;
+        padding-block-start: 80px;
     }
 }
 
@@ -4928,7 +4909,7 @@ input:focus-visible {
 
 @media (min-width: 992px) {
     .pb-60 {
-        padding-block-end: 60px;
+        padding-block-end: 80px;
     }
 }
 /* ================================= Padding Css End =========================== */
@@ -7251,6 +7232,20 @@ input:focus-visible {
 }
 
 /* ======================== banner new section End ======================= */
+/* About New css start */
+@media (max-width: 991px) {
+    .md-text-to-left-none {
+        margin-inline-start: 0;
+        transform: translateX(0) !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .md-tw-pt-15 {
+        padding-block-start: 60px;
+    }
+}
+/* About New css end */
 /* Breadcrumb css start */
 .breadcrumb {
     padding: 256px 0 160px;

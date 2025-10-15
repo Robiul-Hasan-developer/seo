@@ -757,7 +757,7 @@ document.querySelectorAll(".scale-up-wrapper").forEach((section) => {
 
 
 // **************************** Text To right animation js start ****************************
-	if ($('.text-to-right-left').length > 0) {
+	if ($('.text-to-left').length > 0) {
 		gsap.timeline({
 			scrollTrigger: {
 				trigger: '.text-to-right-left',
@@ -776,7 +776,7 @@ document.querySelectorAll(".scale-up-wrapper").forEach((section) => {
 
 	}
 
-	if ($('.text-to-right-left').length > 0) {
+	if ($('.text-to-right').length > 0) {
 		gsap.timeline({
 			scrollTrigger: {
 				trigger: '.text-to-right-left',

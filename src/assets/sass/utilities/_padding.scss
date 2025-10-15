@@ -116,39 +116,29 @@
 }
 
 .py-140 {
-  padding-block-start: 80px;
-  padding-block-end: 80px;
-  @media (min-width: 576px) {
-    padding-block-start: 100px;
-    padding-block-end: 100px;
-  }
+  padding-block-start: 100px;
+  padding-block-end: 100px;
   @media (min-width: 992px) {
     padding-block-start: 140px;
     padding-block-end: 140px;
   }
 }
 .pt-140 {
-  padding-block-start: 80px;
-  @media (min-width: 576px) {
-    padding-block-start: 100px;
-  }
+  padding-block-start: 100px;
   @media (min-width: 992px) {
     padding-block-start: 140px;
   }
 }
 .pb-140 {
-  padding-block-end: 80px;
-  @media (min-width: 576px) {
-    padding-block-end: 100px;
-  }
+  padding-block-end: 100px;
   @media (min-width: 992px) {
     padding-block-end: 140px;
   }
 }
 
 .py-120 {
-  padding-block-start: 60px;
-  padding-block-end: 60px;
+  padding-block-start: 80px;
+  padding-block-end: 80px;
   @media (min-width: 576px) {
     padding-block-start: 80px;
     padding-block-end: 80px;
@@ -159,7 +149,7 @@
   }
 }
 .pt-120 {
-  padding-block-start: 60px;
+  padding-block-start: 80px;
   @media (min-width: 576px) {
     padding-block-start: 80px;
   }
@@ -168,7 +158,7 @@
   }
 }
 .pb-120 {
-  padding-block-end: 60px;
+  padding-block-end: 80px;
   @media (min-width: 576px) {
     padding-block-end: 80px;
   }
@@ -184,8 +174,8 @@
     padding-block-end: 40px;
   }
   @media (min-width: 992px) {
-    padding-block-start: 60px;
-    padding-block-end: 60px;
+    padding-block-start: 80px;
+    padding-block-end: 80px;
   }
 }
 .pt-60 {
@@ -194,7 +184,7 @@
     padding-block-start: 40px;
   }
   @media (min-width: 992px) {
-    padding-block-start: 60px;
+    padding-block-start: 80px;
   }
 }
 .pb-60 {
@@ -203,7 +193,7 @@
     padding-block-end: 40px;
   }
   @media (min-width: 992px) {
-    padding-block-end: 60px;
+    padding-block-end: 80px;
   }
 }
 /* ================================= Padding Css End =========================== */
