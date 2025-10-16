@@ -380,6 +380,15 @@
     border-color: transparent;
 }
 
+.btn-black {
+    background-color: hsl(var(--heading-color)) !important;
+    color: hsl(var(--white)) !important;
+}
+
+.btn-black.button--stroke::after {
+    border-color: transparent;
+}
+
 .btn-black-outline {
     background-color: transparent !important;
     color: hsl(var(--heading-color)) !important;
@@ -4836,6 +4845,10 @@ input:focus-visible {
 
 .tw-p-48-px {
     padding: clamp(1.5rem, -12.1677rem + 28.9177vw, 3rem);
+}
+
+.tw-p-54-px {
+    padding: clamp(1.5rem, -12.1677rem + 28.9177vw, 3.375rem);
 }
 
 .tw-p-60-px {

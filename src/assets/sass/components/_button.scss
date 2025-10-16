@@ -103,6 +103,15 @@
       }
     }
   }
+  &-black {
+    background-color: hsl(var(--heading-color)) !important;
+    color: hsl(var(--white)) !important;
+    &.button--stroke {
+      &::after {
+        border-color: transparent;
+      }
+    }
+  }
   &-black-outline {
     background-color: transparent !important;
     color: hsl(var(--heading-color)) !important;
