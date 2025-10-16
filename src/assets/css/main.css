@@ -3799,6 +3799,12 @@ input:focus-visible {
     margin-block-start: -30px;
 }
 
+@media (min-width: 576px) {
+    .tw--mt-32-px {
+        margin-block-start: -32px;
+    }
+}
+
 .tw--mt-160-px {
     margin-block-start: -160px;
 }
