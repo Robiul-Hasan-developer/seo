@@ -3920,6 +3920,10 @@ input:focus-visible {
     max-height: 100vh;
 }
 
+.tw-max-h-266-px {
+    max-height: 266px;
+}
+
 .tw-max-h-376-px {
     max-height: 376px;
 }
@@ -3952,6 +3956,10 @@ input:focus-visible {
 
 .max-w-214-px {
     max-width: 214px;
+}
+
+.max-w-266-px {
+    max-width: 266px;
 }
 
 .max-w-346-px {
