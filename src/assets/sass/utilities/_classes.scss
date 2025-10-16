@@ -10,6 +10,9 @@
     &-none {
         line-height: 1;
     }
+    &-14 {
+        line-height: 1.4;
+    }
 }
 
 .opacity-05 {
@@ -22,5 +25,13 @@
 
 .aspect-ratio-1 {
     aspect-ratio: 1
+}
+
+.filter-blur-20-px {
+    filter: blur(20px);
+}
+
+.letter-spacing--10-px {
+    letter-spacing: -10px;
 }
 /* ================================= Classes Css End =========================== */

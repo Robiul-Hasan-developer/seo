@@ -2223,6 +2223,10 @@ input:focus-visible {
     line-height: 1;
 }
 
+.tw-leading-14 {
+    line-height: 1.4;
+}
+
 .opacity-05 {
     opacity: 0.05;
 }
@@ -2233,6 +2237,14 @@ input:focus-visible {
 
 .aspect-ratio-1 {
     aspect-ratio: 1;
+}
+
+.filter-blur-20-px {
+    filter: blur(20px);
+}
+
+.letter-spacing--10-px {
+    letter-spacing: -10px;
 }
 
 /* ================================= Classes Css End =========================== */
@@ -3810,6 +3822,10 @@ input:focus-visible {
     margin-block-end: -12%;
 }
 
+.tw--mb-70-px {
+    margin-block-end: -70px;
+}
+
 .my-120 {
     margin-block-start: 60px;
     margin-block-end: 60px;
@@ -3928,6 +3944,10 @@ input:focus-visible {
     max-height: 376px;
 }
 
+.tw-max-h-440-px {
+    max-height: 440px;
+}
+
 /* Max Height Css Class End */
 /* Max width Css Class Start */
 .max-w-200-px {
@@ -3968,6 +3988,10 @@ input:focus-visible {
 
 .max-w-430-px {
     max-width: 430px;
+}
+
+.max-w-440-px {
+    max-width: 440px;
 }
 
 .max-w-770-px {
@@ -7272,10 +7296,15 @@ input:focus-visible {
     --heading-four: clamp(1.5rem, 0.8077rem + 1.4423vw, 2.25rem);
     --heading-five: clamp(1.125rem, 0.7788rem + 0.7212vw, 1.5rem);
     --heading-six: clamp(1rem, 0.7692rem + 0.4808vw, 1.25rem);
+    --new-black: #171717;
 }
 
 .fontSizeStyleNew body {
-    background-color: #171717;
+    background-color: var(--new-black);
+}
+
+.new-black {
+    background-color: var(--new-black);
 }
 
 .fontSizeStyleNew h1,
