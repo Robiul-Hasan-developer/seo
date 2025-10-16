@@ -794,6 +794,32 @@
       },
     });
     // ================================ Testimonials four slider js End =================================
+
+    // ================================ Testimonials new slider js Start =================================
+    var testimonialsNewSlider = new Swiper(".testimonials-new-slider", {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      grabCursor: true,
+      loop: true,
+      speed: 1000,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".testimonials-new-next",
+        prevEl: ".testimonials-new-prev",
+      },
+      breakpoints: {
+        992: {
+          slidesPerView: 1,
+        },
+        1300: {
+          slidesPerView: 2,
+        },
+      },
+    });
+    // ================================ Testimonials new slider js End =================================
   });
   // ==========================================
   //      End Document Ready function

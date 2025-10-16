@@ -3955,6 +3955,10 @@ input:focus-visible {
     max-height: 266px;
 }
 
+.tw-max-h-250-px {
+    max-height: 250px;
+}
+
 .tw-max-h-376-px {
     max-height: 376px;
 }
@@ -3991,6 +3995,10 @@ input:focus-visible {
 
 .max-w-214-px {
     max-width: 214px;
+}
+
+.max-w-250-px {
+    max-width: 250px;
 }
 
 .max-w-266-px {
@@ -5546,6 +5554,12 @@ input:focus-visible {
 
 .tw-w-300-px {
     width: 300px;
+}
+
+@media (min-width: 1300px) {
+    .tw-w-100-vw {
+        width: 100vw;
+    }
 }
 
 .tw-w-84-px {

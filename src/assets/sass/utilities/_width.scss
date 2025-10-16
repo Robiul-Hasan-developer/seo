@@ -19,6 +19,11 @@
   &-300-px {
     width: 300px;
   }
+  &-100-vw {
+    @media (min-width: 1300px) {
+      width: 100vw;
+    }
+  }
   &-84-px {
     width: 84px;
   }
