@@ -472,7 +472,7 @@
     // ====================== Marquee Js Start ========================
     if ($(".marquee_left").length) {
       $(".marquee_left").marquee({
-        speed: 50,
+        speed: 300,
         gap: 0,
         delayBeforeStart: 0,
         direction: $("html").attr("dir") === "rtl" ? "right" : "left",
@@ -485,7 +485,7 @@
 
     if ($(".marquee_right").length) {
       $(".marquee_right").marquee({
-        speed: 50,
+        speed: 300,
         gap: 0,
         delayBeforeStart: 0,
         direction: $("html").attr("dir") === "rtl" ? "right" : "left",
