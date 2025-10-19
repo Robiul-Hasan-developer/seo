@@ -7368,7 +7368,7 @@ input:focus-visible {
 }
 
 .text-222-px {
-    font-size: clamp(7.5rem, -2.8846rem + 21.6346vw, 13.875rem);
+    font-size: clamp(4.5rem, -2.8846rem + 21.6346vw, 13.875rem);
 }
 
 .fontSizeStyleNew h1,
@@ -7414,6 +7414,17 @@ input:focus-visible {
     padding-block-end: 90px;
 }
 
+@media (max-width: 1300px) {
+    .banner-new-two {
+        padding-block-start: 180px;
+    }
+}
+
+@media (max-width: 991px) {
+    .banner-new-two {
+        padding-block-start: 120px;
+    }
+}
 /* Banner New two css end */
 /* Breadcrumb css start */
 .breadcrumb {
