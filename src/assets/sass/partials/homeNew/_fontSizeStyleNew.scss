@@ -1,5 +1,5 @@
 .fontSizeStyleNew:root {
-    --display-one: clamp(7.5rem, -2.8846rem + 21.6346vw, 18.75rem); // Min:120px - Max:3000px
+    --display-one: clamp(7.5rem, -2.8846rem + 21.6346vw, 18.75rem); // Min:120px - Max:300px
     --display-two: clamp(6.25rem, 1.6346rem + 9.6154vw, 11.25rem); // Min:100px - Max:180px
 
     --heading-one: clamp(3rem, 0.4615rem + 5.2885vw, 5.75rem); // Min:48px - Max:92px
@@ -41,6 +41,10 @@
 
 .fontSizeStyleNew .display-2 {
     font-size: var(--display-two);
+}
+
+.text-222-px {
+    font-size: clamp(7.5rem, -2.8846rem + 21.6346vw, 13.875rem); // Min:120px - Max:222px;
 }
 
 .fontSizeStyleNew h1,

@@ -2229,7 +2229,7 @@ input:focus-visible {
 }
 
 .tw-leading-none {
-    line-height: 1;
+    line-height: 1 !important;
 }
 
 .tw-leading-14 {
@@ -4051,6 +4051,10 @@ input:focus-visible {
 
 .max-w-1720-px {
     max-width: 1720px;
+}
+
+.max-w-1790-px {
+    max-width: 1790px;
 }
 
 .max-w-630-px {
@@ -7363,6 +7367,10 @@ input:focus-visible {
     font-size: var(--display-two);
 }
 
+.text-222-px {
+    font-size: clamp(7.5rem, -2.8846rem + 21.6346vw, 13.875rem);
+}
+
 .fontSizeStyleNew h1,
 .fontSizeStyleNew .h1 {
     line-height: 1.1;
@@ -7400,6 +7408,13 @@ input:focus-visible {
     }
 }
 /* About New css end */
+/* Banner New two css start */
+.banner-new-two {
+    padding-block-start: 240px;
+    padding-block-end: 90px;
+}
+
+/* Banner New two css end */
 /* Breadcrumb css start */
 .breadcrumb {
     padding: 256px 0 160px;
