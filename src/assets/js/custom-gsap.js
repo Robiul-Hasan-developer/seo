@@ -805,7 +805,7 @@ mmSidebar.add("(min-width: 1401px)", () => {
   gsap.to(metaElement, {
     scrollTrigger: {
       trigger: metaElement,
-      start: "top 120px",
+      start: "top 240px",
       endTrigger: ".sidebar-sticky-wrapper",
       end: "bottom 60%",
       pin: true,
