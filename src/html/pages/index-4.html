@@ -1,45 +1,56 @@
 @@include('../partials/_template-top.html', {
-'pageClass' : 'fontSizeStyleFour'
+'pageClass' : 'fontSizeStyleTwo'
 })
 
-@@include('../partials/_header.html', {
-'headerClass': 'headerAbsoluteStyle menuColorWhite menuPositionEnd fixedHeaderBlack border-line-full header-four border-bottom border-bottom border-white-22'
+@@include('../partials/_header-two.html', {
+'headerClass': 'menuPositionEnd fixedHeaderBgWhite'
 })
-<div id="smooth-wrapper" class="">
+
+<div id="smooth-wrapper">
     <div id="smooth-content">
-        @@include('../partials/_banner-four.html')
 
-        @@include('../partials/_experience-four.html')
+        <!-- Spacer -->
+        <div class="header-space"></div>
+
+        @@include('../partials/_banner-two.html')
+
+        @@include('../partials/_custom-statistics.html')
+
+        @@include('../partials/_about-two.html')
 
         @@include('../partials/_brand.html')
 
-        @@include('../partials/_about-four.html')
+        @@include('../partials/_service-two.html')
 
-        @@include('../partials/_service-four.html')
-
-        @@include('../partials/_value-four.html')
-
-        @@include('../partials/_marquee-three.html', {
-        'sectionClass': 'bg-cream-white'
+        @@include('../partials/_mission-vision.html', {
+        'sectionClass': 'pb-120'
         })
 
-        @@include('../partials/_project-four.html')
+        <div class="price-experience-wrapper position-relative z-1 overflow-hidden">
+            <img src="assets/images/shapes/about-shape1.png" alt="Shape"
+                class="position-absolute d-lg-block d-none z-1 tw-start-0 top-0 tw-mt-17 tw-pt-6 animated-upDown">
+            <img src="assets/images/shapes/about-shape2.png" alt="Shape"
+                class="position-absolute d-lg-block d-none z-1 tw-end-0 top-0 tw-mb-11 animated-upDown">
 
-        @@include('../partials/_testimonials-four.html')
+            @@include('../partials/_pricing-plan-two.html')
 
-        @@include('../partials/_counter-four.html')
+            @@include('../partials/_experience.html')
+        </div>
 
-        @@include('../partials/_team-four.html')
+        @@include('../partials/_choose-us-two.html')
 
-        @@include('../partials/_popup-three.html')
+        @@include('../partials/_project-two.html')
 
-        @@include('../partials/_faq-four.html')
+        @@include('../partials/_counter-two.html')
 
-        @@include('../partials/_blog-four.html')
+        @@include('../partials/_testimonials-two.html')
 
-        @@include('../partials/_cta-four.html')
+        @@include('../partials/_blog-two.html')
 
-        @@include('../partials/_footer-four.html')
+        @@include('../partials/_cta-two.html')
+
+        @@include('../partials/_footer-two.html')
+
     </div>
 </div>
 

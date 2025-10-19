@@ -1,53 +1,54 @@
 @@include('../partials/_template-top.html', {
-'pageClass' : 'fontSizeStyleNew'
+    'pageClass' : 'fontSizeStyleTwo'
 })
 
-@@include('../partials/_header-new.html', {
-'headerClass': 'headerAbsoluteStyle menuColorWhite menuPositionEnd fixedHeaderBlack',
-'logoPath': 'logo.png',
-'searchIconClass': 'text-white hover-text-main-600',
-'rotateTextPath': 'menu-rotate-img.png',
-})
+    @@include('../partials/_header-three.html', {
+        'headerClass': 'menuPositionEnd fixedHeaderBgWhite'
+    })
 
-<div id="smooth-wrapper" class="">
-    <div id="smooth-content">
-        <main>
-            @@include('../partials/_banner-new.html')
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
 
-            @@include('../partials/_agency-thumbnail.html')
+            <!-- Spacer -->
+            <div class="header-space"></div>
             
-            @@include('../partials/_about-new.html')
+            @@include('../partials/_banner-three.html')
 
-            @@include('../partials/_brand-new.html')
+              @@include('../partials/_counter-three.html', {
+                'sectionPadding': 'py-120'
+            })
 
-            @@include('../partials/_agency-video.html')
+            @@include('../partials/_about-three.html')
 
-            @@include('../partials/_service-new.html')
+            @@include('../partials/_popup-three.html')
 
-            @@include('../partials/_project-new.html')
+            @@include('../partials/_service-three.html')
 
-            @@include('../partials/_feature-new.html')
-
-            @@include('../partials/_team-new.html')
-
-            @@include('../partials/_pricing-plan-new.html')
+            @@include('../partials/_statistics-three.html')
             
-            @@include('../partials/_counter-new.html')
-
-            @@include('../partials/_contact-new.html')
-
-            @@include('../partials/_testimonials-new.html')
+            @@include('../partials/_team-three.html')
             
-            @@include('../partials/_blog-new.html')
-            
-        </main>
+            @@include('../partials/_project-three.html')
 
-        @@include('../partials/_footer-new.html')
+            @@include('../partials/_marquee-three.html', {
+                'sectionClass': ''
+            })
+
+            @@include('../partials/_explore-more-three.html')
+
+            @@include('../partials/_testimonials-three.html')
+            
+            @@include('../partials/_get-in-touch-three.html')
+
+            @@include('../partials/_blog-three.html')
+
+
+            @@include('../partials/_footer-three.html')
+            
+        </div>
     </div>
-</div>
 
-@@include('../partials/_template-bottom.html')
+    @@include('../partials/_template-bottom.html')
 
-</body>
-
+    </body>
 </html>

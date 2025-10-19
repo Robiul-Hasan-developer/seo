@@ -1,50 +1,48 @@
 @@include('../partials/_template-top.html', {
-'pageClass' : 'fontSizeStyleOne'
+'pageClass' : 'fontSizeStyleNew'
 })
 
-@@include('../partials/_header.html', {
-'headerClass': 'headerAbsoluteStyle menuColorWhite menuPositionEnd fixedHeaderBlack'
+@@include('../partials/_header-new.html', {
+'headerClass': 'headerAbsoluteStyle menuColorWhite menuPositionEnd fixedHeaderBlack',
+'logoPath': 'logo.png',
+'searchIconClass': 'text-white hover-text-main-600',
+'rotateTextPath': 'menu-rotate-img.png',
 })
 
 <div id="smooth-wrapper" class="">
     <div id="smooth-content">
         <main>
-            @@include('../partials/_banner.html')
+            @@include('../partials/_banner-new.html')
 
-            <div class="position-relative z-1 overflow-hidden">
-                @@include('../partials/_about.html')
-                @@include('../partials/_brand.html')
+            @@include('../partials/_agency-thumbnail.html')
+            
+            @@include('../partials/_about-new.html')
 
-                <img src="assets/images/shapes/about-shape1.png" alt="Shape"
-                    class="position-absolute d-lg-block d-none z-n1 tw-start-0 top-0 tw-mt-17 tw-pt-6 animated-upDown">
-                <img src="assets/images/shapes/chaka-rounded-two.png" alt="Shape"
-                    class="position-absolute d-lg-block d-none z-n1 tw-end-0 bottom-0 tw-mb-11 animation-rotate-right tw--me-7-percent">
-            </div>
+            @@include('../partials/_brand-new.html')
 
-            @@include('../partials/_service.html')
+            @@include('../partials/_agency-video.html')
 
-            @@include('../partials/_choose-us.html')
+            @@include('../partials/_service-new.html')
 
-            @@include('../partials/_feature.html')
+            @@include('../partials/_project-new.html')
 
-            @@include('../partials/_marquee.html')
+            @@include('../partials/_feature-new.html')
 
-            @@include('../partials/_work-with-us.html')
+            @@include('../partials/_team-new.html')
 
-            @@include('../partials/_our-project.html')
+            @@include('../partials/_pricing-plan-new.html')
+            
+            @@include('../partials/_counter-new.html')
 
-            @@include('../partials/_team.html')
+            @@include('../partials/_contact-new.html')
 
-            @@include('../partials/_testimonials.html')
-
-            @@include('../partials/_get-in-touch.html', {
-            'sectionPadding': 'pt-120'
-            })
-
-            @@include('../partials/_blog.html')
+            @@include('../partials/_testimonials-new.html')
+            
+            @@include('../partials/_blog-new.html')
+            
         </main>
 
-        @@include('../partials/_footer.html')
+        @@include('../partials/_footer-new.html')
     </div>
 </div>
 

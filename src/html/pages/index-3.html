@@ -1,54 +1,55 @@
 @@include('../partials/_template-top.html', {
-    'pageClass' : 'fontSizeStyleTwo'
+'pageClass' : 'fontSizeStyleOne'
 })
 
-    @@include('../partials/_header-three.html', {
-        'headerClass': 'menuPositionEnd fixedHeaderBgWhite'
-    })
+@@include('../partials/_header.html', {
+'headerClass': 'headerAbsoluteStyle menuColorWhite menuPositionEnd fixedHeaderBlack'
+})
 
-    <div id="smooth-wrapper">
-        <div id="smooth-content">
+<div id="smooth-wrapper" class="">
+    <div id="smooth-content">
+        <main>
+            @@include('../partials/_banner.html')
 
-            <!-- Spacer -->
-            <div class="header-space"></div>
-            
-            @@include('../partials/_banner-three.html')
+            <div class="position-relative z-1 overflow-hidden">
+                @@include('../partials/_about.html')
+                @@include('../partials/_brand.html')
 
-              @@include('../partials/_counter-three.html', {
-                'sectionPadding': 'py-120'
+                <img src="assets/images/shapes/about-shape1.png" alt="Shape"
+                    class="position-absolute d-lg-block d-none z-n1 tw-start-0 top-0 tw-mt-17 tw-pt-6 animated-upDown">
+                <img src="assets/images/shapes/chaka-rounded-two.png" alt="Shape"
+                    class="position-absolute d-lg-block d-none z-n1 tw-end-0 bottom-0 tw-mb-11 animation-rotate-right tw--me-7-percent">
+            </div>
+
+            @@include('../partials/_service.html')
+
+            @@include('../partials/_choose-us.html')
+
+            @@include('../partials/_feature.html')
+
+            @@include('../partials/_marquee.html')
+
+            @@include('../partials/_work-with-us.html')
+
+            @@include('../partials/_our-project.html')
+
+            @@include('../partials/_team.html')
+
+            @@include('../partials/_testimonials.html')
+
+            @@include('../partials/_get-in-touch.html', {
+            'sectionPadding': 'pt-120'
             })
 
-            @@include('../partials/_about-three.html')
+            @@include('../partials/_blog.html')
+        </main>
 
-            @@include('../partials/_popup-three.html')
-
-            @@include('../partials/_service-three.html')
-
-            @@include('../partials/_statistics-three.html')
-            
-            @@include('../partials/_team-three.html')
-            
-            @@include('../partials/_project-three.html')
-
-            @@include('../partials/_marquee-three.html', {
-                'sectionClass': ''
-            })
-
-            @@include('../partials/_explore-more-three.html')
-
-            @@include('../partials/_testimonials-three.html')
-            
-            @@include('../partials/_get-in-touch-three.html')
-
-            @@include('../partials/_blog-three.html')
-
-
-            @@include('../partials/_footer-three.html')
-            
-        </div>
+        @@include('../partials/_footer.html')
     </div>
+</div>
 
-    @@include('../partials/_template-bottom.html')
+@@include('../partials/_template-bottom.html')
 
-    </body>
+</body>
+
 </html>
