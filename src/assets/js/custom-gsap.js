@@ -808,7 +808,7 @@ if ($(".text-to-bottom-bottom").length > 0) {
     .timeline({
       scrollTrigger: {
         trigger: ".text-to-bottom-bottom",
-        start: "top 50%",
+        start: "top 45%",
         end: "bottom 5%",
         scrub: true,
         invalidateOnRefresh: true,
@@ -816,19 +816,11 @@ if ($(".text-to-bottom-bottom").length > 0) {
       },
     })
     .to(".text-to-bottom-bottom", {
-      y: "35%",
+      y: "30%",
       x: "-100px",
       rotate: -5,
       scale: 1.2
     })
-    .to(".text-to-bottom-bottom", {
-      y: "50%",
-      x: "40%",
-    })
-    .to(".text-to-bottom-bottom", {
-      y: "100%",
-    })
-    ;
 }
 // **************************** Text To right animation js End ****************************
 
