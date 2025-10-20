@@ -2488,6 +2488,10 @@ input:focus-visible {
     text-wrap: balance;
 }
 
+.writing-mode-lr {
+    writing-mode: sideways-lr;
+}
+
 /* Gradient BG & Overlay start */
 .gradient-overlay-1 {
     position: relative;
@@ -7426,6 +7430,24 @@ input:focus-visible {
     }
 }
 /* Banner New two css end */
+/* About new two css start */
+.text {
+    background: linear-gradient(163deg, #ffc800 0%, #f90000 50%);
+    background-size: 100%;
+    word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+@media (min-width: 768px) {
+    .counter-content {
+        padding-inline-end: clamp(1.5rem, -3.5644rem + 8.1683vw, 5.625rem);
+        margin-inline-end: clamp(1.5rem, -3.5644rem + 8.1683vw, 5.625rem);
+        border-inline-end: 1px solid var(--neutral-600) !important;
+    }
+}
+/* About new two css end */
 /* Breadcrumb css start */
 .breadcrumb {
     padding: 256px 0 160px;

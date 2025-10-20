@@ -755,45 +755,54 @@ document.querySelectorAll(".scale-up-wrapper").forEach((section) => {
 // **************************** Scale Image up scale js End ****************************
 
 // **************************** Text To right animation js start ****************************
-if ($(".text-to-left").length > 0) {
+if ($(".text-to-left-top").length > 0) {
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: ".text-to-right-left",
-        start: "top 80%",
+        trigger: ".text-to-left-top",
+        start: "top 10%",
         end: "bottom 20%",
         scrub: true,
         invalidateOnRefresh: true,
       },
     })
-    .to(".text-to-left", {
-      x: "-15%",
+    .to(".text-to-left-top", {
+      x: "-10%",
     });
-  gsap.set(".text-to-left", {
-    x: "10%",
-  });
+}
+
+if ($(".text-to-left").length > 0) {
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".text-to-left",
+        start: "top 95%",
+        end: "bottom 5%",
+        scrub: true,
+        invalidateOnRefresh: true,
+      },
+    })
+    .to(".text-to-left", {
+      x: "-35%",
+    });
 }
 
 if ($(".text-to-right").length > 0) {
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: ".text-to-right-left",
-        start: "top 80%",
-        end: "bottom 20%",
+        trigger: ".text-to-right",
+        start: "top 95%",
+        end: "bottom 5%",
         scrub: true,
         invalidateOnRefresh: true,
       },
     })
     .to(".text-to-right", {
-      x: "15%",
+      x: "35%",
     });
-  gsap.set(".text-to-right", {
-    x: "-10%",
-  });
 }
 // **************************** Text To right animation js End ****************************
-
 
 // **************************** Sticky sidebar js start ****************************
 let mmSidebar = gsap.matchMedia();
@@ -816,8 +825,6 @@ mmSidebar.add("(min-width: 1401px)", () => {
   });
 });
 // **************************** Sticky sidebar js End ****************************
-
-
 
 // /* ****************************************************************************
 //                           Custom GSAP js start
