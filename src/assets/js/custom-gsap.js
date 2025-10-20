@@ -760,10 +760,11 @@ if ($(".text-to-left-top").length > 0) {
     .timeline({
       scrollTrigger: {
         trigger: ".text-to-left-top",
-        start: "top 10%",
+        start: "top 40%",
         end: "bottom 20%",
         scrub: true,
         invalidateOnRefresh: true,
+        markers: false,
       },
     })
     .to(".text-to-left-top", {
@@ -808,7 +809,7 @@ if ($(".text-to-bottom-bottom").length > 0) {
     .timeline({
       scrollTrigger: {
         trigger: ".text-to-bottom-bottom",
-        start: "top 45%",
+        start: "top 10%",
         end: "bottom 5%",
         scrub: true,
         invalidateOnRefresh: true,
@@ -816,9 +817,9 @@ if ($(".text-to-bottom-bottom").length > 0) {
       },
     })
     .to(".text-to-bottom-bottom", {
-      y: "30%",
+      y: "80%",
       x: "-100px",
-      rotate: -5,
+      rotate: -8,
       scale: 1.2
     })
 }
