@@ -820,7 +820,15 @@ if ($(".text-to-bottom-bottom").length > 0) {
       x: "-100px",
       rotate: -5,
       scale: 1.2
-    });
+    })
+    .to(".text-to-bottom-bottom", {
+      y: "50%",
+      x: "40%",
+    })
+    .to(".text-to-bottom-bottom", {
+      y: "100%",
+    })
+    ;
 }
 // **************************** Text To right animation js End ****************************
 
