@@ -98,6 +98,9 @@
     }
   }
   &-py {
+    &-60-px {
+      padding-block: clamp(1.5rem, -12.1677rem + 28.9177vw, 3.75rem);
+    }
     &-70-px {
       padding-block: clamp(1.5rem, -12.1677rem + 28.9177vw, 4.375rem);
     }

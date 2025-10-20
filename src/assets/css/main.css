@@ -4909,6 +4909,10 @@ input:focus-visible {
     padding-block-end: 4.5rem;
 }
 
+.tw-py-60-px {
+    padding-block: clamp(1.5rem, -12.1677rem + 28.9177vw, 3.75rem);
+}
+
 .tw-py-70-px {
     padding-block: clamp(1.5rem, -12.1677rem + 28.9177vw, 4.375rem);
 }

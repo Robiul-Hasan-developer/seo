@@ -812,13 +812,13 @@ if ($(".text-to-bottom-bottom").length > 0) {
         end: "bottom 5%",
         scrub: true,
         invalidateOnRefresh: true,
-        markers: true,
+        markers: false,
       },
     })
     .to(".text-to-bottom-bottom", {
       y: "35%",
       x: "-100px",
-      rotate: -6,
+      rotate: -5,
       scale: 1.2
     });
 }
