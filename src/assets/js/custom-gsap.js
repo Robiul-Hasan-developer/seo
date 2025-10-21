@@ -809,7 +809,7 @@ if ($(".text-to-bottom-bottom").length > 0) {
     .timeline({
       scrollTrigger: {
         trigger: ".text-to-bottom-bottom",
-        start: "top 10%",
+        start: "top 20%",
         end: "bottom 5%",
         scrub: true,
         invalidateOnRefresh: true,
@@ -820,8 +820,8 @@ if ($(".text-to-bottom-bottom").length > 0) {
       y: "80%",
       x: "-100px",
       rotate: -8,
-      scale: 1.2
-    })
+      scale: 1.2,
+    });
 }
 // **************************** Text To right animation js End ****************************
 
@@ -847,6 +847,49 @@ mmSidebar.add("(min-width: 1401px)", () => {
 });
 // **************************** Sticky sidebar js End ****************************
 
+// **************************** Work Process js Start ****************************
+if ($(".working-process-new-two").length > 0) {
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".working-process-new-two",
+        pin: true,
+        start: "top 0%",
+        end: "bottom 0%",
+        scrub: true,
+        invalidateOnRefresh: true,
+        markers: false,
+      },
+    })
+    .from(".card-one", {
+      rotate: 10,
+      zIndex: 3,
+    })
+    .to(".card-one", {
+      y: "10%",
+      scale: 1.2,
+    })
+    .to(".card-one", {
+      opacity: 0,
+    })
+    .from(".card-two", {
+      rotate: -10,
+      zIndex: 2,
+    })
+    .to(".card-two", {
+      scale: 1.1,
+      y: 100,
+    })
+    .to(".card-two", {
+      opacity: 0,
+    })
+    .to(".card-three", {
+      y: 100,
+    });
+}
+// **************************** Work Process js End ****************************
+
+  
 // /* ****************************************************************************
 //                           Custom GSAP js start
 // ****************************************************************************  */
