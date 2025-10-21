@@ -870,6 +870,9 @@ if ($(".working-process-new-two").length > 0) {
       scale: 1.2,
     })
     .to(".card-one", {
+      scale: 1.4,
+    })
+    .to(".card-one", {
       opacity: 0,
     })
     .from(".card-two", {
@@ -881,10 +884,16 @@ if ($(".working-process-new-two").length > 0) {
       y: 100,
     })
     .to(".card-two", {
+      scale: 1.3,
+    })
+    .to(".card-two", {
       opacity: 0,
     })
     .to(".card-three", {
-      y: 100,
+      y: 60,
+    })
+    .to(".card-three", {
+         scale: 1.2,
     });
 }
 // **************************** Work Process js End ****************************
