@@ -2270,6 +2270,10 @@ input:focus-visible {
     backdrop-filter: blur(26px);
 }
 
+.line-height-11 {
+    line-height: 1.125 !important;
+}
+
 /* ================================= Classes Css End =========================== */
 /* element double animation css start */
 .element-double-animation {
@@ -4105,6 +4109,10 @@ input:focus-visible {
 
 .max-w-890-px {
     max-width: 890px;
+}
+
+.max-w-960-px {
+    max-width: 960px;
 }
 
 .max-w-455-px {
