@@ -2260,6 +2260,16 @@ input:focus-visible {
     transform: translateY(48px);
 }
 
+@media (min-width: 576px) {
+    .translate-y--60-px {
+        transform: translateY(60px);
+    }
+}
+
+.backdrop-filter-26-px {
+    backdrop-filter: blur(26px);
+}
+
 /* ================================= Classes Css End =========================== */
 /* element double animation css start */
 .element-double-animation {
@@ -2910,6 +2920,10 @@ input:focus-visible {
 
 .group:hover .group-hover-text-main-two-600 {
     color: var(--main-two-600) !important;
+}
+
+.group:hover .group-hover-text-heading {
+    color: hsl(var(--heading-color)) !important;
 }
 
 .group:hover .group-hover-bg-white {
@@ -7464,8 +7478,6 @@ input:focus-visible {
     }
 }
 /* About new two css end */
-/* ==================== Working Process new two css start =========================== */
-/* ==================== Working Process new two css end =========================== */
 /* Breadcrumb css start */
 .breadcrumb {
     padding: 256px 0 160px;

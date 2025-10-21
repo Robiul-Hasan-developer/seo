@@ -734,24 +734,29 @@ headings.forEach((heading) => {
 // **************************** Text hover animation js End ****************************
 
 // **************************** Scale Image up scale js End ****************************
-document.querySelectorAll(".scale-up-wrapper").forEach((section) => {
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: section,
-      start: "top 95%",
-      end: "bottom 10%",
-      scrub: 1,
-      markers: false,
-    },
+if($('.scale-up-wrapper').length > 0) {
+  document.querySelectorAll(".scale-up-wrapper").forEach((section) => {
+    const img = section.querySelector(".scale-up__img");
+    if (!img) return; // skip if no target found
+    
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: section,
+        start: "top 95%",
+        end: "bottom 10%",
+        scrub: 1,
+        markers: false,
+      },
+    });
+  
+    tl.to(section.querySelector(".scale-up__img"), {
+      scale: 1.1,
+    }).to(section.querySelector(".scale-up__img"), {
+      scale: 1.15,
+      y: "200px",
+    });
   });
-
-  tl.to(section.querySelector(".scale-up__img"), {
-    scale: 1.1,
-  }).to(section.querySelector(".scale-up__img"), {
-    scale: 1.15,
-    y: "200px",
-  });
-});
+}
 // **************************** Scale Image up scale js End ****************************
 
 // **************************** Text To right animation js start ****************************
@@ -897,6 +902,27 @@ if ($(".working-process-new-two").length > 0) {
     });
 }
 // **************************** Work Process js End ****************************
+
+// **************************** Item Animation Up Down js Start ****************************
+mmm.add("(min-width: 576px)", () => {
+  if ($(".item-animation-down").length > 0) {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".item-animation-section",
+          start: "top 95%",
+          end: "bottom 5%",
+          scrub: true,
+          invalidateOnRefresh: true,
+          markers: false,
+        },
+      })
+      .to(".item-animation-down", {
+        y: "100px",
+      })
+  }
+});
+// **************************** Item Animation Up Down js End ****************************
 
   
 // /* ****************************************************************************

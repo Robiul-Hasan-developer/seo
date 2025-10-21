@@ -11,6 +11,9 @@
       &-main-two-600 {
         color: var(--main-two-600) !important;
       }
+      &-heading {
+        color: hsl(var(--heading-color)) !important;
+      }
     }
     .group-hover-bg {
       &-white {
