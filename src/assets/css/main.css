@@ -2330,6 +2330,10 @@ input:focus-visible {
     font-size: 4rem;
 }
 
+.text-58-px {
+    font-size: clamp(1.5rem, -0.9423rem + 4.5673vw, 3.625rem);
+}
+
 .text-36-px {
     font-size: 2.5rem;
 }
@@ -4113,6 +4117,10 @@ input:focus-visible {
 
 .max-w-960-px {
     max-width: 960px;
+}
+
+.max-w-1030-px {
+    max-width: 1030px;
 }
 
 .max-w-455-px {
