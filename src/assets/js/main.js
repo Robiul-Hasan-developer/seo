@@ -820,6 +820,34 @@
       },
     });
     // ================================ Testimonials new slider js End =================================
+
+    var testiNewTwoThumbsSlider = new Swiper(
+      ".testimonials-new-two-thumbs-slider",
+      {
+        spaceBetween: 0,
+        slidesPerView: 3,
+        watchSlidesProgress: true,
+        centeredSlides: true,
+        grabCursor: true,
+        loop: true,
+        speed: 1000,
+      }
+    );
+    var testiNewTwoContentSlider = new Swiper(
+      ".testimonials-new-two-content-slider",
+      {
+        spaceBetween: 0,
+        loop: true,
+        grabCursor: true,
+        navigation: {
+          nextEl: ".testimonials-new-two-content-next",
+          prevEl: ".testimonials-new-two-content-prev",
+        },
+        thumbs: {
+          swiper: testiNewTwoThumbsSlider,
+        },
+      }
+    );
   });
   // ==========================================
   //      End Document Ready function

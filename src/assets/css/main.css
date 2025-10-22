@@ -7486,6 +7486,19 @@ input:focus-visible {
     }
 }
 /* About new two css end */
+/* ========================= Testimonials new two css start ============================= */
+.testimonials-new-two-thumbs-slider .swiper-slide {
+    transform: scale(0.6);
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.testimonials-new-two-thumbs-slider .swiper-slide-thumb-active {
+    transform: scale(1);
+}
+
+/* ========================= Testimonials new two css end ============================= */
 /* Breadcrumb css start */
 .breadcrumb {
     padding: 256px 0 160px;
