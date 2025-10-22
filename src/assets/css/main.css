@@ -1884,6 +1884,10 @@ input:focus-visible {
     border-color: #FFFFFF38 !important;
 }
 
+.border-16 {
+    border-width: 16px !important;
+}
+
 /* Colors class start */
 .text-main-40 {
     color: var(--main-40);

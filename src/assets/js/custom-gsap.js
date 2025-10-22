@@ -734,11 +734,11 @@ headings.forEach((heading) => {
 // **************************** Text hover animation js End ****************************
 
 // **************************** Scale Image up scale js End ****************************
-if($('.scale-up-wrapper').length > 0) {
+if ($(".scale-up-wrapper").length > 0) {
   document.querySelectorAll(".scale-up-wrapper").forEach((section) => {
     const img = section.querySelector(".scale-up__img");
     if (!img) return; // skip if no target found
-    
+
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: section,
@@ -748,7 +748,7 @@ if($('.scale-up-wrapper').length > 0) {
         markers: false,
       },
     });
-  
+
     tl.to(section.querySelector(".scale-up__img"), {
       scale: 1.1,
     }).to(section.querySelector(".scale-up__img"), {
@@ -861,7 +861,7 @@ if ($(".working-process-new-two").length > 0) {
         pin: true,
         start: "top 0%",
         end: "bottom 0%",
-        scrub: true,
+        scrub: 1.5,
         invalidateOnRefresh: true,
         markers: false,
       },
@@ -892,13 +892,16 @@ if ($(".working-process-new-two").length > 0) {
       scale: 1.3,
     })
     .to(".card-two", {
+      scale: 1.3,
+    })
+    .to(".card-two", {
       opacity: 0,
     })
     .to(".card-three", {
       y: 60,
     })
     .to(".card-three", {
-         scale: 1.2,
+      scale: 1.2,
     });
 }
 // **************************** Work Process js End ****************************
@@ -918,13 +921,12 @@ mmm.add("(min-width: 576px)", () => {
         },
       })
       .to(".item-animation-down", {
-        y: "100px",
-      })
+        y: "120px",
+      });
   }
 });
 // **************************** Item Animation Up Down js End ****************************
 
-  
 // /* ****************************************************************************
 //                           Custom GSAP js start
 // ****************************************************************************  */
