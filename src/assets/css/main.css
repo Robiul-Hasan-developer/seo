@@ -6753,6 +6753,10 @@ input:focus-visible {
     --main: var(--main-h) var(--main-s) var(--main-l);
 }
 
+.color-green .btn-main {
+    color: hsl(var(--heading-color)) !important;
+}
+
 /* ========================= Banner one css start ============================= */
 .banner-one__inner {
     padding: 294px 0 194px 0;

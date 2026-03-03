@@ -5,4 +5,8 @@
         --main-l: 45%;
         --main: var(--main-h) var(--main-s) var(--main-l);
     }
+
+    .btn-main {
+        color: hsl(var(--heading-color)) !important;
+    }
 }
