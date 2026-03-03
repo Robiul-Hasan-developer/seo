@@ -6757,6 +6757,14 @@ input:focus-visible {
     color: hsl(var(--heading-color)) !important;
 }
 
+.color-green .btn-main .btn-icon {
+    background: hsl(var(--heading-color)) !important;
+}
+
+.color-green .hover-style-one .button__flair::before {
+    background-color: #fff;
+}
+
 /* ========================= Banner one css start ============================= */
 .banner-one__inner {
     padding: 294px 0 194px 0;

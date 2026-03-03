@@ -9,4 +9,12 @@
     .btn-main {
         color: hsl(var(--heading-color)) !important;
     }
+
+    .btn-main .btn-icon {
+        background: hsl(var(--heading-color)) !important;
+    }
+
+    .hover-style-one .button__flair::before {
+        background-color: #fff;
+    }
 }
