@@ -1,0 +1,8 @@
+.color-green {
+    &:root {
+        --main-h: 72;
+        --main-s: 97%;
+        --main-l: 45%;
+        --main: var(--main-h) var(--main-s) var(--main-l);
+    }
+}

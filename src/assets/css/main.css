@@ -1427,6 +1427,10 @@ input:focus-visible {
     background-color: #292d20;
 }
 
+.bg-black-new {
+    background-color: #111111;
+}
+
 .bg-mint-sky {
     background-color: #dbfff9;
 }
@@ -6736,6 +6740,13 @@ input:focus-visible {
 
 .fontSizeStyleOne h1, .fontSizeStyleOne .h1 {
     font-size: var(--heading-one);
+}
+
+.color-green:root {
+    --main-h: 72;
+    --main-s: 97%;
+    --main-l: 45%;
+    --main: var(--main-h) var(--main-s) var(--main-l);
 }
 
 /* ========================= Banner one css start ============================= */

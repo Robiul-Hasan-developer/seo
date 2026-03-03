@@ -753,7 +753,6 @@ if ($(".scale-up-wrapper").length > 0) {
       scale: 1.1,
     }).to(section.querySelector(".scale-up__img"), {
       scale: 1.15,
-      y: "200px",
     });
   });
 }
