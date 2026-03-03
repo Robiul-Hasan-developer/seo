@@ -6367,6 +6367,10 @@ input:focus-visible {
     margin-block-start: 0;
 }
 
+.active-text-green-600 .nav-menu__item.activePage > a, .active-text-green-600 .nav-menu__item.activePage > a::before {
+    color: var(--main-600) !important;
+}
+
 /* ================================= Header Css End =========================== */
 /* Mega menu css start */
 .mega-menu {
